@@ -6,11 +6,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   <!-- ==================== 1. HERO ==================== -->
   <section class="relative overflow-hidden bg-cream">
-    <div class="relative z-10 pt-[0.75rem] md:pt-[1rem] lg:pt-[1.25rem] pb-4 lg:pb-6">
+    <div class="relative z-10 pt-[0.75rem] md:pt-[1rem] md:pt-[1.25rem] pb-4 md:pb-6">
       <div class="container-main">
 
         <!-- Hero container card -->
-        <div class="bg-[#F5E0D0] rounded-[1.5rem] md:rounded-[2.5rem] lg:rounded-[3rem] px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 relative overflow-hidden">
+        <div class="bg-[#F5E0D0] rounded-[1.5rem] md:rounded-[2.5rem] md:rounded-[3rem] px-5 py-8 md:px-8 md:py-12 md:px-10 md:py-14 relative overflow-hidden">
           <!-- Subtle inner texture -->
           <div class="absolute inset-0 opacity-[0.04] pointer-events-none" style="background-image: radial-gradient(circle, #C47D5A 1px, transparent 1px); background-size: 28px 28px;" aria-hidden="true"></div>
 
@@ -24,7 +24,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <div class="relative z-10">
 
             <!-- Stat pills row -->
-            <div class="hero-el flex flex-wrap justify-center gap-2.5 sm:gap-3 mb-8 lg:mb-10">
+            <div class="hero-el flex flex-wrap justify-center gap-2.5 sm:gap-3 mb-8 md:mb-10">
               <div class="bg-white/70 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 shadow-sm">
                 <svg class="w-3.5 h-3.5 text-terracotta shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                   <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
@@ -106,7 +106,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[60rem] h-[60rem] rounded-full bg-sage-pale/20 blur-[140px] -translate-y-1/2 pointer-events-none" aria-hidden="true"></div>
 
     <div class="container-main relative z-10">
-      <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-14 scroll-reveal">
+      <div class="text-center max-w-2xl mx-auto mb-10 md:mb-14 scroll-reveal">
         <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-sage mb-4">Getting started</p>
         <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
           Four steps to <span class="text-sage">virtual care.</span>
@@ -114,10 +114,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <!-- 4-step grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 md:gap-6">
 
         <!-- Step 01: Book Online -->
-        <div class="scroll-reveal hiw-card bg-white rounded-[1.5rem] p-7 lg:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative" style="transition-delay: 0s;">
+        <div class="scroll-reveal hiw-card bg-white rounded-[1.5rem] p-7 md:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative" style="transition-delay: 0s;">
           <div class="hiw-icon-wrap mb-5">
             <div class="w-14 h-14 rounded-2xl bg-sage/10 flex items-center justify-center">
               <svg class="w-7 h-7 text-sage hiw-icon icon-float" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
@@ -131,7 +131,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
 
         <!-- Step 02: Share Your Story -->
-        <div class="scroll-reveal hiw-card bg-white rounded-[1.5rem] p-7 lg:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative" style="transition-delay: 0.08s;">
+        <div class="scroll-reveal hiw-card bg-white rounded-[1.5rem] p-7 md:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative" style="transition-delay: 0.08s;">
           <div class="hiw-icon-wrap mb-5">
             <div class="w-14 h-14 rounded-2xl bg-terracotta/10 flex items-center justify-center">
               <svg class="w-7 h-7 text-terracotta hiw-icon icon-heartbeat" style="animation-delay: 0.3s;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
@@ -146,7 +146,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <!-- Step 03: Deep-Dive Visit (FEATURED) -->
         <div class="scroll-reveal hiw-card hiw-featured bg-white rounded-[1.5rem] shadow-sm hover:shadow-lg transition-all duration-300 relative" style="transition-delay: 0.16s;">
-          <div class="bg-gradient-to-br from-sage to-sage-dark rounded-[1.5rem] p-7 lg:p-8 h-full">
+          <div class="bg-gradient-to-br from-sage to-sage-dark rounded-[1.5rem] p-7 md:p-8 h-full">
             <div class="hiw-icon-wrap mb-5">
               <div class="w-14 h-14 rounded-2xl bg-white/15 flex items-center justify-center">
                 <svg class="w-7 h-7 text-white hiw-icon icon-search" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
@@ -161,7 +161,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
 
         <!-- Step 04: Heal & Thrive -->
-        <div class="scroll-reveal hiw-card bg-white rounded-[1.5rem] p-7 lg:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative" style="transition-delay: 0.24s;">
+        <div class="scroll-reveal hiw-card bg-white rounded-[1.5rem] p-7 md:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative" style="transition-delay: 0.24s;">
           <div class="hiw-icon-wrap mb-5">
             <div class="w-14 h-14 rounded-2xl bg-sage/10 flex items-center justify-center">
               <svg class="w-7 h-7 text-sage hiw-icon icon-zap" style="animation-delay: 0.6s;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
@@ -185,7 +185,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="container-main relative z-10">
 
       <!-- Centered header -->
-      <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-14 scroll-reveal">
+      <div class="text-center max-w-2xl mx-auto mb-10 md:mb-14 scroll-reveal">
         <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Virtual = In-Person</p>
         <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal mb-4">
           Same quality care. <span class="text-sage">Your location.</span>
@@ -197,7 +197,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
       <!-- Comparison card -->
       <div class="scroll-reveal max-w-xl mx-auto" style="transition-delay: 0.12s;">
-        <div class="bg-white rounded-[2rem] p-6 sm:p-8 lg:p-10 shadow-sm border border-white/60">
+        <div class="bg-white rounded-[2rem] p-6 sm:p-8 md:p-10 shadow-sm border border-white/60">
 
           <!-- Grid header -->
           <div class="compare-grid compare-grid-header mb-2">
@@ -268,7 +268,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="absolute bottom-0 left-0 w-[40rem] h-[40rem] rounded-full bg-sage-pale/20 blur-[120px] translate-y-1/2 -translate-x-1/4 pointer-events-none" aria-hidden="true"></div>
 
     <div class="container-main relative z-10">
-      <div class="max-w-2xl mb-10 lg:mb-14 scroll-reveal">
+      <div class="max-w-2xl mb-10 md:mb-14 scroll-reveal">
         <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">What we treat</p>
         <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
           Expert care for <span class="text-sage">complex conditions.</span>
@@ -276,10 +276,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <!-- 3x2 condition cards -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6 mb-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-5 md:gap-6 mb-8">
 
         <!-- Gut Health & SIBO -->
-        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 lg:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300">
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 md:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300">
           <div class="w-14 h-14 rounded-2xl bg-sage/10 flex items-center justify-center mb-5">
             <svg class="w-7 h-7 text-sage icon-search" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
               <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
@@ -295,7 +295,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
 
         <!-- Hormones & Endocrine -->
-        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 lg:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300" style="transition-delay: 0.06s;">
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 md:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300" style="transition-delay: 0.06s;">
           <div class="w-14 h-14 rounded-2xl bg-terracotta/10 flex items-center justify-center mb-5">
             <svg class="w-7 h-7 text-terracotta icon-heartbeat" style="animation-delay: 0.3s;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
               <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
@@ -311,7 +311,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
 
         <!-- Mold Illness -->
-        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 lg:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300" style="transition-delay: 0.12s;">
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 md:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300" style="transition-delay: 0.12s;">
           <div class="w-14 h-14 rounded-2xl bg-sage/10 flex items-center justify-center mb-5">
             <svg class="w-7 h-7 text-sage icon-wobble" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
               <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4.5c-.77-.833-2.694-.833-3.464 0L3.34 16.5c-.77.833.192 2.5 1.732 2.5z"/>
@@ -327,7 +327,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
 
         <!-- Autoimmune Disease -->
-        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 lg:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300" style="transition-delay: 0.18s;">
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 md:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300" style="transition-delay: 0.18s;">
           <div class="w-14 h-14 rounded-2xl bg-terracotta/10 flex items-center justify-center mb-5">
             <svg class="w-7 h-7 text-terracotta icon-zap" style="animation-delay: 0.6s;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
               <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
@@ -343,7 +343,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
 
         <!-- Women's Health & Fertility -->
-        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 lg:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300" style="transition-delay: 0.24s;">
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 md:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300" style="transition-delay: 0.24s;">
           <div class="w-14 h-14 rounded-2xl bg-sage/10 flex items-center justify-center mb-5">
             <svg class="w-7 h-7 text-sage icon-float" style="animation-delay: 0.4s;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -359,7 +359,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
 
         <!-- Mental Health & Stress -->
-        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 lg:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300" style="transition-delay: 0.3s;">
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 md:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300" style="transition-delay: 0.3s;">
           <div class="w-14 h-14 rounded-2xl bg-terracotta/10 flex items-center justify-center mb-5">
             <svg class="w-7 h-7 text-terracotta icon-nod" style="animation-delay: 0.9s;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
               <path d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -377,7 +377,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <!-- In-person note -->
-      <div class="scroll-reveal bg-sage-pale/50 rounded-[1.5rem] p-6 lg:p-8 border border-sage-pale/60 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+      <div class="scroll-reveal bg-sage-pale/50 rounded-[1.5rem] p-6 md:p-8 border border-sage-pale/60 flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <div class="w-12 h-12 rounded-full bg-sage/10 flex items-center justify-center shrink-0">
           <svg class="w-6 h-6 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
             <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -396,7 +396,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="absolute top-1/2 right-0 w-[40rem] h-[40rem] rounded-full bg-[#F5E0D0]/20 blur-[120px] translate-x-1/4 -translate-y-1/2 pointer-events-none" aria-hidden="true"></div>
 
     <div class="container-main relative z-10">
-      <div class="max-w-2xl mb-10 lg:mb-14 scroll-reveal">
+      <div class="max-w-2xl mb-10 md:mb-14 scroll-reveal">
         <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-sage mb-4">Benefits</p>
         <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
           Healthcare that fits <span class="text-sage">your life.</span>
@@ -404,10 +404,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <!-- Bento Grid -->
-      <div class="grid grid-cols-4 md:grid-cols-12 auto-rows-[minmax(140px,auto)] gap-4 lg:gap-5">
+      <div class="grid grid-cols-4 md:grid-cols-12 auto-rows-[minmax(140px,auto)] gap-4 md:gap-5">
 
         <!-- CARD 1 — No Commute (tall sage) -->
-        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-5 md:row-span-2 bg-sage rounded-[1.5rem] p-8 lg:p-10 relative overflow-hidden group hover:shadow-xl transition-all duration-300">
+        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-5 md:row-span-2 bg-sage rounded-[1.5rem] p-8 md:p-10 relative overflow-hidden group hover:shadow-xl transition-all duration-300">
           <div class="absolute -top-10 -right-10 w-40 h-40 rounded-full border border-white/10" aria-hidden="true"></div>
           <div class="absolute -bottom-6 -left-6 w-28 h-28 rounded-full border border-white/10" aria-hidden="true"></div>
           <div class="relative z-10 h-full flex flex-col justify-between">
@@ -421,7 +421,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
 
         <!-- CARD 2 — Same 3-Doctor Team -->
-        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-7 bg-white rounded-[1.5rem] p-8 lg:p-10 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.06s;">
+        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-7 bg-white rounded-[1.5rem] p-8 md:p-10 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.06s;">
           <div class="flex flex-col sm:flex-row sm:items-center gap-6">
             <div class="flex -space-x-3 shrink-0">
               <div class="w-12 h-12 rounded-full bg-terracotta/15 border-2 border-white flex items-center justify-center text-sm font-bold text-terracotta">B</div>
@@ -430,7 +430,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
             <div>
               <p class="text-xs font-bold uppercase tracking-widest text-sage mb-2">Collaborative Care</p>
-              <p class="font-bold text-charcoal text-xl lg:text-2xl leading-snug mb-2">Same <span class="text-sage">3-doctor</span> team.</p>
+              <p class="font-bold text-charcoal text-xl md:text-2xl leading-snug mb-2">Same <span class="text-sage">3-doctor</span> team.</p>
               <p class="text-sm text-text-light leading-relaxed">Virtual doesn't mean solo. All three doctors still collaborate and review your case together.</p>
             </div>
           </div>
@@ -438,7 +438,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <!-- CARD 3 — AZ Statewide (peach) -->
         <div class="scroll-reveal bento-tilt col-span-4 md:col-span-4 bg-[#F5E0D0] rounded-[1.5rem] p-8 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.12s;">
-          <p class="text-[3.5rem] lg:text-[4.5rem] font-black text-terracotta/20 absolute -top-2 -right-1 leading-none select-none" aria-hidden="true">AZ</p>
+          <p class="text-[3.5rem] md:text-[4.5rem] font-black text-terracotta/20 absolute -top-2 -right-1 leading-none select-none" aria-hidden="true">AZ</p>
           <div class="relative z-10">
             <p class="text-5xl font-black text-terracotta mb-1">AZ</p>
             <p class="text-lg font-bold text-charcoal mb-2">Statewide</p>
@@ -460,7 +460,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
 
         <!-- CARD 5 — Flexible Scheduling (sage-pale, wide) -->
-        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-7 bg-sage-pale rounded-[1.5rem] p-8 lg:p-10 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.24s;">
+        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-7 bg-sage-pale rounded-[1.5rem] p-8 md:p-10 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.24s;">
           <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
             <div class="flex items-center gap-4 shrink-0">
               <div class="w-12 h-12 rounded-full bg-sage/15 flex items-center justify-center">
@@ -476,7 +476,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </div>
             </div>
             <div>
-              <p class="font-bold text-charcoal text-xl lg:text-2xl leading-snug mb-1">Flexible scheduling that <span class="text-sage">works for you</span></p>
+              <p class="font-bold text-charcoal text-xl md:text-2xl leading-snug mb-1">Flexible scheduling that <span class="text-sage">works for you</span></p>
               <p class="text-sm text-text leading-relaxed">No time off work, no childcare juggling. Book morning, afternoon, or evening slots that fit your life.</p>
             </div>
           </div>
@@ -505,7 +505,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="absolute bottom-0 left-0 w-80 h-80 rounded-full bg-sage/4 translate-y-1/3 -translate-x-1/4" aria-hidden="true"></div>
 
     <div class="container-main relative z-10">
-      <div class="text-center max-w-2xl mx-auto mb-12 lg:mb-16 scroll-reveal">
+      <div class="text-center max-w-2xl mx-auto mb-12 md:mb-16 scroll-reveal">
         <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta-light mb-4">Before your visit</p>
         <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-white mb-5">
           Everything you need to <span class="text-sage-light">get started.</span>
@@ -513,10 +513,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <!-- 2-column grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
 
         <!-- What You'll Need -->
-        <div class="scroll-reveal bg-white/8 backdrop-blur-sm rounded-[1.5rem] p-8 lg:p-10 border border-white/10">
+        <div class="scroll-reveal bg-white/8 backdrop-blur-sm rounded-[1.5rem] p-8 md:p-10 border border-white/10">
           <p class="text-xs font-bold uppercase tracking-widest text-sage-light mb-6">What You'll Need</p>
           <div class="space-y-5">
             <div class="flex items-start gap-4">
@@ -567,7 +567,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
 
         <!-- Simple & Secure -->
-        <div class="scroll-reveal bg-white/8 backdrop-blur-sm rounded-[1.5rem] p-8 lg:p-10 border border-white/10" style="transition-delay: 0.1s;">
+        <div class="scroll-reveal bg-white/8 backdrop-blur-sm rounded-[1.5rem] p-8 md:p-10 border border-white/10" style="transition-delay: 0.1s;">
           <p class="text-xs font-bold uppercase tracking-widest text-terracotta-light mb-6">Simple & Secure</p>
           <div class="space-y-5">
             <div class="flex items-start gap-4">
@@ -609,7 +609,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <!-- Trust badges row -->
-      <div class="scroll-reveal grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6" style="transition-delay: 0.15s;">
+      <div class="scroll-reveal grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6" style="transition-delay: 0.15s;">
         <div class="bg-white/8 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/10 hover:border-white/20 transition-all duration-300">
           <div class="w-12 h-12 rounded-full bg-sage/15 flex items-center justify-center mx-auto mb-4">
             <svg class="w-6 h-6 text-sage-light icon-float" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">

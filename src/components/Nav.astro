@@ -12,14 +12,14 @@ const simpleLinks = [
   <!-- Main nav -->
   <nav aria-label="Main navigation" class="nav-bar bg-cream/85 backdrop-blur-xl border-b border-sage-pale/50 transition-all duration-300">
     <div class="container-main">
-      <div class="flex items-center justify-between h-[72px] lg:h-[80px]">
+      <div class="flex items-center justify-between h-[72px] md:h-[80px]">
 
         <!-- Logo (actual brand logo) -->
         <a href="/" class="shrink-0 group" aria-label="Love Your Health Natural Medicine — Home">
           <img
             src="/images/logo.webp"
             alt="Love Your Health Natural Medicine"
-            class="h-14 lg:h-16 w-auto transition-transform duration-300 group-hover:scale-[1.02]"
+            class="h-14 md:h-16 w-auto transition-transform duration-300 group-hover:scale-[1.02]"
           />
         </a>
 
@@ -727,6 +727,23 @@ const simpleLinks = [
         </div>
         Pricing
       </a>
+
+      <!-- Health Quiz -->
+      <a href="/quiz" class="flex items-center gap-3 px-4 py-3.5 text-[15px] font-semibold text-terracotta hover:bg-terracotta/5 rounded-xl transition-colors">
+        <div class="w-9 h-9 rounded-lg bg-terracotta/10 flex items-center justify-center shrink-0">
+          <svg class="w-4.5 h-4.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+        </div>
+        Health Quiz
+        <span class="text-[10px] font-bold uppercase tracking-wider bg-terracotta/10 text-terracotta px-2 py-0.5 rounded-full ml-auto">Free</span>
+      </a>
+
+      <!-- Contact -->
+      <a href="/contact" class="flex items-center gap-3 px-4 py-3.5 text-[15px] font-semibold text-charcoal hover:text-sage hover:bg-sage-pale/40 rounded-xl transition-colors">
+        <div class="w-9 h-9 rounded-lg bg-terracotta/10 flex items-center justify-center shrink-0">
+          <svg class="w-4.5 h-4.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        Contact Us
+      </a>
     </div>
 
     <!-- Mobile CTA section -->
@@ -752,7 +769,7 @@ const simpleLinks = [
 <div id="petal-canvas" class="fixed inset-0 z-[100] pointer-events-none overflow-hidden" aria-hidden="true"></div>
 
 <!-- Spacer to offset fixed header -->
-<div id="header-spacer" class="h-[72px] lg:h-[80px]"></div>
+<div id="header-spacer" class="h-[72px] md:h-[80px]"></div>
 
 <style>
   /* Scrolled state */

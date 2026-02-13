@@ -9,7 +9,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[60rem] h-[60rem] rounded-full bg-[#F5E0D0]/20 blur-[140px] -translate-y-1/2 pointer-events-none" aria-hidden="true"></div>
 
     <div class="container-main relative z-10">
-      <div class="text-center max-w-3xl mx-auto mb-10 lg:mb-14">
+      <div class="text-center max-w-3xl mx-auto mb-10 md:mb-14">
         <p class="scroll-reveal text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-sage mb-4">About Us</p>
         <h1 class="scroll-reveal text-[clamp(2.2rem,6vw,4.2rem)] font-black leading-[1.06] tracking-[-0.03em] text-charcoal mb-5">
           Medicine built on <span class="text-sage">empathy,</span> not ego.
@@ -44,7 +44,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="absolute top-0 right-0 w-[40rem] h-[40rem] rounded-full bg-sage-pale/30 blur-[120px] -translate-y-1/2 translate-x-1/4 pointer-events-none" aria-hidden="true"></div>
 
     <div class="container-main relative z-10">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-start">
 
         <!-- Left: narrative -->
         <div class="scroll-reveal">
@@ -67,7 +67,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <!-- Right: timeline -->
         <div class="scroll-reveal" style="transition-delay: 0.15s;">
-          <div class="bg-white rounded-[1.5rem] p-8 lg:p-10 border border-sage-pale/40 shadow-sm">
+          <div class="bg-white rounded-[1.5rem] p-8 md:p-10 border border-sage-pale/40 shadow-sm">
             <p class="text-xs font-bold uppercase tracking-widest text-sage mb-8">Our Journey</p>
 
             <div class="space-y-0">
@@ -130,7 +130,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-white/15 blur-[120px] pointer-events-none" aria-hidden="true"></div>
 
     <div class="container-main relative z-10">
-      <div class="text-center max-w-2xl mx-auto mb-12 lg:mb-16 scroll-reveal">
+      <div class="text-center max-w-2xl mx-auto mb-12 md:mb-16 scroll-reveal">
         <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Our philosophy</p>
         <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal mb-5">
           Find the why. Treat the <span class="text-sage">whole person.</span>
@@ -141,10 +141,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <!-- 3-column pillars -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
 
         <!-- Pillar 1: Root-Cause Medicine -->
-        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-8 lg:p-10 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300">
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-8 md:p-10 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300">
           <div class="w-14 h-14 rounded-2xl bg-sage/10 flex items-center justify-center mb-6">
             <svg class="w-7 h-7 text-sage icon-search" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
               <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
@@ -155,7 +155,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
 
         <!-- Pillar 2: Whole-Person Care -->
-        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-8 lg:p-10 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300" style="transition-delay: 0.1s;">
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-8 md:p-10 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300" style="transition-delay: 0.1s;">
           <div class="w-14 h-14 rounded-2xl bg-terracotta/10 flex items-center justify-center mb-6">
             <svg class="w-7 h-7 text-terracotta icon-heartbeat" style="animation-delay: 0.3s;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
               <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
@@ -166,7 +166,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
 
         <!-- Pillar 3: Patient Empowerment -->
-        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-8 lg:p-10 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300" style="transition-delay: 0.2s;">
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-8 md:p-10 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300" style="transition-delay: 0.2s;">
           <div class="w-14 h-14 rounded-2xl bg-earth/10 flex items-center justify-center mb-6">
             <svg class="w-7 h-7 text-earth icon-zap" style="animation-delay: 0.6s;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
               <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
@@ -185,7 +185,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="absolute bottom-0 left-0 w-[40rem] h-[40rem] rounded-full bg-sage-pale/20 blur-[120px] translate-y-1/2 -translate-x-1/4 pointer-events-none" aria-hidden="true"></div>
 
     <div class="container-main relative z-10">
-      <div class="text-center max-w-2xl mx-auto mb-12 lg:mb-16 scroll-reveal">
+      <div class="text-center max-w-2xl mx-auto mb-12 md:mb-16 scroll-reveal">
         <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Your care team</p>
         <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal mb-5">
           The doctors behind <span class="text-sage">the mission.</span>
@@ -200,19 +200,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <!-- Dr. Carie Perrino -->
         <div class="scroll-reveal bg-white rounded-[1.5rem] overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-sage-pale/40">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
-            <div class="lg:col-span-4 relative overflow-hidden">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-0">
+            <div class="md:col-span-4 relative overflow-hidden">
               <img
                 src="/images/doctors/team-photo.jpg"
                 alt="Dr. Carie Perrino, NMD, RDN, CLT — Co-Founder of Love Your Health Natural Medicine"
-                class="w-full h-full object-cover object-top aspect-[4/3] lg:aspect-auto min-h-[300px]"
+                class="w-full h-full object-cover object-top aspect-[4/3] md:aspect-auto min-h-[300px]"
                 loading="lazy"
               />
               <div class="absolute top-4 left-4">
                 <span class="bg-white/90 backdrop-blur-sm text-terracotta text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full">Co-Founder</span>
               </div>
             </div>
-            <div class="lg:col-span-8 p-8 lg:p-10 flex flex-col justify-center">
+            <div class="md:col-span-8 p-8 md:p-10 flex flex-col justify-center">
               <h3 class="text-2xl font-black text-charcoal mb-1">Dr. Carie Perrino</h3>
               <p class="text-sm text-sage font-semibold mb-4">NMD, RDN, CLT · Co-Founder</p>
               <p class="text-sm md:text-base text-text-light leading-relaxed mb-5">
@@ -242,19 +242,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <!-- Dr. Spencer Warren -->
         <div class="scroll-reveal bg-white rounded-[1.5rem] overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-sage-pale/40" style="transition-delay: 0.1s;">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
-            <div class="lg:col-span-4 relative overflow-hidden">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-0">
+            <div class="md:col-span-4 relative overflow-hidden">
               <img
                 src="/images/doctors/spencer-headshot.jpg"
                 alt="Dr. Spencer Warren, NMD — Co-Founder of Love Your Health Natural Medicine"
-                class="w-full h-full object-cover object-top aspect-[4/3] lg:aspect-auto min-h-[300px]"
+                class="w-full h-full object-cover object-top aspect-[4/3] md:aspect-auto min-h-[300px]"
                 loading="lazy"
               />
               <div class="absolute top-4 left-4">
                 <span class="bg-white/90 backdrop-blur-sm text-sage text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full">Co-Founder</span>
               </div>
             </div>
-            <div class="lg:col-span-8 p-8 lg:p-10 flex flex-col justify-center">
+            <div class="md:col-span-8 p-8 md:p-10 flex flex-col justify-center">
               <h3 class="text-2xl font-black text-charcoal mb-1">Dr. Spencer Warren</h3>
               <p class="text-sm text-sage font-semibold mb-4">NMD · Co-Founder</p>
               <p class="text-sm md:text-base text-text-light leading-relaxed mb-5">
@@ -284,19 +284,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <!-- Dr. Bailey Newman -->
         <div class="scroll-reveal bg-white rounded-[1.5rem] overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-sage-pale/40" style="transition-delay: 0.2s;">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
-            <div class="lg:col-span-4 relative overflow-hidden">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-0">
+            <div class="md:col-span-4 relative overflow-hidden">
               <img
                 src="/images/doctors/bailey-headshot.jpeg"
                 alt="Dr. Bailey Newman, NMD — Naturopathic Doctor at Love Your Health Natural Medicine"
-                class="w-full h-full object-cover object-top aspect-[4/3] lg:aspect-auto min-h-[300px]"
+                class="w-full h-full object-cover object-top aspect-[4/3] md:aspect-auto min-h-[300px]"
                 loading="lazy"
               />
               <div class="absolute top-4 left-4">
                 <span class="bg-white/90 backdrop-blur-sm text-earth text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full">Naturopathic Doctor</span>
               </div>
             </div>
-            <div class="lg:col-span-8 p-8 lg:p-10 flex flex-col justify-center">
+            <div class="md:col-span-8 p-8 md:p-10 flex flex-col justify-center">
               <h3 class="text-2xl font-black text-charcoal mb-1">Dr. Bailey Newman</h3>
               <p class="text-sm text-sage font-semibold mb-4">NMD</p>
               <p class="text-sm md:text-base text-text-light leading-relaxed mb-5">
@@ -333,7 +333,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="absolute top-1/2 right-0 w-[40rem] h-[40rem] rounded-full bg-[#F5E0D0]/20 blur-[120px] translate-x-1/4 -translate-y-1/2 pointer-events-none" aria-hidden="true"></div>
 
     <div class="container-main relative z-10">
-      <div class="max-w-2xl mb-10 lg:mb-14 scroll-reveal">
+      <div class="max-w-2xl mb-10 md:mb-14 scroll-reveal">
         <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-sage mb-4">What makes us different</p>
         <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
           Not your typical <span class="text-sage">doctor's office.</span>
@@ -341,10 +341,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <!-- Bento Grid -->
-      <div class="grid grid-cols-4 md:grid-cols-12 auto-rows-[minmax(140px,auto)] gap-4 lg:gap-5">
+      <div class="grid grid-cols-4 md:grid-cols-12 auto-rows-[minmax(140px,auto)] gap-4 md:gap-5">
 
         <!-- Women-Owned (tall left) -->
-        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-5 md:row-span-2 bg-sage rounded-[1.5rem] p-8 lg:p-10 relative overflow-hidden group hover:shadow-xl transition-all duration-300">
+        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-5 md:row-span-2 bg-sage rounded-[1.5rem] p-8 md:p-10 relative overflow-hidden group hover:shadow-xl transition-all duration-300">
           <div class="absolute -top-10 -right-10 w-40 h-40 rounded-full border border-white/10" aria-hidden="true"></div>
           <div class="absolute -bottom-6 -left-6 w-28 h-28 rounded-full border border-white/10" aria-hidden="true"></div>
           <div class="relative z-10 h-full flex flex-col justify-between">
@@ -358,7 +358,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
 
         <!-- LGBTQ+ Founded -->
-        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-7 bg-white rounded-[1.5rem] p-8 lg:p-10 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.06s;">
+        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-7 bg-white rounded-[1.5rem] p-8 md:p-10 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.06s;">
           <div class="flex flex-col sm:flex-row sm:items-center gap-6">
             <div class="w-16 h-16 rounded-2xl bg-[#F5E0D0] flex items-center justify-center shrink-0">
               <svg class="w-8 h-8 text-terracotta icon-heartbeat" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
@@ -367,7 +367,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
             <div>
               <p class="text-xs font-bold uppercase tracking-widest text-terracotta mb-2">LGBTQ+ Founded & Friendly</p>
-              <p class="font-bold text-charcoal text-xl lg:text-2xl leading-snug mb-2">A safe space for <span class="text-sage">everyone.</span></p>
+              <p class="font-bold text-charcoal text-xl md:text-2xl leading-snug mb-2">A safe space for <span class="text-sage">everyone.</span></p>
               <p class="text-sm text-text-light leading-relaxed">Our practice was founded by members of the LGBTQ+ community. Inclusivity isn't an afterthought — it's in our DNA.</p>
             </div>
           </div>
@@ -376,7 +376,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <!-- Bilingual Care -->
         <div class="scroll-reveal bento-tilt col-span-4 md:col-span-4 bg-[#F5E0D0] rounded-[1.5rem] p-8 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.12s;">
           <div class="relative z-10">
-            <p class="text-3xl lg:text-4xl font-black text-terracotta/80 mb-2">EN / ES</p>
+            <p class="text-3xl md:text-4xl font-black text-terracotta/80 mb-2">EN / ES</p>
             <p class="text-lg font-bold text-charcoal mb-2">Bilingual Care</p>
             <p class="text-sm text-text-light leading-relaxed">Dr. Bailey is fluent in English and Spanish, making quality naturopathic care accessible to more of our community.</p>
           </div>
@@ -396,7 +396,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
 
         <!-- Collaborative Team (wide bottom) -->
-        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-7 bg-sage-pale rounded-[1.5rem] p-8 lg:p-10 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.24s;">
+        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-7 bg-sage-pale rounded-[1.5rem] p-8 md:p-10 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.24s;">
           <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
             <div class="flex -space-x-3 shrink-0">
               <div class="w-12 h-12 rounded-full bg-sage/15 border-2 border-sage-pale flex items-center justify-center text-sm font-bold text-sage">C</div>
@@ -404,7 +404,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               <div class="w-12 h-12 rounded-full bg-earth/15 border-2 border-sage-pale flex items-center justify-center text-sm font-bold text-earth">B</div>
             </div>
             <div>
-              <p class="font-bold text-charcoal text-xl lg:text-2xl leading-snug mb-1">3 Doctors Consult on <span class="text-sage">Every</span> Case</p>
+              <p class="font-bold text-charcoal text-xl md:text-2xl leading-snug mb-1">3 Doctors Consult on <span class="text-sage">Every</span> Case</p>
               <p class="text-sm text-text leading-relaxed">Your care isn't siloed. All three doctors collaborate and review cases together, so you get three expert opinions for the price of one visit.</p>
             </div>
           </div>
@@ -433,7 +433,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="absolute bottom-0 left-0 w-80 h-80 rounded-full bg-sage/4 translate-y-1/3 -translate-x-1/4" aria-hidden="true"></div>
 
     <div class="container-main relative z-10">
-      <div class="text-center max-w-2xl mx-auto mb-12 lg:mb-16 scroll-reveal">
+      <div class="text-center max-w-2xl mx-auto mb-12 md:mb-16 scroll-reveal">
         <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta-light mb-4">Trusted credentials</p>
         <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-white mb-5">
           Backed by training. Driven by <span class="text-sage-light">purpose.</span>
@@ -444,7 +444,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <!-- Trust badges row -->
-      <div class="scroll-reveal grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 mb-12">
+      <div class="scroll-reveal grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12">
         <div class="bg-white/8 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/10 hover:border-white/20 transition-all duration-300">
           <div class="w-12 h-12 rounded-full bg-sage/15 flex items-center justify-center mx-auto mb-4">
             <svg class="w-6 h-6 text-sage-light icon-float" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">

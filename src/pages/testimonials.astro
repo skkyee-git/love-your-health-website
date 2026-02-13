@@ -149,7 +149,7 @@ const cardAccents = ['sage', 'terracotta', 'earth', 'sage', 'terracotta', 'earth
 
     <div class="container-main relative z-10">
       <div class="scroll-reveal">
-        <div class="bg-sage-pale/30 rounded-[2rem] p-8 md:p-12 lg:p-16 relative overflow-hidden border border-sage-pale/50">
+        <div class="bg-sage-pale/30 rounded-[2rem] p-8 md:p-12 md:p-16 relative overflow-hidden border border-sage-pale/50">
 
           <!-- Decorative quote marks -->
           <div class="absolute top-6 left-8 md:top-8 md:left-12 opacity-10" aria-hidden="true">
@@ -170,7 +170,7 @@ const cardAccents = ['sage', 'terracotta', 'earth', 'sage', 'terracotta', 'earth
             </div>
 
             <!-- Quote -->
-            <blockquote class="text-lg md:text-xl lg:text-2xl font-medium leading-relaxed text-charcoal mb-8">
+            <blockquote class="text-lg md:text-xl md:text-2xl font-medium leading-relaxed text-charcoal mb-8">
               "{featured.quote}"
             </blockquote>
 
@@ -206,7 +206,7 @@ const cardAccents = ['sage', 'terracotta', 'earth', 'sage', 'terracotta', 'earth
     <div class="container-main relative z-10">
 
       <!-- Section heading -->
-      <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-14">
+      <div class="text-center max-w-2xl mx-auto mb-10 md:mb-14">
         <p class="scroll-reveal text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Real Results</p>
         <h2 class="scroll-reveal text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
           Stories that speak for <span class="text-sage">themselves.</span>
@@ -214,7 +214,7 @@ const cardAccents = ['sage', 'terracotta', 'earth', 'sage', 'terracotta', 'earth
       </div>
 
       <!-- Masonry-style grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 testimonial-grid">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 testimonial-grid">
         {gridTestimonials.map((t, i) => {
           const accent = cardAccents[i];
           const accentColorMap = {
