@@ -1,0 +1,714 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Hormonal Balance · Love Your Health Natural Medicine" description="Root-cause treatment for thyroid disorders, PCOS, adrenal fatigue, and menopause. Full hormone panels, DUTCH testing, and personalized protocols. Three naturopathic doctors in Tempe, AZ and virtual across Arizona.">
+
+  <!-- ==================== 1. HERO — SPLIT WITH HORMONE MAP ==================== -->
+  <section class="relative overflow-hidden bg-cream">
+    <div class="relative z-10 pt-[0.75rem] md:pt-[1rem] pb-4">
+      <div class="container-main">
+
+        <!-- Breadcrumb -->
+        <nav class="hero-el flex items-center gap-2 text-xs text-text-light mb-4 pt-2" aria-label="Breadcrumb">
+          <a href="/conditions" class="hover:text-sage transition-colors">Conditions</a>
+          <span class="text-sage/40">/</span>
+          <span class="text-charcoal font-medium">Hormonal Balance</span>
+        </nav>
+
+        <div class="bg-terracotta rounded-[1.5rem] md:rounded-[2.5rem] px-5 py-8 md:px-8 md:py-12 relative overflow-hidden">
+          <div class="absolute inset-0 opacity-[0.06] pointer-events-none" style="background-image: radial-gradient(circle, #fff 1px, transparent 1px); background-size: 28px 28px;" aria-hidden="true"></div>
+
+          <!-- Decorative rings -->
+          <div class="absolute top-1/2 right-0 translate-x-1/3 -translate-y-1/2 pointer-events-none" aria-hidden="true">
+            <div class="signal-ring w-[22rem] h-[22rem] rounded-full border-2 border-white/10"></div>
+            <div class="signal-ring absolute -top-[5rem] -left-[5rem] w-[32rem] h-[32rem] rounded-full border border-white/6" style="animation-delay: 0.6s;"></div>
+          </div>
+
+          <div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 items-center">
+
+            <!-- Left: text content -->
+            <div class="md:col-span-7">
+              <div class="hero-el flex flex-wrap gap-2.5 mb-6">
+                <span class="bg-white/15 rounded-full px-3.5 py-1.5 text-xs font-bold text-white">Thyroid</span>
+                <span class="bg-white/15 rounded-full px-3.5 py-1.5 text-xs font-bold text-white">PCOS</span>
+                <span class="bg-white/15 rounded-full px-3.5 py-1.5 text-xs font-bold text-white">Adrenal</span>
+                <span class="bg-white/15 rounded-full px-3.5 py-1.5 text-xs font-bold text-white">Menopause</span>
+              </div>
+
+              <h1 class="hero-el text-[clamp(2.2rem,5.5vw,4rem)] font-black leading-[1.06] tracking-[-0.03em] text-white mb-5">
+                Your hormones aren't broken. They're <span class="text-[#FDF6EE]">imbalanced.</span>
+              </h1>
+              <p class="hero-el text-base md:text-lg text-white/80 leading-relaxed max-w-lg mb-8">
+                We test what others skip &mdash; full thyroid panels, DUTCH hormone mapping, insulin &amp; cortisol rhythms &mdash; and treat the root cause, not just the lab number.
+              </p>
+
+              <div class="hero-el flex flex-row flex-wrap gap-3 mb-6">
+                <a href="/contact" class="magnetic-btn cta-shine group relative inline-flex items-center justify-center gap-2 bg-sage hover:bg-sage-dark text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-sage/25 overflow-hidden">
+                  <span class="relative z-10 flex items-center gap-2">
+                    Book Your First Visit
+                    <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </span>
+                </a>
+                <a href="/conditions" class="magnetic-btn relative inline-flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 overflow-hidden">
+                  View All Conditions
+                </a>
+              </div>
+
+              <div class="hero-el flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-white/80">
+                <span class="flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-white/70" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  No referral needed
+                </span>
+                <span class="w-px h-3 bg-white/20"></span>
+                <span>Tempe or virtual across AZ</span>
+              </div>
+            </div>
+
+            <!-- Right: hormone system card -->
+            <div class="md:col-span-5 hero-el">
+              <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-[1.5rem] p-6 space-y-3">
+                <p class="text-xs font-bold text-white/70 uppercase tracking-widest mb-4">What We Test</p>
+
+                <div class="bg-white/10 rounded-xl p-4 flex items-center gap-3">
+                  <div class="icon-float w-9 h-9 rounded-lg bg-white/15 flex items-center justify-center shrink-0" style="animation-delay: 0s;">
+                    <svg class="w-4.5 h-4.5 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                  </div>
+                  <div>
+                    <p class="text-sm font-bold text-white">Thyroid</p>
+                    <p class="text-[11px] text-white/80">TSH · Free T3 · Free T4 · RT3 · Antibodies</p>
+                  </div>
+                </div>
+
+                <div class="bg-white/10 rounded-xl p-4 flex items-center gap-3">
+                  <div class="icon-float w-9 h-9 rounded-lg bg-white/15 flex items-center justify-center shrink-0" style="animation-delay: 0.4s;">
+                    <svg class="w-4.5 h-4.5 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                  </div>
+                  <div>
+                    <p class="text-sm font-bold text-white">Reproductive</p>
+                    <p class="text-[11px] text-white/80">Estrogen · Progesterone · Testosterone · DHEA</p>
+                  </div>
+                </div>
+
+                <div class="bg-white/10 rounded-xl p-4 flex items-center gap-3">
+                  <div class="icon-float w-9 h-9 rounded-lg bg-white/15 flex items-center justify-center shrink-0" style="animation-delay: 0.8s;">
+                    <svg class="w-4.5 h-4.5 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 3h6m-5 0v6.5L4.5 18a1.5 1.5 0 001.28 2.28h12.44A1.5 1.5 0 0019.5 18L14 9.5V3"/><path d="M7.5 15h9" stroke-linecap="round"/></svg>
+                  </div>
+                  <div>
+                    <p class="text-sm font-bold text-white">Adrenal</p>
+                    <p class="text-[11px] text-white/80">4-point cortisol · DHEA-S · Cortisol metabolites</p>
+                  </div>
+                </div>
+
+                <div class="bg-white/10 rounded-xl p-4 flex items-center gap-3">
+                  <div class="icon-float w-9 h-9 rounded-lg bg-white/15 flex items-center justify-center shrink-0" style="animation-delay: 1.2s;">
+                    <svg class="w-4.5 h-4.5 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+                  </div>
+                  <div>
+                    <p class="text-sm font-bold text-white">Metabolic</p>
+                    <p class="text-[11px] text-white/80">Fasting insulin · HbA1c · Lipids · Glucose</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 2. FOUR PILLARS — MAGAZINE LAYOUT ==================== -->
+  <section class="section-padding bg-warm-white relative overflow-hidden">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[60rem] h-[60rem] rounded-full bg-sage-pale/20 blur-[140px] -translate-y-1/2 pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-14 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">What We Treat</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          Four hormonal systems. One <span class="text-sage">root-cause approach.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+
+        <!-- Thyroid — tall featured card (left) -->
+        <div class="scroll-reveal bento-tilt md:col-span-5 md:row-span-2 bg-sage rounded-[1.5rem] p-8 relative overflow-hidden group hover:shadow-xl transition-all duration-300">
+          <div class="absolute -top-10 -right-10 w-40 h-40 rounded-full border border-white/10" aria-hidden="true"></div>
+          <div class="absolute -bottom-6 -left-6 w-28 h-28 rounded-full border border-white/10" aria-hidden="true"></div>
+          <div class="relative z-10 h-full flex flex-col justify-between min-h-[280px]">
+            <div>
+              <p class="text-white/80 text-xs font-bold uppercase tracking-widest mb-3">Most Common</p>
+              <h3 class="text-2xl font-black text-white leading-snug mb-3">Thyroid Disorders</h3>
+              <p class="text-sm text-white/80 leading-relaxed mb-4">Hashimoto's, hypothyroidism, hyperthyroidism &mdash; we run the full panel, not just TSH. Because "normal" TSH doesn't mean your thyroid is fine.</p>
+            </div>
+            <div>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-white/15 text-white text-xs font-medium px-3 py-1 rounded-full">Hashimoto's</span>
+                <span class="bg-white/15 text-white text-xs font-medium px-3 py-1 rounded-full">Hypothyroid</span>
+                <span class="bg-white/15 text-white text-xs font-medium px-3 py-1 rounded-full">Free T3 / T4</span>
+              </div>
+              <p class="text-xs text-white/70">TSH · Free T3 · Free T4 · Reverse T3 · TPO · TG Antibodies</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PCOS — white card (top-right) -->
+        <div class="scroll-reveal bento-tilt md:col-span-7 bg-white rounded-[1.5rem] p-7 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300" style="transition-delay: 0.06s;">
+          <div class="flex items-start gap-5">
+            <div class="w-12 h-12 rounded-2xl bg-terracotta/10 flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-charcoal mb-1">PCOS</h3>
+              <p class="text-sm text-text-light leading-relaxed mb-3">Irregular cycles, acne, hair loss, weight gain. We address insulin resistance, inflammation, and androgen excess &mdash; not just birth control pills.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-terracotta/10 text-terracotta text-xs font-medium px-3 py-1 rounded-full">Insulin Resistance</span>
+                <span class="bg-terracotta/10 text-terracotta text-xs font-medium px-3 py-1 rounded-full">Androgens</span>
+                <span class="bg-terracotta/10 text-terracotta text-xs font-medium px-3 py-1 rounded-full">Cycle Health</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Adrenal — charcoal card (bottom-right top) -->
+        <div class="scroll-reveal bento-tilt md:col-span-4 bg-charcoal rounded-[1.5rem] p-7 hover:shadow-lg transition-all duration-300" style="transition-delay: 0.12s;">
+          <h3 class="text-base font-bold text-white mb-2">Adrenal Fatigue</h3>
+          <p class="text-xs text-white/80 leading-relaxed mb-3">Wired-but-tired, afternoon crashes, salt cravings. When cortisol is off, everything downstream is off.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-white/10 text-white/80 text-xs font-medium px-3 py-1 rounded-full">Cortisol</span>
+            <span class="bg-white/10 text-white/80 text-xs font-medium px-3 py-1 rounded-full">HPA Axis</span>
+          </div>
+        </div>
+
+        <!-- Menopause — blush card (bottom-right bottom) -->
+        <div class="scroll-reveal bento-tilt md:col-span-3 bg-[#F5E0D0] rounded-[1.5rem] p-7 hover:shadow-lg transition-all duration-300" style="transition-delay: 0.18s;">
+          <h3 class="text-base font-bold text-charcoal mb-2">Menopause</h3>
+          <p class="text-xs text-text leading-relaxed mb-3">Hot flashes, sleep disruption, brain fog. We optimize the transition naturally.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-white/60 text-charcoal text-xs font-medium px-3 py-1 rounded-full">Perimenopause</span>
+            <span class="bg-white/60 text-charcoal text-xs font-medium px-3 py-1 rounded-full">Estrogen</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3. SYMPTOMS — CENTERED PILLS + DUAL CARDS ==================== -->
+  <section class="section-padding bg-cream relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-[#F5E0D0]/20 blur-[140px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-8 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Recognize the Signs</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          Symptoms your doctor may be <span class="text-sage">dismissing.</span>
+        </h2>
+      </div>
+
+      <!-- Symptom pills -->
+      <div class="scroll-reveal flex flex-wrap justify-center gap-2.5 max-w-3xl mx-auto mb-12">
+        <span class="bg-white border border-sage-pale/40 rounded-full px-4 py-2.5 text-sm font-medium text-charcoal shadow-sm">Unexplained weight gain</span>
+        <span class="bg-white border border-sage-pale/40 rounded-full px-4 py-2.5 text-sm font-medium text-charcoal shadow-sm">Crushing fatigue</span>
+        <span class="bg-terracotta/10 border border-terracotta/20 rounded-full px-4 py-2.5 text-sm font-medium text-terracotta shadow-sm">Hair thinning or loss</span>
+        <span class="bg-white border border-sage-pale/40 rounded-full px-4 py-2.5 text-sm font-medium text-charcoal shadow-sm">Irregular periods</span>
+        <span class="bg-sage/10 border border-sage/20 rounded-full px-4 py-2.5 text-sm font-medium text-sage shadow-sm">Anxiety or mood swings</span>
+        <span class="bg-white border border-sage-pale/40 rounded-full px-4 py-2.5 text-sm font-medium text-charcoal shadow-sm">Brain fog</span>
+        <span class="bg-terracotta/10 border border-terracotta/20 rounded-full px-4 py-2.5 text-sm font-medium text-terracotta shadow-sm">Hot flashes or night sweats</span>
+        <span class="bg-white border border-sage-pale/40 rounded-full px-4 py-2.5 text-sm font-medium text-charcoal shadow-sm">Acne or cystic breakouts</span>
+        <span class="bg-sage/10 border border-sage/20 rounded-full px-4 py-2.5 text-sm font-medium text-sage shadow-sm">Low libido</span>
+        <span class="bg-white border border-sage-pale/40 rounded-full px-4 py-2.5 text-sm font-medium text-charcoal shadow-sm">Cold hands &amp; feet</span>
+        <span class="bg-white border border-sage-pale/40 rounded-full px-4 py-2.5 text-sm font-medium text-charcoal shadow-sm">Insomnia</span>
+        <span class="bg-terracotta/10 border border-terracotta/20 rounded-full px-4 py-2.5 text-sm font-medium text-terracotta shadow-sm">Afternoon energy crash</span>
+      </div>
+
+      <!-- Dual cards: approach + CTA -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div class="scroll-reveal bg-sage-pale rounded-[1.5rem] p-8">
+          <p class="text-xs font-bold text-sage uppercase tracking-widest mb-3">Our Approach</p>
+          <h3 class="text-xl font-black text-charcoal mb-3">Beyond "your labs are normal"</h3>
+          <p class="text-sm text-text leading-relaxed mb-4">Most doctors check TSH and call it a day. We run comprehensive panels &mdash; Free T3, Free T4, Reverse T3, antibodies, cortisol rhythm, insulin, DHEA, estrogen metabolites &mdash; and interpret them through optimal ranges, not just reference ranges.</p>
+          <p class="text-sm text-text leading-relaxed">Your treatment plan is built on <em>your</em> labs, <em>your</em> symptoms, and <em>your</em> goals. No cookie-cutter protocols.</p>
+        </div>
+
+        <div class="scroll-reveal bg-charcoal rounded-[1.5rem] p-8 flex flex-col justify-between relative overflow-hidden" style="transition-delay: 0.08s;">
+          <div class="absolute -top-8 -right-8 w-32 h-32 rounded-full border border-white/5" aria-hidden="true"></div>
+          <div class="absolute -bottom-6 -left-6 w-24 h-24 rounded-full border border-white/5" aria-hidden="true"></div>
+          <div class="relative z-10">
+            <p class="text-xs font-bold text-terracotta uppercase tracking-widest mb-3">The Difference</p>
+            <h3 class="text-xl font-black text-white mb-3">3 doctors review every case</h3>
+            <p class="text-sm text-white/80 leading-relaxed mb-6">Your hormone case isn't seen by one doctor in a vacuum. All three of our NMDs collaborate &mdash; bringing different specialties, different perspectives, and one unified plan.</p>
+          </div>
+          <a href="/contact" class="relative z-10 inline-flex items-center gap-2 text-sm font-bold text-terracotta hover:text-terracotta-light transition-colors">
+            Book your first visit
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. TESTING — DARK SECTION + 2-COL CARDS ==================== -->
+  <section class="section-padding bg-[#1a2516] relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-sage/8 blur-[160px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
+
+        <!-- Left: header + description -->
+        <div class="md:col-span-5 scroll-reveal">
+          <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-sage-light mb-4">Advanced Diagnostics</p>
+          <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-white mb-5">
+            The labs most doctors <span class="text-terracotta-light">skip.</span>
+          </h2>
+          <p class="text-sm text-white/75 leading-relaxed mb-6">Checking TSH alone misses 80% of the picture. We run comprehensive hormone testing that shows exactly what's happening &mdash; and why.</p>
+
+          <!-- Inline stat badges -->
+          <div class="space-y-3">
+            <div class="bg-white/5 border border-white/10 rounded-xl px-5 py-3 flex items-center gap-3">
+              <span class="text-lg font-black text-sage-light">6+</span>
+              <span class="text-xs text-white/70">Thyroid markers tested (not just TSH)</span>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl px-5 py-3 flex items-center gap-3">
+              <span class="text-lg font-black text-terracotta-light">24hr</span>
+              <span class="text-xs text-white/70">Cortisol rhythm mapped with DUTCH</span>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl px-5 py-3 flex items-center gap-3">
+              <span class="text-lg font-black text-sage-light">35+</span>
+              <span class="text-xs text-white/70">Hormone metabolites analyzed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: test cards -->
+        <div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+          <div class="scroll-reveal bg-white/5 border border-white/10 rounded-[1.5rem] p-6 hover:bg-white/10 transition-all duration-300">
+            <div class="w-10 h-10 rounded-xl bg-sage/20 flex items-center justify-center mb-4">
+              <svg class="w-5 h-5 text-sage-light" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M9 3h6m-5 0v6.5L4.5 18a1.5 1.5 0 001.28 2.28h12.44A1.5 1.5 0 0019.5 18L14 9.5V3"/><path d="M7.5 15h9" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="text-base font-bold text-white mb-2">DUTCH Complete</h3>
+            <p class="text-xs text-white/70 leading-relaxed">Dried urine test mapping cortisol rhythm, estrogen metabolites, androgens, melatonin, and organic acids in one comprehensive panel.</p>
+          </div>
+
+          <div class="scroll-reveal bg-white/5 border border-white/10 rounded-[1.5rem] p-6 hover:bg-white/10 transition-all duration-300" style="transition-delay: 0.06s;">
+            <div class="w-10 h-10 rounded-xl bg-terracotta/20 flex items-center justify-center mb-4">
+              <svg class="w-5 h-5 text-terracotta-light" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h3 class="text-base font-bold text-white mb-2">Full Thyroid Panel</h3>
+            <p class="text-xs text-white/70 leading-relaxed">TSH, Free T3, Free T4, Reverse T3, TPO antibodies, and thyroglobulin antibodies. The full picture, not just one number.</p>
+          </div>
+
+          <div class="scroll-reveal bg-white/5 border border-white/10 rounded-[1.5rem] p-6 hover:bg-white/10 transition-all duration-300" style="transition-delay: 0.12s;">
+            <div class="w-10 h-10 rounded-xl bg-sage/20 flex items-center justify-center mb-4">
+              <svg class="w-5 h-5 text-sage-light" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+              </svg>
+            </div>
+            <h3 class="text-base font-bold text-white mb-2">Metabolic &amp; Insulin Panel</h3>
+            <p class="text-xs text-white/70 leading-relaxed">Fasting insulin, glucose, HbA1c, and lipid panel. Insulin resistance drives PCOS and weight resistance.</p>
+          </div>
+
+          <div class="scroll-reveal bg-white/5 border border-white/10 rounded-[1.5rem] p-6 hover:bg-white/10 transition-all duration-300" style="transition-delay: 0.18s;">
+            <div class="w-10 h-10 rounded-xl bg-terracotta/20 flex items-center justify-center mb-4">
+              <svg class="w-5 h-5 text-terracotta-light" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <h3 class="text-base font-bold text-white mb-2">Adrenal Stress Panel</h3>
+            <p class="text-xs text-white/70 leading-relaxed">4-point cortisol curve, DHEA-S, and cortisol metabolites. Maps your stress response across the full day.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. APPROACH — WIDE CARD WITH INTERNAL SPLIT ==================== -->
+  <section class="section-padding bg-warm-white relative overflow-hidden">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[60rem] h-[60rem] rounded-full bg-sage-pale/20 blur-[140px] -translate-y-1/2 pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="scroll-reveal bg-white rounded-[2rem] p-7 md:p-10 border border-sage-pale/40 shadow-sm">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
+
+          <!-- Left: narrative -->
+          <div class="md:col-span-7">
+            <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">How We Treat</p>
+            <h2 class="text-[clamp(1.6rem,3.5vw,2.5rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal mb-5">
+              Your hormones are an <span class="text-sage">orchestra.</span> We tune the whole ensemble.
+            </h2>
+
+            <div class="space-y-4">
+              <div>
+                <h3 class="text-sm font-bold text-charcoal mb-1">Thyroid &amp; gut are connected</h3>
+                <p class="text-sm text-text-light leading-relaxed">20% of T4-to-T3 conversion happens in the gut. If your microbiome is off, your thyroid medication won't work as well as it should.</p>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-charcoal mb-1">Cortisol steals progesterone</h3>
+                <p class="text-sm text-text-light leading-relaxed">Under chronic stress, your body diverts progesterone to make cortisol (the "pregnenolone steal"). This drives PMS, irregular cycles, and anxiety.</p>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-charcoal mb-1">Insulin drives androgens</h3>
+                <p class="text-sm text-text-light leading-relaxed">High insulin tells the ovaries to produce more testosterone. PCOS treatment that ignores insulin resistance will fail. We address metabolism first.</p>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-charcoal mb-1">Estrogen needs a clear exit</h3>
+                <p class="text-sm text-text-light leading-relaxed">If your liver and gut aren't processing estrogen properly, it recirculates &mdash; driving fibroids, heavy periods, and estrogen dominance.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: protocol steps -->
+          <div class="md:col-span-5">
+            <div class="bg-sage-pale rounded-[1.5rem] p-6">
+              <p class="text-xs font-bold uppercase tracking-widest text-sage mb-5">Your Protocol</p>
+
+              <div class="space-y-0">
+                <div class="flex gap-4">
+                  <div class="flex flex-col items-center">
+                    <div class="w-9 h-9 rounded-full bg-sage/15 flex items-center justify-center shrink-0">
+                      <span class="text-xs font-black text-sage">1</span>
+                    </div>
+                    <div class="w-px h-full bg-sage/20 min-h-[1.5rem]"></div>
+                  </div>
+                  <div class="pb-5">
+                    <p class="text-sm font-bold text-charcoal">Comprehensive Testing</p>
+                    <p class="text-xs text-text-light leading-relaxed mt-0.5">Full hormone panel + metabolic markers</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-4">
+                  <div class="flex flex-col items-center">
+                    <div class="w-9 h-9 rounded-full bg-terracotta/15 flex items-center justify-center shrink-0">
+                      <span class="text-xs font-black text-terracotta">2</span>
+                    </div>
+                    <div class="w-px h-full bg-sage/20 min-h-[1.5rem]"></div>
+                  </div>
+                  <div class="pb-5">
+                    <p class="text-sm font-bold text-charcoal">Root-Cause Analysis</p>
+                    <p class="text-xs text-text-light leading-relaxed mt-0.5">3-doctor review of all findings</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-4">
+                  <div class="flex flex-col items-center">
+                    <div class="w-9 h-9 rounded-full bg-sage/15 flex items-center justify-center shrink-0">
+                      <span class="text-xs font-black text-sage">3</span>
+                    </div>
+                    <div class="w-px h-full bg-sage/20 min-h-[1.5rem]"></div>
+                  </div>
+                  <div class="pb-5">
+                    <p class="text-sm font-bold text-charcoal">Personalized Protocol</p>
+                    <p class="text-xs text-text-light leading-relaxed mt-0.5">Nutrition, supplements, botanicals, lifestyle</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-4">
+                  <div class="flex flex-col items-center">
+                    <div class="w-9 h-9 rounded-full bg-terracotta/15 flex items-center justify-center shrink-0">
+                      <span class="text-xs font-black text-terracotta">4</span>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="text-sm font-bold text-charcoal">Monitor &amp; Adjust</p>
+                    <p class="text-xs text-text-light leading-relaxed mt-0.5">Re-test, refine, and optimize over time</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. DOCTORS — WIDE BANNER CARD ==================== -->
+  <section class="section-padding bg-[#F5E0D0] relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-white/15 blur-[120px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="scroll-reveal bg-white rounded-[2rem] p-7 md:p-10 shadow-sm">
+        <div class="text-center mb-8">
+          <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-3">Collaborative Care</p>
+          <h2 class="text-[clamp(1.5rem,3vw,2.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+            Three doctors collaborate on <span class="text-sage">your hormones.</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="flex items-center gap-4 bg-sage-pale/30 rounded-[1.25rem] p-5">
+            <div class="w-12 h-12 rounded-full bg-terracotta/15 border-2 border-white flex items-center justify-center shrink-0 text-base font-black text-terracotta">C</div>
+            <div>
+              <p class="text-sm font-black text-charcoal">Dr. Carie Perrino</p>
+              <p class="text-xs text-text-light">NMD, RDN, CLT</p>
+              <p class="text-xs text-sage font-medium mt-0.5">Nutrition &middot; Gut-Hormone Axis</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 bg-sage-pale/30 rounded-[1.25rem] p-5">
+            <div class="w-12 h-12 rounded-full bg-sage/15 border-2 border-white flex items-center justify-center shrink-0 text-base font-black text-sage">S</div>
+            <div>
+              <p class="text-sm font-black text-charcoal">Dr. Spencer Warren</p>
+              <p class="text-xs text-text-light">NMD</p>
+              <p class="text-xs text-sage font-medium mt-0.5">Fertility &middot; Thyroid &middot; PCOS</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 bg-sage-pale/30 rounded-[1.25rem] p-5">
+            <div class="w-12 h-12 rounded-full bg-earth/15 border-2 border-white flex items-center justify-center shrink-0 text-base font-black text-earth">B</div>
+            <div>
+              <p class="text-sm font-black text-charcoal">Dr. Bailey Newman</p>
+              <p class="text-xs text-text-light">NMD</p>
+              <p class="text-xs text-sage font-medium mt-0.5">Acupuncture &middot; Hormone Support</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-6">
+          <a href="/doctors" class="inline-flex items-center gap-1.5 text-sm font-semibold text-sage hover:text-sage-dark transition-colors">
+            Meet our full team
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7. RELATED CONDITIONS — PILL ROW ==================== -->
+  <section class="py-10 md:py-14 bg-warm-white">
+    <div class="container-main">
+      <div class="scroll-reveal text-center">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-5">Related Conditions</p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <a href="/conditions/digestive-health" class="bg-white border border-sage-pale/40 rounded-full px-5 py-2.5 text-sm font-medium text-charcoal hover:bg-sage hover:text-white hover:border-sage transition-all duration-300 shadow-sm">Digestive Health</a>
+          <a href="/conditions/fertility" class="bg-white border border-sage-pale/40 rounded-full px-5 py-2.5 text-sm font-medium text-charcoal hover:bg-sage hover:text-white hover:border-sage transition-all duration-300 shadow-sm">Fertility</a>
+          <a href="/conditions/stress-anxiety" class="bg-white border border-sage-pale/40 rounded-full px-5 py-2.5 text-sm font-medium text-charcoal hover:bg-sage hover:text-white hover:border-sage transition-all duration-300 shadow-sm">Stress &amp; Anxiety</a>
+          <a href="/conditions/weight-management" class="bg-white border border-sage-pale/40 rounded-full px-5 py-2.5 text-sm font-medium text-charcoal hover:bg-sage hover:text-white hover:border-sage transition-all duration-300 shadow-sm">Weight Management</a>
+          <a href="/conditions/chronic-pain" class="bg-white border border-sage-pale/40 rounded-full px-5 py-2.5 text-sm font-medium text-charcoal hover:bg-sage hover:text-white hover:border-sage transition-all duration-300 shadow-sm">Chronic Pain</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 8. CTA ==================== -->
+  <section class="section-padding bg-cream relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-[#F5E0D0]/20 blur-[140px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Ready?</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal mb-5">
+          Stop guessing. Start <span class="text-sage">testing.</span>
+        </h2>
+        <p class="text-base md:text-lg text-text-light leading-relaxed mb-8">
+          Your first visit is 75&ndash;90 minutes &mdash; enough time to review your full history, map your hormone landscape, and build a plan that actually addresses the root cause. Not a 10-minute visit with a birth control prescription.
+        </p>
+        <div class="flex flex-row flex-wrap justify-center gap-4">
+          <a href="/contact" class="magnetic-btn cta-shine group relative inline-flex items-center justify-center gap-2 bg-sage hover:bg-sage-dark text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-sage/25 overflow-hidden">
+            <span class="relative z-10 flex items-center gap-2">
+              Book Your First Visit
+              <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+          <a href="tel:+14809140521" class="magnetic-btn relative inline-flex items-center justify-center gap-2 bg-white hover:bg-sage-pale text-charcoal font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-md border border-sage-pale/60 overflow-hidden">
+            Call (480) 914-0521
+          </a>
+        </div>
+        <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-1.5 text-xs text-text-light/50 mt-5">
+          <span>No referral needed</span>
+          <span class="w-px h-3 bg-sage/15"></span>
+          <span>In-person in Tempe or virtual across Arizona</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* ===== HERO ELEMENT STAGGER ===== */
+  .hero-el {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: heroElIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  .hero-el:nth-child(1) { animation-delay: 0.1s; }
+  .hero-el:nth-child(2) { animation-delay: 0.2s; }
+  .hero-el:nth-child(3) { animation-delay: 0.3s; }
+  .hero-el:nth-child(4) { animation-delay: 0.4s; }
+  .hero-el:nth-child(5) { animation-delay: 0.5s; }
+  .hero-el:nth-child(6) { animation-delay: 0.6s; }
+
+  @keyframes heroElIn {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ===== SIGNAL RINGS ===== */
+  .signal-ring {
+    animation: signalPulse 3.5s ease-out infinite;
+  }
+  @keyframes signalPulse {
+    0% { transform: scale(0.85); opacity: 1; }
+    70% { transform: scale(1.1); opacity: 0.3; }
+    100% { transform: scale(1.2); opacity: 0; }
+  }
+
+  /* ===== ICON FLOAT ===== */
+  .icon-float {
+    animation: iconFloat 3s ease-in-out infinite;
+  }
+  @keyframes iconFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+  }
+
+  /* ===== SCROLL REVEAL ===== */
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== CTA SHINE SWEEP ===== */
+  .cta-shine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+    transition: none;
+    pointer-events: none;
+  }
+  .cta-shine:hover::before {
+    animation: shineSweep 0.6s ease forwards;
+  }
+  @keyframes shineSweep {
+    to { left: 125%; }
+  }
+
+  /* ===== MAGNETIC BUTTONS ===== */
+  .magnetic-btn {
+    transition: transform 0.3s cubic-bezier(0.03, 0.98, 0.52, 0.99), background-color 0.3s, box-shadow 0.3s;
+  }
+
+  /* ===== BENTO TILT ===== */
+  .bento-tilt {
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform 0.35s cubic-bezier(0.03, 0.98, 0.52, 0.99), box-shadow 0.35s ease;
+  }
+  .bento-tilt .bento-glow {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+    border-radius: inherit;
+    z-index: 1;
+  }
+  .bento-tilt:hover .bento-glow {
+    opacity: 1;
+  }
+
+  /* ===== REDUCED MOTION ===== */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-el {
+      opacity: 1;
+      transform: none;
+      animation: none;
+    }
+    .scroll-reveal {
+      opacity: 1;
+      transform: none;
+    }
+    .cta-shine::before {
+      display: none;
+    }
+    .bento-tilt {
+      transform: none !important;
+    }
+    .signal-ring {
+      animation: none;
+    }
+    .icon-float {
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ===== SCROLL REVEAL =====
+  const revealElements = document.querySelectorAll('.scroll-reveal');
+  if (revealElements.length) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    revealElements.forEach((el) => {
+      if (prefersReduced) {
+        el.classList.add('visible');
+      } else {
+        observer.observe(el);
+      }
+    });
+  }
+
+  // ===== BENTO CARD TILT + GLOW =====
+  document.querySelectorAll('.bento-tilt').forEach((card) => {
+    if (window.innerWidth < 1024 || prefersReduced) return;
+    const glow = document.createElement('div');
+    glow.classList.add('bento-glow');
+    card.appendChild(glow);
+    const maxTilt = 8;
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width;
+      const y = (e.clientY - rect.top) / rect.height;
+      const rotateY = (x - 0.5) * maxTilt * 2;
+      const rotateX = (0.5 - y) * maxTilt * 2;
+      card.style.transform = `perspective(600px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+      glow.style.background = `radial-gradient(circle at ${x * 100}% ${y * 100}%, rgba(255,255,255,0.15) 0%, transparent 60%)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(600px) rotateX(0) rotateY(0) scale(1)';
+    });
+  });
+
+  // ===== MAGNETIC CTA BUTTONS =====
+  document.querySelectorAll('.magnetic-btn').forEach((btn) => {
+    if (window.innerWidth < 1024) return;
+    const strength = 0.3;
+    btn.addEventListener('mousemove', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      btn.style.transform = `translate(${x * strength}px, ${y * strength}px)`;
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = 'translate(0, 0)';
+    });
+  });
+</script>

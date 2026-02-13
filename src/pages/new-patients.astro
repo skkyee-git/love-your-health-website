@@ -1,0 +1,815 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="New Patients · Love Your Health Natural Medicine" description="Everything you need to know before your first visit. 75-90 minute appointments, 3-doctor collaborative team, no referral needed. Download patient forms and learn about insurance. Tempe, AZ and virtual across Arizona.">
+
+  <!-- ==================== 1. HERO — WARM WELCOME ==================== -->
+  <section class="relative overflow-hidden bg-cream">
+    <div class="relative z-10 pt-[0.75rem] md:pt-[1rem] pb-4">
+      <div class="container-main">
+
+        <div class="bg-sage-pale rounded-[1.5rem] md:rounded-[2.5rem] px-5 py-8 md:px-10 md:py-14 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-[30rem] h-[30rem] rounded-full bg-sage/8 blur-[120px] -translate-y-1/3 translate-x-1/4 pointer-events-none" aria-hidden="true"></div>
+
+          <div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 items-center">
+            <div class="md:col-span-7">
+              <div class="hero-el flex flex-wrap gap-2.5 mb-5">
+                <span class="bg-sage/15 rounded-full px-3.5 py-1.5 text-xs font-bold text-sage-dark">75-90 Min Visits</span>
+                <span class="bg-terracotta/10 rounded-full px-3.5 py-1.5 text-xs font-bold text-terracotta">3-Doctor Team</span>
+                <span class="bg-sage/15 rounded-full px-3.5 py-1.5 text-xs font-bold text-sage-dark">No Referral</span>
+              </div>
+
+              <h1 class="hero-el text-[clamp(2.2rem,5.5vw,4rem)] font-black leading-[1.06] tracking-[-0.03em] text-charcoal mb-5">
+                Your first visit starts <span class="text-sage">here.</span>
+              </h1>
+              <p class="hero-el text-base md:text-lg text-charcoal leading-relaxed max-w-xl mb-8">
+                We do things differently. No rushed appointments, no guessing, no band-aids. Here's exactly what to expect &mdash; so you can walk in ready to get answers.
+              </p>
+
+              <div class="hero-el flex flex-row flex-wrap gap-3 mb-5">
+                <a href="/contact" class="magnetic-btn cta-shine group relative inline-flex items-center justify-center gap-2 bg-sage hover:bg-sage-dark text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-sage/25 overflow-hidden">
+                  <span class="relative z-10 flex items-center gap-2">
+                    Book Your First Visit
+                    <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </span>
+                </a>
+                <a href="tel:+14809140521" class="magnetic-btn relative inline-flex items-center justify-center gap-2 bg-white/70 hover:bg-white text-charcoal font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-md overflow-hidden">
+                  Call (480) 914-0521
+                </a>
+              </div>
+            </div>
+
+            <!-- Right: quick-glance card -->
+            <div class="md:col-span-5 hero-el">
+              <div class="bg-white rounded-[1.5rem] shadow-lg border border-sage-pale/30 p-7">
+                <p class="text-xs font-bold text-sage uppercase tracking-widest mb-5">At a Glance</p>
+                <div class="space-y-4">
+                  <div class="flex items-start gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-sage/10 flex items-center justify-center shrink-0 mt-0.5">
+                      <svg class="w-4.5 h-4.5 text-sage" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <div>
+                      <p class="text-sm font-bold text-charcoal">75&ndash;90 minute first visit</p>
+                      <p class="text-xs text-text-light">Not a rushed 10-minute appointment</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-terracotta/10 flex items-center justify-center shrink-0 mt-0.5">
+                      <svg class="w-4.5 h-4.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <div>
+                      <p class="text-sm font-bold text-charcoal">3 doctors review every case</p>
+                      <p class="text-xs text-text-light">Collaborative team approach</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-sage/10 flex items-center justify-center shrink-0 mt-0.5">
+                      <svg class="w-4.5 h-4.5 text-sage" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <div>
+                      <p class="text-sm font-bold text-charcoal">No referral needed</p>
+                      <p class="text-xs text-text-light">Book directly, same-day available</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-terracotta/10 flex items-center justify-center shrink-0 mt-0.5">
+                      <svg class="w-4.5 h-4.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <div>
+                      <p class="text-sm font-bold text-charcoal">In-person or virtual</p>
+                      <p class="text-xs text-text-light">Tempe office or telehealth across AZ</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 2. VISIT TIMELINE — BEFORE / DURING / AFTER (3 TALL CARDS) ==================== -->
+  <section class="section-padding bg-warm-white relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-sage/5 blur-[160px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-12 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Your Visit</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          What to expect, step by <span class="text-sage">step.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <!-- BEFORE -->
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden flex flex-col">
+          <div class="h-2 bg-gradient-to-r from-terracotta to-terracotta-light rounded-t-[1.5rem]"></div>
+          <div class="p-7 flex-1 flex flex-col">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="icon-pulse w-12 h-12 rounded-2xl bg-terracotta/10 flex items-center justify-center">
+                <span class="text-lg font-black text-terracotta">01</span>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-terracotta uppercase tracking-widest">Before</p>
+                <p class="text-base font-black text-charcoal">Preparing for your visit</p>
+              </div>
+            </div>
+            <ul class="space-y-3 flex-1">
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-sage mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+                <span class="text-sm text-text-light leading-relaxed"><strong class="text-charcoal">Download forms</strong> &mdash; complete intake paperwork ahead of time</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-sage mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+                <span class="text-sm text-text-light leading-relaxed"><strong class="text-charcoal">Gather past labs</strong> &mdash; bring any recent bloodwork or imaging</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-sage mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+                <span class="text-sm text-text-light leading-relaxed"><strong class="text-charcoal">List your meds &amp; supplements</strong> &mdash; including dosages</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-sage mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+                <span class="text-sm text-text-light leading-relaxed"><strong class="text-charcoal">Write your questions</strong> &mdash; we want to hear every concern</span>
+              </li>
+            </ul>
+            <a href="#forms" class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-terracotta hover:text-terracotta-light transition-colors">
+              Download forms below
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- DURING -->
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden flex flex-col" style="transition-delay: 0.08s;">
+          <div class="h-2 bg-gradient-to-r from-sage to-sage-light rounded-t-[1.5rem]"></div>
+          <div class="p-7 flex-1 flex flex-col">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="icon-pulse w-12 h-12 rounded-2xl bg-sage/10 flex items-center justify-center" style="animation-delay: 0.5s;">
+                <span class="text-lg font-black text-sage">02</span>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-sage uppercase tracking-widest">During</p>
+                <p class="text-base font-black text-charcoal">Your 75&ndash;90 min appointment</p>
+              </div>
+            </div>
+            <ul class="space-y-3 flex-1">
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-sage mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+                <span class="text-sm text-text-light leading-relaxed"><strong class="text-charcoal">Full health timeline</strong> &mdash; we map your entire story, not just today's complaint</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-sage mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+                <span class="text-sm text-text-light leading-relaxed"><strong class="text-charcoal">Physical exam</strong> &mdash; naturopathic assessment tailored to your concerns</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-sage mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+                <span class="text-sm text-text-light leading-relaxed"><strong class="text-charcoal">Lab orders</strong> &mdash; advanced testing your PCP doesn't run</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-sage mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+                <span class="text-sm text-text-light leading-relaxed"><strong class="text-charcoal">Initial treatment plan</strong> &mdash; you leave with first steps, not just a follow-up date</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-sage mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+                <span class="text-sm text-text-light leading-relaxed"><strong class="text-charcoal">Acupuncture</strong> &mdash; included if appropriate for your condition</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- AFTER -->
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden flex flex-col" style="transition-delay: 0.16s;">
+          <div class="h-2 bg-gradient-to-r from-earth to-[#A08868] rounded-t-[1.5rem]"></div>
+          <div class="p-7 flex-1 flex flex-col">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="icon-pulse w-12 h-12 rounded-2xl bg-earth/10 flex items-center justify-center" style="animation-delay: 1s;">
+                <span class="text-lg font-black text-earth">03</span>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-earth uppercase tracking-widest">After</p>
+                <p class="text-base font-black text-charcoal">Your ongoing care plan</p>
+              </div>
+            </div>
+            <ul class="space-y-3 flex-1">
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-sage mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+                <span class="text-sm text-text-light leading-relaxed"><strong class="text-charcoal">Lab results review</strong> &mdash; 30-min follow-up to walk through findings together</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-sage mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+                <span class="text-sm text-text-light leading-relaxed"><strong class="text-charcoal">Full protocol</strong> &mdash; supplements, nutrition, lifestyle &mdash; all personalized</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-sage mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+                <span class="text-sm text-text-light leading-relaxed"><strong class="text-charcoal">Team review</strong> &mdash; all 3 doctors discuss your case and refine the plan</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-sage mt-0.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+                <span class="text-sm text-text-light leading-relaxed"><strong class="text-charcoal">Re-test at 90 days</strong> &mdash; track measurable progress, adjust as needed</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3. WHAT TO BRING — CHECKLIST CARD ==================== -->
+  <section class="section-padding bg-cream relative overflow-hidden">
+    <div class="container-main relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start max-w-5xl mx-auto">
+        <div class="md:col-span-5 scroll-reveal">
+          <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Come Prepared</p>
+          <h2 class="text-[clamp(1.6rem,3.5vw,2.5rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal mb-4">
+            What to bring to your <span class="text-sage">appointment.</span>
+          </h2>
+          <p class="text-sm text-text-light leading-relaxed">
+            The more information you bring, the faster we can find your root cause. Don't worry if you don't have everything &mdash; we'll work with what you have.
+          </p>
+        </div>
+
+        <div class="md:col-span-7 scroll-reveal" style="transition-delay: 0.08s;">
+          <div class="bento-tilt bg-white rounded-[1.5rem] p-7 md:p-8 border border-sage-pale/40 shadow-sm relative overflow-hidden">
+            <div class="space-y-4">
+              <div class="flex items-start gap-3 p-3 rounded-xl bg-sage-pale/30 border border-sage/10">
+                <div class="w-6 h-6 rounded-md bg-sage flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+                </div>
+                <div>
+                  <p class="text-sm font-bold text-charcoal">Completed intake forms</p>
+                  <p class="text-xs text-text-light">Download below &mdash; or arrive 15 min early to fill out in office</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-xl bg-sage-pale/30 border border-sage/10">
+                <div class="w-6 h-6 rounded-md bg-sage flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+                </div>
+                <div>
+                  <p class="text-sm font-bold text-charcoal">Recent lab work &amp; imaging</p>
+                  <p class="text-xs text-text-light">Bloodwork, MRIs, ultrasounds from the past 6&ndash;12 months</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-xl bg-sage-pale/30 border border-sage/10">
+                <div class="w-6 h-6 rounded-md bg-sage flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+                </div>
+                <div>
+                  <p class="text-sm font-bold text-charcoal">Current medications &amp; supplements list</p>
+                  <p class="text-xs text-text-light">Names, dosages, and how long you've been taking them</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-xl bg-sage-pale/30 border border-sage/10">
+                <div class="w-6 h-6 rounded-md bg-sage flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+                </div>
+                <div>
+                  <p class="text-sm font-bold text-charcoal">Insurance card (if applicable)</p>
+                  <p class="text-xs text-text-light">We provide superbills for out-of-network reimbursement</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 p-3 rounded-xl bg-sage-pale/30 border border-sage/10">
+                <div class="w-6 h-6 rounded-md bg-sage flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+                </div>
+                <div>
+                  <p class="text-sm font-bold text-charcoal">Your questions &amp; health goals</p>
+                  <p class="text-xs text-text-light">Write them down &mdash; no concern is too small</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. PATIENT FORMS — #forms ==================== -->
+  <section id="forms" class="section-padding bg-warm-white relative overflow-hidden">
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-sage mb-4">Patient Forms</p>
+        <h2 class="text-[clamp(1.6rem,3.5vw,2.5rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          Download &amp; complete <span class="text-terracotta">before you arrive.</span>
+        </h2>
+        <p class="text-sm text-text-light mt-3 leading-relaxed">Completing forms ahead of time means more face-to-face time with your doctor. If you prefer, you can also arrive 15 minutes early to fill them out in office.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl mx-auto">
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 text-center relative overflow-hidden">
+          <div class="icon-float w-14 h-14 rounded-2xl bg-sage/10 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+          </div>
+          <h3 class="text-base font-black text-charcoal mb-1.5">New Patient Intake</h3>
+          <p class="text-xs text-text-light mb-4">Health history, current symptoms, medications, and goals</p>
+          <a href="/forms/new-patient-intake.pdf" class="inline-flex items-center gap-1.5 text-sm font-bold text-sage hover:text-sage-dark transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            Download PDF
+          </a>
+        </div>
+
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 text-center relative overflow-hidden" style="transition-delay: 0.06s;">
+          <div class="icon-float w-14 h-14 rounded-2xl bg-terracotta/10 flex items-center justify-center mx-auto mb-4" style="animation-delay: 0.4s;">
+            <svg class="w-7 h-7 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="text-base font-black text-charcoal mb-1.5">Consent &amp; HIPAA</h3>
+          <p class="text-xs text-text-light mb-4">Informed consent for treatment and privacy practices</p>
+          <a href="/forms/consent-hipaa.pdf" class="inline-flex items-center gap-1.5 text-sm font-bold text-terracotta hover:text-terracotta-light transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            Download PDF
+          </a>
+        </div>
+
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 text-center relative overflow-hidden" style="transition-delay: 0.12s;">
+          <div class="icon-float w-14 h-14 rounded-2xl bg-sage/10 flex items-center justify-center mx-auto mb-4" style="animation-delay: 0.8s;">
+            <svg class="w-7 h-7 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25z"/></svg>
+          </div>
+          <h3 class="text-base font-black text-charcoal mb-1.5">Supplement History</h3>
+          <p class="text-xs text-text-light mb-4">Current and past supplements, vitamins, and herbs</p>
+          <a href="/forms/supplement-history.pdf" class="inline-flex items-center gap-1.5 text-sm font-bold text-sage hover:text-sage-dark transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. INSURANCE & PAYMENT — DARK SECTION ==================== -->
+  <section class="section-padding bg-[#1a2516] relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-sage/6 blur-[160px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta-light mb-4">Investment in Your Health</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-white">
+          Insurance, payment, and <span class="text-sage-light">what to expect.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
+        <div class="scroll-reveal bento-tilt bg-white/5 border border-white/10 rounded-[1.5rem] p-7 relative overflow-hidden">
+          <div class="icon-float w-12 h-12 rounded-2xl bg-sage/15 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-sage-light" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"/></svg>
+          </div>
+          <h3 class="text-lg font-black text-white mb-3">Payment Methods</h3>
+          <p class="text-sm text-white/60 leading-relaxed mb-4">We accept all major credit and debit cards, as well as HSA and FSA cards. Payment is due at the time of service.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs text-white/50 bg-white/8 px-3 py-1.5 rounded-full">Visa</span>
+            <span class="text-xs text-white/50 bg-white/8 px-3 py-1.5 rounded-full">Mastercard</span>
+            <span class="text-xs text-white/50 bg-white/8 px-3 py-1.5 rounded-full">Amex</span>
+            <span class="text-xs text-white/50 bg-white/8 px-3 py-1.5 rounded-full">Discover</span>
+            <span class="text-xs text-sage-light/80 bg-sage/15 px-3 py-1.5 rounded-full font-medium">HSA/FSA</span>
+          </div>
+        </div>
+
+        <div class="scroll-reveal bento-tilt bg-white/5 border border-white/10 rounded-[1.5rem] p-7 relative overflow-hidden" style="transition-delay: 0.06s;">
+          <div class="icon-float w-12 h-12 rounded-2xl bg-terracotta/15 flex items-center justify-center mb-4" style="animation-delay: 0.4s;">
+            <svg class="w-6 h-6 text-terracotta-light" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="text-lg font-black text-white mb-3">Insurance &amp; Superbills</h3>
+          <p class="text-sm text-white/60 leading-relaxed mb-4">We are an out-of-network provider for most insurance plans. We provide superbills (detailed receipts) that you can submit to your insurance for potential reimbursement.</p>
+          <p class="text-xs text-white/40 leading-relaxed">Many patients with PPO plans receive 40&ndash;80% reimbursement. Contact your insurance to verify your out-of-network naturopathic benefits.</p>
+        </div>
+
+        <div class="scroll-reveal bento-tilt bg-white/5 border border-white/10 rounded-[1.5rem] p-7 relative overflow-hidden" style="transition-delay: 0.12s;">
+          <div class="icon-float w-12 h-12 rounded-2xl bg-sage/15 flex items-center justify-center mb-4" style="animation-delay: 0.8s;">
+            <svg class="w-6 h-6 text-sage-light" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 class="text-lg font-black text-white mb-3">Cancellation Policy</h3>
+          <p class="text-sm text-white/60 leading-relaxed">We kindly ask for at least 24 hours notice to cancel or reschedule. Late cancellations or no-shows may incur a fee, as that time was reserved specifically for you.</p>
+        </div>
+
+        <div class="scroll-reveal bento-tilt bg-white/5 border border-white/10 rounded-[1.5rem] p-7 relative overflow-hidden" style="transition-delay: 0.18s;">
+          <div class="icon-float w-12 h-12 rounded-2xl bg-terracotta/15 flex items-center justify-center mb-4" style="animation-delay: 1.2s;">
+            <svg class="w-6 h-6 text-terracotta-light" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-black text-white mb-3">Transparent Pricing</h3>
+          <p class="text-sm text-white/60 leading-relaxed mb-3">No surprise bills. We'll discuss costs and testing fees upfront before ordering anything. You always know what you're paying for.</p>
+          <a href="/pricing" class="inline-flex items-center gap-1.5 text-sm font-bold text-terracotta-light hover:text-white transition-colors">
+            View full pricing
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. LOCATION & HOURS ==================== -->
+  <section class="section-padding bg-cream relative overflow-hidden">
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Find Us</p>
+        <h2 class="text-[clamp(1.6rem,3.5vw,2.5rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          Our office in <span class="text-sage">Tempe, Arizona.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
+        <!-- Address card -->
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="icon-float w-12 h-12 rounded-2xl bg-sage/10 flex items-center justify-center">
+              <svg class="w-6 h-6 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+            </div>
+            <h3 class="text-lg font-black text-charcoal">Address</h3>
+          </div>
+          <p class="text-base font-bold text-charcoal">Love Your Health Natural Medicine</p>
+          <p class="text-sm text-text-light mt-1">123 E Baseline Rd, Suite D208 #4</p>
+          <p class="text-sm text-text-light">Tempe, AZ 85283</p>
+          <p class="text-xs text-text-light/60 mt-1.5">2nd Floor &middot; Mill Towne Center</p>
+
+          <div class="mt-5 pt-5 border-t border-sage-pale/40">
+            <p class="text-sm text-text-light"><strong class="text-charcoal">Parking:</strong> Free parking available in the building lot.</p>
+            <p class="text-sm text-text-light mt-2"><strong class="text-charcoal">Virtual option:</strong> Can't make it in person? We see patients across all of Arizona via secure telehealth.</p>
+          </div>
+        </div>
+
+        <!-- Hours card -->
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.06s;">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="icon-float w-12 h-12 rounded-2xl bg-terracotta/10 flex items-center justify-center" style="animation-delay: 0.4s;">
+              <svg class="w-6 h-6 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 class="text-lg font-black text-charcoal">Office Hours</h3>
+          </div>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center py-2.5 border-b border-sage-pale/30">
+              <span class="text-sm font-medium text-charcoal">Monday</span>
+              <span class="text-sm text-text-light">9:00 AM &ndash; 6:00 PM</span>
+            </div>
+            <div class="flex justify-between items-center py-2.5 border-b border-sage-pale/30">
+              <span class="text-sm font-medium text-charcoal">Tuesday &ndash; Thursday</span>
+              <span class="text-sm text-text-light">8:00 AM &ndash; 5:00 PM</span>
+            </div>
+            <div class="flex justify-between items-center py-2.5 border-b border-sage-pale/30">
+              <span class="text-sm font-medium text-charcoal">Friday</span>
+              <span class="text-sm text-text-light">9:00 AM &ndash; 2:00 PM</span>
+            </div>
+            <div class="flex justify-between items-center py-2.5">
+              <span class="text-sm font-medium text-charcoal">Saturday &ndash; Sunday</span>
+              <span class="text-sm text-text-light/50">Closed</span>
+            </div>
+          </div>
+          <p class="text-xs text-text-light/60 mt-4">By appointment only &middot; Same-day appointments often available</p>
+        </div>
+      </div>
+
+      <!-- Contact row -->
+      <div class="scroll-reveal grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mt-5">
+        <a href="tel:+14809140521" class="bento-tilt bg-white rounded-[1.5rem] p-5 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 flex items-center gap-4 relative overflow-hidden">
+          <div class="w-10 h-10 rounded-xl bg-sage/10 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-sage" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-charcoal">(480) 914-0521</p>
+            <p class="text-xs text-text-light">Call or text</p>
+          </div>
+        </a>
+        <a href="mailto:Hello@LoveYourHealthNaturalMedicine.com" class="bento-tilt bg-white rounded-[1.5rem] p-5 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 flex items-center gap-4 relative overflow-hidden">
+          <div class="w-10 h-10 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-terracotta" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-charcoal break-all">Hello@LYHNM.com</p>
+            <p class="text-xs text-text-light">Email us anytime</p>
+          </div>
+        </a>
+        <a href="/virtual-care" class="bento-tilt bg-white rounded-[1.5rem] p-5 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 flex items-center gap-4 relative overflow-hidden">
+          <div class="w-10 h-10 rounded-xl bg-sage/10 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-sage" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-charcoal">Virtual Visits</p>
+            <p class="text-xs text-text-light">All of Arizona</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7. FAQ ACCORDION ==================== -->
+  <section class="section-padding bg-warm-white relative overflow-hidden">
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-sage mb-4">Common Questions</p>
+        <h2 class="text-[clamp(1.6rem,3.5vw,2.5rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          Frequently asked by <span class="text-terracotta">new patients.</span>
+        </h2>
+      </div>
+
+      <div class="max-w-3xl mx-auto space-y-3">
+        <div class="scroll-reveal faq-item bg-white rounded-[1.25rem] border border-sage-pale/40 shadow-sm overflow-hidden">
+          <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+            <span class="text-base font-bold text-charcoal pr-4">Do I need a referral to see a naturopathic doctor?</span>
+            <svg class="faq-icon w-5 h-5 text-sage shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6v12M6 12h12"/></svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-6">
+            <p class="text-sm text-text-light leading-relaxed">No referral is needed. You can book directly with us. Naturopathic doctors in Arizona are licensed primary care physicians, so you can see us as your first point of contact.</p>
+          </div>
+        </div>
+
+        <div class="scroll-reveal faq-item bg-white rounded-[1.25rem] border border-sage-pale/40 shadow-sm overflow-hidden" style="transition-delay: 0.04s;">
+          <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+            <span class="text-base font-bold text-charcoal pr-4">What happens at my first appointment?</span>
+            <svg class="faq-icon w-5 h-5 text-sage shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6v12M6 12h12"/></svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-6">
+            <p class="text-sm text-text-light leading-relaxed">Your first visit is 75&ndash;90 minutes. We'll review your complete health history, perform a physical exam, discuss your goals, order advanced lab work, and begin building your personalized treatment plan. You'll leave with actionable first steps &mdash; not just a follow-up date.</p>
+          </div>
+        </div>
+
+        <div class="scroll-reveal faq-item bg-white rounded-[1.25rem] border border-sage-pale/40 shadow-sm overflow-hidden" style="transition-delay: 0.08s;">
+          <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+            <span class="text-base font-bold text-charcoal pr-4">Do you accept insurance?</span>
+            <svg class="faq-icon w-5 h-5 text-sage shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6v12M6 12h12"/></svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-6">
+            <p class="text-sm text-text-light leading-relaxed">We are an out-of-network provider. We provide superbills that you can submit to your insurance for potential reimbursement. Many PPO patients receive 40&ndash;80% back. We also accept HSA/FSA cards, which cover naturopathic visits.</p>
+          </div>
+        </div>
+
+        <div class="scroll-reveal faq-item bg-white rounded-[1.25rem] border border-sage-pale/40 shadow-sm overflow-hidden" style="transition-delay: 0.12s;">
+          <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+            <span class="text-base font-bold text-charcoal pr-4">Can I do a virtual visit instead of coming in?</span>
+            <svg class="faq-icon w-5 h-5 text-sage shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6v12M6 12h12"/></svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-6">
+            <p class="text-sm text-text-light leading-relaxed">Yes! We offer full telehealth visits to patients anywhere in Arizona. You get the same 75&ndash;90 minute first visit, the same 3-doctor team, and the same root-cause approach &mdash; from the comfort of your home. Lab work can be drawn at local Quest or Sonora Quest locations.</p>
+          </div>
+        </div>
+
+        <div class="scroll-reveal faq-item bg-white rounded-[1.25rem] border border-sage-pale/40 shadow-sm overflow-hidden" style="transition-delay: 0.16s;">
+          <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+            <span class="text-base font-bold text-charcoal pr-4">How long until I see results?</span>
+            <svg class="faq-icon w-5 h-5 text-sage shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6v12M6 12h12"/></svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-6">
+            <p class="text-sm text-text-light leading-relaxed">Many patients notice improvements within 2&ndash;4 weeks of starting their protocol. We formally re-test at 90 days to measure objective progress. Root-cause treatment takes longer than symptom suppression, but the results are lasting &mdash; not temporary.</p>
+          </div>
+        </div>
+
+        <div class="scroll-reveal faq-item bg-white rounded-[1.25rem] border border-sage-pale/40 shadow-sm overflow-hidden" style="transition-delay: 0.2s;">
+          <button class="faq-trigger w-full flex items-center justify-between p-6 text-left" aria-expanded="false">
+            <span class="text-base font-bold text-charcoal pr-4">Can I still see my regular doctor while working with you?</span>
+            <svg class="faq-icon w-5 h-5 text-sage shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6v12M6 12h12"/></svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-6">
+            <p class="text-sm text-text-light leading-relaxed">Absolutely. We encourage it. We work alongside your existing providers and can coordinate care as needed. Many patients find that our testing and protocols complement their conventional care &mdash; not replace it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 8. CTA ==================== -->
+  <section class="section-padding bg-cream relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-sage/5 blur-[140px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Ready?</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal mb-5">
+          Your first step toward real <span class="text-sage">answers.</span>
+        </h2>
+        <p class="text-base md:text-lg text-text-light leading-relaxed mb-8">
+          No referral, no waiting months, no 10-minute visit. Book your first appointment and experience what root-cause medicine actually feels like.
+        </p>
+        <div class="flex flex-row flex-wrap justify-center gap-4">
+          <a href="/contact" class="magnetic-btn cta-shine group relative inline-flex items-center justify-center gap-2 bg-sage hover:bg-sage-dark text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-sage/25 overflow-hidden">
+            <span class="relative z-10 flex items-center gap-2">
+              Book Your First Visit
+              <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+          <a href="tel:+14809140521" class="magnetic-btn relative inline-flex items-center justify-center gap-2 bg-white hover:bg-sage-pale text-charcoal font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-md border border-sage-pale/60 overflow-hidden">
+            Call (480) 914-0521
+          </a>
+        </div>
+        <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-1.5 text-xs text-text-light/50 mt-5">
+          <span>No referral needed</span>
+          <span class="w-px h-3 bg-sage/15"></span>
+          <span>Same-day appointments often available</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* ===== HERO ELEMENT STAGGER ===== */
+  .hero-el {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: heroElIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  .hero-el:nth-child(1) { animation-delay: 0.1s; }
+  .hero-el:nth-child(2) { animation-delay: 0.2s; }
+  .hero-el:nth-child(3) { animation-delay: 0.3s; }
+  .hero-el:nth-child(4) { animation-delay: 0.4s; }
+  .hero-el:nth-child(5) { animation-delay: 0.5s; }
+  .hero-el:nth-child(6) { animation-delay: 0.6s; }
+
+  @keyframes heroElIn {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ===== ICON FLOAT ===== */
+  .icon-float {
+    animation: iconFloat 3s ease-in-out infinite;
+  }
+  @keyframes iconFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  /* ===== ICON PULSE ===== */
+  .icon-pulse {
+    animation: iconPulse 2.5s ease-in-out infinite;
+  }
+  @keyframes iconPulse {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(91, 140, 111, 0.2); }
+    50% { transform: scale(1.08); box-shadow: 0 0 0 6px rgba(91, 140, 111, 0); }
+  }
+
+  /* ===== SCROLL REVEAL ===== */
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== BENTO TILT ===== */
+  .bento-tilt {
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform 0.35s cubic-bezier(0.03, 0.98, 0.52, 0.99), box-shadow 0.35s ease;
+  }
+  .bento-tilt .bento-glow {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+    border-radius: inherit;
+    z-index: 1;
+  }
+  .bento-tilt:hover .bento-glow {
+    opacity: 1;
+  }
+
+  /* ===== FAQ ACCORDION ===== */
+  .faq-icon {
+    transition: transform 0.3s ease;
+  }
+  .faq-item.open .faq-icon {
+    transform: rotate(45deg);
+  }
+
+  /* ===== CTA SHINE SWEEP ===== */
+  .cta-shine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+    transition: none;
+    pointer-events: none;
+  }
+  .cta-shine:hover::before {
+    animation: shineSweep 0.6s ease forwards;
+  }
+  @keyframes shineSweep {
+    to { left: 125%; }
+  }
+
+  /* ===== MAGNETIC BUTTONS ===== */
+  .magnetic-btn {
+    transition: transform 0.3s cubic-bezier(0.03, 0.98, 0.52, 0.99), background-color 0.3s, box-shadow 0.3s;
+  }
+
+  /* ===== REDUCED MOTION ===== */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-el {
+      opacity: 1;
+      transform: none;
+      animation: none;
+    }
+    .scroll-reveal {
+      opacity: 1;
+      transform: none;
+    }
+    .cta-shine::before {
+      display: none;
+    }
+    .icon-float {
+      animation: none;
+    }
+    .icon-pulse {
+      animation: none;
+    }
+    .bento-tilt {
+      transform: none !important;
+    }
+  }
+</style>
+
+<script>
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ===== SCROLL REVEAL =====
+  const revealElements = document.querySelectorAll('.scroll-reveal');
+  if (revealElements.length) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    revealElements.forEach((el) => {
+      if (prefersReduced) {
+        el.classList.add('visible');
+      } else {
+        observer.observe(el);
+      }
+    });
+  }
+
+  // ===== FAQ ACCORDION =====
+  document.querySelectorAll('.faq-trigger').forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      const item = trigger.closest('.faq-item');
+      const content = item?.querySelector('.faq-content');
+      const isOpen = item?.classList.contains('open');
+
+      // Close all others
+      document.querySelectorAll('.faq-item.open').forEach((openItem) => {
+        if (openItem !== item) {
+          openItem.classList.remove('open');
+          openItem.querySelector('.faq-content')?.classList.add('hidden');
+          openItem.querySelector('.faq-trigger')?.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Toggle this one
+      if (isOpen) {
+        item?.classList.remove('open');
+        content?.classList.add('hidden');
+        trigger.setAttribute('aria-expanded', 'false');
+      } else {
+        item?.classList.add('open');
+        content?.classList.remove('hidden');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // ===== BENTO CARD TILT + GLOW =====
+  document.querySelectorAll('.bento-tilt').forEach((card) => {
+    if (window.innerWidth < 1024 || prefersReduced) return;
+    const el = card as HTMLElement;
+    const glow = document.createElement('div');
+    glow.classList.add('bento-glow');
+    el.appendChild(glow);
+    const maxTilt = 6;
+    el.addEventListener('mousemove', (e: MouseEvent) => {
+      const rect = el.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width;
+      const y = (e.clientY - rect.top) / rect.height;
+      const rotateY = (x - 0.5) * maxTilt * 2;
+      const rotateX = (0.5 - y) * maxTilt * 2;
+      el.style.transform = `perspective(600px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.015)`;
+      glow.style.background = `radial-gradient(circle at ${x * 100}% ${y * 100}%, rgba(255,255,255,0.12) 0%, transparent 60%)`;
+    });
+    el.addEventListener('mouseleave', () => {
+      el.style.transform = 'perspective(600px) rotateX(0) rotateY(0) scale(1)';
+    });
+  });
+
+  // ===== MAGNETIC CTA BUTTONS =====
+  document.querySelectorAll('.magnetic-btn').forEach((btn) => {
+    if (window.innerWidth < 1024) return;
+    const el = btn as HTMLElement;
+    const strength = 0.3;
+    el.addEventListener('mousemove', (e: MouseEvent) => {
+      const rect = el.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      el.style.transform = `translate(${x * strength}px, ${y * strength}px)`;
+    });
+    el.addEventListener('mouseleave', () => {
+      el.style.transform = 'translate(0, 0)';
+    });
+  });
+</script>

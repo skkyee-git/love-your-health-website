@@ -1,0 +1,563 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Pricing · Love Your Health Natural Medicine" description="Transparent pricing for naturopathic care, acupuncture, and membership plans. No surprises. HSA/FSA accepted. Superbills provided. Three naturopathic doctors in Tempe, AZ.">
+
+  <!-- ==================== 1. HERO ==================== -->
+  <section class="relative overflow-hidden bg-cream">
+    <div class="relative z-10 pt-[0.75rem] md:pt-[1rem] pb-4">
+      <div class="container-main">
+
+        <div class="bg-charcoal rounded-[1.5rem] md:rounded-[2.5rem] px-5 py-8 md:px-10 md:py-14 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-[30rem] h-[30rem] rounded-full bg-sage/10 blur-[120px] -translate-y-1/3 translate-x-1/4 pointer-events-none" aria-hidden="true"></div>
+
+          <div class="relative z-10 text-center max-w-3xl mx-auto">
+            <div class="hero-el flex flex-wrap justify-center gap-2.5 mb-5">
+              <span class="bg-sage/15 rounded-full px-3.5 py-1.5 text-xs font-bold text-sage-light">HSA/FSA Accepted</span>
+              <span class="bg-terracotta/15 rounded-full px-3.5 py-1.5 text-xs font-bold text-terracotta-light">Superbills Provided</span>
+              <span class="bg-sage/15 rounded-full px-3.5 py-1.5 text-xs font-bold text-sage-light">No Surprises</span>
+            </div>
+
+            <h1 class="hero-el text-[clamp(2.2rem,5.5vw,4rem)] font-black leading-[1.06] tracking-[-0.03em] text-white mb-5">
+              Flexible care, <span class="text-sage-light">on your terms.</span>
+            </h1>
+            <p class="hero-el text-base md:text-lg text-white/70 leading-relaxed max-w-xl mx-auto mb-8">
+              Pay per visit or save with a membership. No long-term contracts, no hidden fees. Your health, your way.
+            </p>
+
+            <div class="hero-el flex flex-row flex-wrap justify-center gap-3">
+              <a href="/contact" class="magnetic-btn cta-shine group relative inline-flex items-center justify-center gap-2 bg-sage hover:bg-sage-dark text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-sage/25 overflow-hidden">
+                <span class="relative z-10 flex items-center gap-2">
+                  Book Your First Visit
+                  <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+              </a>
+              <a href="tel:+14809140521" class="magnetic-btn relative inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 overflow-hidden border border-white/10">
+                Call (480) 914-0521
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 2. PAY PER VISIT ==================== -->
+  <section class="section-padding bg-warm-white relative overflow-hidden">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[50rem] h-[50rem] rounded-full bg-sage/4 blur-[160px] -translate-y-1/2 pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-12 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Pay Per Visit</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          Only pay for the care <span class="text-sage">you need.</span>
+        </h2>
+        <p class="text-sm text-text-light mt-3">No membership required. No long-term commitment.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-5xl mx-auto">
+
+        <!-- New Patient Visits -->
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden">
+          <div class="bg-charcoal px-7 py-4 rounded-t-[1.5rem]">
+            <p class="text-sm font-black text-white uppercase tracking-wide">New Patient Visits</p>
+          </div>
+          <div class="p-7">
+            <div class="space-y-0 divide-y divide-sage-pale/30">
+              <div class="flex items-center justify-between py-3.5">
+                <div>
+                  <p class="text-sm font-bold text-charcoal">Medical Only</p>
+                  <p class="text-xs text-text-light">75&ndash;90 minute comprehensive visit</p>
+                </div>
+                <p class="text-lg font-black text-charcoal">$275&ndash;375</p>
+              </div>
+              <div class="flex items-center justify-between py-3.5">
+                <div>
+                  <p class="text-sm font-bold text-charcoal">Initial Acupuncture</p>
+                  <p class="text-xs text-text-light">First acupuncture session</p>
+                </div>
+                <p class="text-lg font-black text-charcoal">$160</p>
+              </div>
+            </div>
+            <p class="text-[11px] text-text-light/60 mt-4 italic">A $50 booking fee is applied toward your initial consultation total.</p>
+          </div>
+        </div>
+
+        <!-- Established Patient Visits -->
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.06s;">
+          <div class="bg-sage px-7 py-4 rounded-t-[1.5rem]">
+            <p class="text-sm font-black text-white uppercase tracking-wide">Established Patient Visits</p>
+          </div>
+          <div class="p-7">
+            <div class="space-y-0 divide-y divide-sage-pale/30">
+              <div class="flex items-center justify-between py-3.5">
+                <div>
+                  <p class="text-sm font-bold text-charcoal">Lab Review &amp; Treatment Plan</p>
+                  <p class="text-xs text-text-light">Full results walkthrough + protocol</p>
+                </div>
+                <p class="text-lg font-black text-charcoal">$170</p>
+              </div>
+              <div class="flex items-center justify-between py-3.5">
+                <div>
+                  <p class="text-sm font-bold text-charcoal">Follow-up</p>
+                  <p class="text-xs text-text-light">30&ndash;45 minutes</p>
+                </div>
+                <p class="text-lg font-black text-charcoal">$80&ndash;155</p>
+              </div>
+              <div class="flex items-center justify-between py-3.5">
+                <div>
+                  <p class="text-sm font-bold text-charcoal">Quick Q&amp;A</p>
+                  <p class="text-xs text-text-light">15&ndash;25 minutes</p>
+                </div>
+                <p class="text-lg font-black text-charcoal">$45</p>
+              </div>
+              <div class="flex items-center justify-between py-3.5">
+                <div>
+                  <p class="text-sm font-bold text-charcoal">Acute Illness</p>
+                  <p class="text-xs text-text-light">Sick visit, urgent concern</p>
+                </div>
+                <p class="text-lg font-black text-charcoal">$75</p>
+              </div>
+              <div class="flex items-center justify-between py-3.5">
+                <div>
+                  <p class="text-sm font-bold text-charcoal">Acupuncture Follow-up</p>
+                  <p class="text-xs text-text-light">Established acupuncture patient</p>
+                </div>
+                <p class="text-lg font-black text-charcoal">$80</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Services -->
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.12s;">
+          <div class="bg-terracotta px-7 py-4 rounded-t-[1.5rem]">
+            <p class="text-sm font-black text-white uppercase tracking-wide">Additional Services</p>
+          </div>
+          <div class="p-7">
+            <div class="space-y-0 divide-y divide-sage-pale/30">
+              <div class="flex items-center justify-between py-3.5">
+                <div>
+                  <p class="text-sm font-bold text-charcoal">Cupping / Gua Sha</p>
+                  <p class="text-xs text-text-light">Standalone $50 &middot; Add-on $25</p>
+                </div>
+                <p class="text-lg font-black text-charcoal">$25&ndash;50</p>
+              </div>
+              <div class="flex items-center justify-between py-3.5">
+                <div>
+                  <p class="text-sm font-bold text-charcoal">Ear Cleaning</p>
+                </div>
+                <p class="text-lg font-black text-charcoal">$50&ndash;85</p>
+              </div>
+              <div class="flex items-center justify-between py-3.5">
+                <div>
+                  <p class="text-sm font-bold text-charcoal">Emotion Code</p>
+                  <p class="text-xs text-text-light">Standalone $60 &middot; Add-on $30</p>
+                </div>
+                <p class="text-lg font-black text-charcoal">$30&ndash;60</p>
+              </div>
+              <div class="flex items-center justify-between py-3.5">
+                <div>
+                  <p class="text-sm font-bold text-charcoal">Fat Burner Shot</p>
+                </div>
+                <p class="text-lg font-black text-charcoal">$35</p>
+              </div>
+              <div class="flex items-center justify-between py-3.5">
+                <div>
+                  <p class="text-sm font-bold text-charcoal">B12 Shot</p>
+                </div>
+                <p class="text-lg font-black text-charcoal">$20</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Packages -->
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.18s;">
+          <div class="bg-earth px-7 py-4 rounded-t-[1.5rem]">
+            <p class="text-sm font-black text-white uppercase tracking-wide">Packages</p>
+          </div>
+          <div class="p-7">
+            <div class="space-y-0 divide-y divide-sage-pale/30">
+              <div class="flex items-center justify-between py-3.5">
+                <div>
+                  <p class="text-sm font-bold text-charcoal">Acupuncture</p>
+                  <p class="text-xs text-text-light">5 visits &middot; Save $25</p>
+                </div>
+                <p class="text-lg font-black text-charcoal">$375</p>
+              </div>
+              <div class="flex items-center justify-between py-3.5">
+                <div>
+                  <p class="text-sm font-bold text-charcoal">Fat Burner Shots</p>
+                  <p class="text-xs text-text-light">4 pack &middot; Save $20</p>
+                </div>
+                <p class="text-lg font-black text-charcoal">$120</p>
+              </div>
+              <div class="flex items-center justify-between py-3.5">
+                <div>
+                  <p class="text-sm font-bold text-charcoal">B12 Shots</p>
+                  <p class="text-xs text-text-light">4 pack &middot; Save $10</p>
+                </div>
+                <p class="text-lg font-black text-charcoal">$70</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="scroll-reveal text-xs text-text-light/60 text-center mt-6 italic max-w-2xl mx-auto">Additional $40 will be charged per 15-minute increment over designated appointment time.</p>
+    </div>
+  </section>
+
+  <!-- ==================== 3. MEMBERSHIP PLANS ==================== -->
+  <section id="memberships" class="section-padding bg-[#1a2516] relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-sage/6 blur-[160px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-5 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta-light mb-4">Membership Plans</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-white">
+          Affordable, year-round care <span class="text-sage-light">with a membership.</span>
+        </h2>
+        <p class="text-sm text-white/60 mt-3 leading-relaxed">Predictable pricing, ongoing support, and flexible options that fit your needs.</p>
+      </div>
+
+      <!-- Duo pricing note -->
+      <p class="scroll-reveal text-xs text-white/40 text-center mb-10">All plans available as Duo (2-person) for additional savings.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto">
+
+        <!-- Essential -->
+        <div class="scroll-reveal bento-tilt bg-white/5 border border-white/10 rounded-[1.5rem] relative overflow-hidden hover:border-white/20 transition-all duration-300">
+          <div class="bg-sage/20 px-7 py-5 text-center border-b border-white/10">
+            <p class="text-xs font-bold text-sage-light uppercase tracking-widest mb-1">Essential</p>
+            <p class="text-4xl font-black text-white">$135<span class="text-base font-medium text-white/50">/mo</span></p>
+            <p class="text-xs text-white/40 mt-1">Duo: $200/mo</p>
+          </div>
+          <div class="p-7">
+            <ul class="space-y-3.5">
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white/80">Naturopathic visits</span>
+                <span class="text-sm font-bold text-white">12</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white/80">Acupuncture visits</span>
+                <span class="text-sm font-bold text-sage-light">10% off</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white/80">Phone consults (20 min)</span>
+                <span class="text-sm font-bold text-white">4</span>
+              </li>
+              <li class="flex items-center justify-between border-t border-white/8 pt-3.5">
+                <span class="text-sm text-white/80">Unlimited messaging</span>
+                <svg class="w-5 h-5 text-sage-light" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white/80">10% off additional visits</span>
+                <svg class="w-5 h-5 text-sage-light" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white/50">Same week scheduling</span>
+                <svg class="w-5 h-5 text-white/20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white/50">1 specialty test/year*</span>
+                <svg class="w-5 h-5 text-white/20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white/50">Specialty test discounts</span>
+                <svg class="w-5 h-5 text-white/20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+              </li>
+            </ul>
+            <a href="/contact" class="mt-6 w-full inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 text-white font-bold text-sm py-3.5 rounded-full transition-all duration-300 border border-white/10">
+              Get Started
+            </a>
+          </div>
+        </div>
+
+        <!-- Balanced -->
+        <div class="scroll-reveal bento-tilt bg-white/5 border border-white/10 rounded-[1.5rem] relative overflow-hidden hover:border-white/20 transition-all duration-300" style="transition-delay: 0.08s;">
+          <div class="bg-terracotta/20 px-7 py-5 text-center border-b border-white/10">
+            <p class="text-xs font-bold text-terracotta-light uppercase tracking-widest mb-1">Balanced</p>
+            <p class="text-4xl font-black text-white">$135<span class="text-base font-medium text-white/50">/mo</span></p>
+            <p class="text-xs text-white/40 mt-1">Duo: $200/mo</p>
+          </div>
+          <div class="p-7">
+            <ul class="space-y-3.5">
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white/80">Naturopathic visits</span>
+                <span class="text-sm font-bold text-white">6</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white/80">Acupuncture visits</span>
+                <span class="text-sm font-bold text-white">6</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white/80">Phone consults (20 min)</span>
+                <span class="text-sm font-bold text-white">4</span>
+              </li>
+              <li class="flex items-center justify-between border-t border-white/8 pt-3.5">
+                <span class="text-sm text-white/80">Unlimited messaging</span>
+                <svg class="w-5 h-5 text-sage-light" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white/80">10% off additional visits</span>
+                <svg class="w-5 h-5 text-sage-light" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white/50">Same week scheduling</span>
+                <svg class="w-5 h-5 text-white/20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white/50">1 specialty test/year*</span>
+                <svg class="w-5 h-5 text-white/20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white/50">Specialty test discounts</span>
+                <svg class="w-5 h-5 text-white/20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+              </li>
+            </ul>
+            <a href="/contact" class="mt-6 w-full inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 text-white font-bold text-sm py-3.5 rounded-full transition-all duration-300 border border-white/10">
+              Get Started
+            </a>
+          </div>
+        </div>
+
+        <!-- Complete (featured) -->
+        <div class="scroll-reveal bento-tilt bg-white/8 border-2 border-sage/40 rounded-[1.5rem] relative overflow-hidden hover:border-sage/60 transition-all duration-300 ring-1 ring-sage/20" style="transition-delay: 0.16s;">
+          <div class="absolute top-4 right-4">
+            <span class="bg-sage text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Best Value</span>
+          </div>
+          <div class="bg-sage/25 px-7 py-5 text-center border-b border-white/10">
+            <p class="text-xs font-bold text-sage-light uppercase tracking-widest mb-1">Complete</p>
+            <p class="text-4xl font-black text-white">$399<span class="text-base font-medium text-white/50">/mo</span></p>
+            <p class="text-xs text-white/40 mt-1">Duo: $698/mo</p>
+          </div>
+          <div class="p-7">
+            <ul class="space-y-3.5">
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white/80">Naturopathic visits</span>
+                <span class="text-sm font-black text-sage-light">Unlimited</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white/80">Acupuncture visits</span>
+                <span class="text-sm font-bold text-sage-light">10% off</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white/80">Phone consults (20 min)</span>
+                <span class="text-sm font-black text-sage-light">Unlimited</span>
+              </li>
+              <li class="flex items-center justify-between border-t border-white/8 pt-3.5">
+                <span class="text-sm text-white/80">Unlimited messaging</span>
+                <svg class="w-5 h-5 text-sage-light" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white/80">10% off additional visits</span>
+                <svg class="w-5 h-5 text-sage-light" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white">Same week scheduling</span>
+                <svg class="w-5 h-5 text-sage-light" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white">1 specialty test/year*</span>
+                <svg class="w-5 h-5 text-sage-light" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="text-sm text-white">Specialty test discounts</span>
+                <svg class="w-5 h-5 text-sage-light" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              </li>
+            </ul>
+            <a href="/contact" class="mt-6 w-full inline-flex items-center justify-center gap-2 bg-sage hover:bg-sage-dark text-white font-bold text-sm py-3.5 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-sage/25">
+              Get Started
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="scroll-reveal text-xs text-white/40 text-center mt-6 italic max-w-2xl mx-auto">*Specialty test options: microbiome, mold toxin, hormone, metabolic health, or food sensitivity testing.</p>
+    </div>
+  </section>
+
+  <!-- ==================== 4. INSURANCE & PAYMENT ==================== -->
+  <section id="insurance" class="section-padding bg-cream relative overflow-hidden">
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-sage mb-4">Payment Info</p>
+        <h2 class="text-[clamp(1.6rem,3.5vw,2.5rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          Insurance, HSA/FSA, and <span class="text-terracotta">payment options.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl mx-auto">
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden">
+          <div class="icon-float w-12 h-12 rounded-2xl bg-sage/10 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"/></svg>
+          </div>
+          <h3 class="text-base font-black text-charcoal mb-2">We Accept</h3>
+          <p class="text-sm text-text-light leading-relaxed mb-3">Visa, Mastercard, Amex, Discover, and <strong class="text-charcoal">HSA/FSA cards</strong>. Payment is due at time of service.</p>
+          <p class="text-xs text-text-light/60">Payment plans available (minimum $250 due).</p>
+        </div>
+
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.06s;">
+          <div class="icon-float w-12 h-12 rounded-2xl bg-terracotta/10 flex items-center justify-center mb-4" style="animation-delay: 0.4s;">
+            <svg class="w-6 h-6 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="text-base font-black text-charcoal mb-2">Superbills Provided</h3>
+          <p class="text-sm text-text-light leading-relaxed">We're out-of-network for most plans. We provide superbills for potential reimbursement. Many PPO patients receive <strong class="text-charcoal">40&ndash;80% back</strong>.</p>
+        </div>
+
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.12s;">
+          <div class="icon-float w-12 h-12 rounded-2xl bg-sage/10 flex items-center justify-center mb-4" style="animation-delay: 0.8s;">
+            <svg class="w-6 h-6 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-base font-black text-charcoal mb-2">No Surprise Bills</h3>
+          <p class="text-sm text-text-light leading-relaxed">We discuss costs and testing fees upfront before ordering anything. You always know what you're paying for.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. CTA ==================== -->
+  <section class="section-padding bg-warm-white relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-sage/5 blur-[140px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Ready to Start?</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal mb-5">
+          Invest in your health &mdash; <span class="text-sage">without breaking the bank.</span>
+        </h2>
+        <p class="text-base md:text-lg text-text-light leading-relaxed mb-8">
+          Whether you choose pay-per-visit or a membership, you get the same 3-doctor team, advanced testing, and root-cause approach. Questions about pricing? Just call &mdash; we're happy to walk through your options.
+        </p>
+        <div class="flex flex-row flex-wrap justify-center gap-4">
+          <a href="/contact" class="magnetic-btn cta-shine group relative inline-flex items-center justify-center gap-2 bg-sage hover:bg-sage-dark text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-sage/25 overflow-hidden">
+            <span class="relative z-10 flex items-center gap-2">
+              Book Your First Visit
+              <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+          <a href="tel:+14809140521" class="magnetic-btn relative inline-flex items-center justify-center gap-2 bg-white hover:bg-sage-pale text-charcoal font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-md border border-sage-pale/60 overflow-hidden">
+            Call (480) 914-0521
+          </a>
+        </div>
+        <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-1.5 text-xs text-text-light/50 mt-5">
+          <span>HSA/FSA accepted</span>
+          <span class="w-px h-3 bg-sage/15"></span>
+          <span>Superbills for insurance reimbursement</span>
+          <span class="w-px h-3 bg-sage/15"></span>
+          <span>Payment plans available</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  .hero-el {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: heroElIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  .hero-el:nth-child(1) { animation-delay: 0.1s; }
+  .hero-el:nth-child(2) { animation-delay: 0.2s; }
+  .hero-el:nth-child(3) { animation-delay: 0.3s; }
+  .hero-el:nth-child(4) { animation-delay: 0.4s; }
+  @keyframes heroElIn {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .icon-float {
+    animation: iconFloat 3s ease-in-out infinite;
+  }
+  @keyframes iconFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .bento-tilt {
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform 0.35s cubic-bezier(0.03, 0.98, 0.52, 0.99), box-shadow 0.35s ease;
+  }
+  .bento-tilt .bento-glow {
+    position: absolute; inset: 0; opacity: 0; transition: opacity 0.35s ease;
+    pointer-events: none; border-radius: inherit; z-index: 1;
+  }
+  .bento-tilt:hover .bento-glow { opacity: 1; }
+
+  .cta-shine::before {
+    content: ''; position: absolute; top: 0; left: -75%; width: 50%; height: 100%;
+    background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%);
+    transition: none; pointer-events: none;
+  }
+  .cta-shine:hover::before { animation: shineSweep 0.6s ease forwards; }
+  @keyframes shineSweep { to { left: 125%; } }
+
+  .magnetic-btn {
+    transition: transform 0.3s cubic-bezier(0.03, 0.98, 0.52, 0.99), background-color 0.3s, box-shadow 0.3s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-el { opacity: 1; transform: none; animation: none; }
+    .scroll-reveal { opacity: 1; transform: none; }
+    .cta-shine::before { display: none; }
+    .icon-float { animation: none; }
+    .bento-tilt { transform: none !important; }
+  }
+</style>
+
+<script>
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const revealElements = document.querySelectorAll('.scroll-reveal');
+  if (revealElements.length) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    revealElements.forEach((el) => { if (prefersReduced) { el.classList.add('visible'); } else { observer.observe(el); } });
+  }
+
+  document.querySelectorAll('.bento-tilt').forEach((card) => {
+    if (window.innerWidth < 1024 || prefersReduced) return;
+    const el = card as HTMLElement;
+    const glow = document.createElement('div');
+    glow.classList.add('bento-glow');
+    el.appendChild(glow);
+    const maxTilt = 6;
+    el.addEventListener('mousemove', (e: MouseEvent) => {
+      const rect = el.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width;
+      const y = (e.clientY - rect.top) / rect.height;
+      el.style.transform = `perspective(600px) rotateX(${(0.5-y)*maxTilt*2}deg) rotateY(${(x-0.5)*maxTilt*2}deg) scale(1.015)`;
+      glow.style.background = `radial-gradient(circle at ${x*100}% ${y*100}%, rgba(255,255,255,0.12) 0%, transparent 60%)`;
+    });
+    el.addEventListener('mouseleave', () => { el.style.transform = 'perspective(600px) rotateX(0) rotateY(0) scale(1)'; });
+  });
+
+  document.querySelectorAll('.magnetic-btn').forEach((btn) => {
+    if (window.innerWidth < 1024) return;
+    const el = btn as HTMLElement;
+    el.addEventListener('mousemove', (e: MouseEvent) => {
+      const rect = el.getBoundingClientRect();
+      el.style.transform = `translate(${(e.clientX-rect.left-rect.width/2)*0.3}px, ${(e.clientY-rect.top-rect.height/2)*0.3}px)`;
+    });
+    el.addEventListener('mouseleave', () => { el.style.transform = 'translate(0,0)'; });
+  });
+</script>

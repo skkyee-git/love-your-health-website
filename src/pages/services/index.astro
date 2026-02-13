@@ -1,0 +1,700 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Our Services · Love Your Health Natural Medicine" description="Root-cause naturopathic care, integrative medicine, acupuncture, and advanced lab testing. 75-90 minute visits with 3 doctors collaborating on every case. Tempe, AZ and virtual across Arizona.">
+
+  <!-- ==================== 1. HERO ==================== -->
+  <section class="relative overflow-hidden bg-cream">
+    <div class="relative z-10 pt-[0.75rem] md:pt-[1rem] pb-4">
+      <div class="container-main">
+
+        <div class="bg-[#F5E0D0] rounded-[1.5rem] md:rounded-[2.5rem] px-5 py-8 md:px-8 md:py-12 relative overflow-hidden">
+          <div class="absolute inset-0 opacity-[0.04] pointer-events-none" style="background-image: radial-gradient(circle, #C47D5A 1px, transparent 1px); background-size: 28px 28px;" aria-hidden="true"></div>
+
+          <!-- Ambient signal rings -->
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none" aria-hidden="true">
+            <div class="signal-ring absolute -top-[9rem] -left-[9rem] w-[18rem] h-[18rem] rounded-full border-2 border-sage/15"></div>
+            <div class="signal-ring absolute -top-[14rem] -left-[14rem] w-[28rem] h-[28rem] rounded-full border-[1.5px] border-sage/10" style="animation-delay: 0.6s;"></div>
+            <div class="signal-ring absolute -top-[20rem] -left-[20rem] w-[40rem] h-[40rem] rounded-full border border-sage/6" style="animation-delay: 1.2s;"></div>
+          </div>
+
+          <div class="relative z-10">
+            <!-- Stat pills -->
+            <div class="hero-el flex flex-wrap justify-center gap-2.5 sm:gap-3 mb-8">
+              <div class="bg-white/70 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 shadow-sm">
+                <svg class="w-3.5 h-3.5 text-sage shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                </svg>
+                <span class="text-xs sm:text-sm font-bold text-charcoal">75-90 Min</span>
+                <span class="text-xs text-text-light hidden sm:inline">First Visit</span>
+              </div>
+              <div class="bg-white/70 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 shadow-sm">
+                <svg class="w-3.5 h-3.5 text-terracotta shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                </svg>
+                <span class="text-xs sm:text-sm font-bold text-charcoal">4 Services</span>
+              </div>
+              <div class="bg-white/70 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 shadow-sm">
+                <svg class="w-3.5 h-3.5 text-sage shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 00-3-3.87" /><path d="M16 3.13a4 4 0 010 7.75" />
+                </svg>
+                <span class="text-xs sm:text-sm font-bold text-charcoal">3 Doctors</span>
+                <span class="text-xs text-text-light hidden sm:inline">One Team</span>
+              </div>
+            </div>
+
+            <!-- Centered hero content -->
+            <div class="text-center max-w-3xl mx-auto">
+              <h1 class="hero-el text-[clamp(2.4rem,6.5vw,4.5rem)] font-black leading-[1.04] tracking-[-0.03em] text-charcoal mb-5">
+                Everything we do starts with <span class="text-sage">why.</span>
+              </h1>
+              <p class="hero-el text-base md:text-lg text-text-light leading-relaxed max-w-xl mx-auto mb-8">
+                From naturopathic deep-dives to acupuncture and advanced lab testing &mdash; every service is built around one question: what is actually going on in your body?
+              </p>
+
+              <!-- CTAs -->
+              <div class="hero-el flex flex-row flex-wrap justify-center gap-3 mb-8">
+                <a href="/book" class="magnetic-btn cta-shine group relative inline-flex items-center justify-center gap-2 bg-sage hover:bg-sage-dark text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-sage/25 overflow-hidden">
+                  <span class="relative z-10 flex items-center gap-2">
+                    Book Your First Visit
+                    <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </span>
+                </a>
+                <a href="tel:+14809140521" class="magnetic-btn relative inline-flex items-center justify-center gap-2 bg-white/70 hover:bg-white text-charcoal font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-md overflow-hidden">
+                  Call (480) 914-0521
+                </a>
+              </div>
+
+              <!-- Trust strip -->
+              <div class="hero-el flex flex-wrap justify-center items-center gap-x-4 gap-y-1.5 text-xs text-text-light">
+                <span class="flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-sage" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  No referral needed
+                </span>
+                <span class="w-px h-3 bg-sage/25"></span>
+                <span>In-person in Tempe or virtual across Arizona</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 2. SERVICE CARDS ==================== -->
+  <section class="section-padding bg-warm-white relative overflow-hidden">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[60rem] h-[60rem] rounded-full bg-sage-pale/20 blur-[140px] -translate-y-1/2 pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-14 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Our Services</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          Root-cause medicine, <span class="text-sage">four ways.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Naturopathic Care -->
+        <a href="/services/naturopathic-care" class="scroll-reveal bento-tilt group bg-white rounded-[1.5rem] p-7 lg:p-8 border border-sage-pale/40 shadow-sm hover:shadow-xl transition-all duration-500 block">
+          <div class="w-14 h-14 rounded-2xl bg-sage/10 flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-sage ico-sway" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66L7 19c4-4 6-8 10-11z"/>
+              <path d="M2 2s7 1 10 4c3 3 4 10 4 10" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-black text-charcoal mb-2 group-hover:text-sage transition-colors">Naturopathic Care</h3>
+          <p class="text-sm text-text-light leading-relaxed mb-4">Medicine that actually listens. 75-90 min visits, root-cause investigation, whole-person care.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-sage/10 text-sage text-xs font-medium px-3 py-1 rounded-full">Root-Cause</span>
+            <span class="bg-sage/10 text-sage text-xs font-medium px-3 py-1 rounded-full">75-90 Min</span>
+            <span class="bg-sage/10 text-sage text-xs font-medium px-3 py-1 rounded-full">Whole-Person</span>
+          </div>
+          <span class="inline-flex items-center gap-1.5 text-sm font-bold text-sage group-hover:text-sage-dark transition-colors">
+            Learn more
+            <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+
+        <!-- Integrative Care -->
+        <a href="/services/integrative-care" class="scroll-reveal bento-tilt group bg-white rounded-[1.5rem] p-7 lg:p-8 border border-sage-pale/40 shadow-sm hover:shadow-xl transition-all duration-500 block" style="transition-delay: 0.08s;">
+          <div class="w-14 h-14 rounded-2xl bg-terracotta/10 flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-terracotta ico-spin" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 01-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 10-3.214 3.214c.446.166.855.497.925.968a.979.979 0 01-.276.837l-1.611 1.611a2.407 2.407 0 01-1.704.706 2.407 2.407 0 01-1.704-.706l-1.568-1.568a1.026 1.026 0 00-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 11-3.237-3.237c.464-.18.894-.527.967-1.02a1.026 1.026 0 00-.289-.877l-1.568-1.568A2.407 2.407 0 011.5 12c0-.617.236-1.234.706-1.704L3.817 8.685a.98.98 0 01.837-.276c.47.07.802.48.968.925a2.501 2.501 0 103.214-3.214c-.446-.166-.855-.497-.925-.968a.979.979 0 01.276-.837l1.611-1.611A2.407 2.407 0 0111.5 2c.617 0 1.234.236 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.968a2.5 2.5 0 113.237 3.237c-.464.18-.894.527-.967 1.02z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-black text-charcoal mb-2 group-hover:text-sage transition-colors">Integrative Care</h3>
+          <p class="text-sm text-text-light leading-relaxed mb-4">Not anti-conventional &mdash; we bridge both worlds. Evidence-based natural therapies alongside modern medicine.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-terracotta/10 text-terracotta text-xs font-medium px-3 py-1 rounded-full">Natural + Conventional</span>
+            <span class="bg-terracotta/10 text-terracotta text-xs font-medium px-3 py-1 rounded-full">Evidence-Based</span>
+          </div>
+          <span class="inline-flex items-center gap-1.5 text-sm font-bold text-sage group-hover:text-sage-dark transition-colors">
+            Learn more
+            <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+
+        <!-- Acupuncture -->
+        <a href="/services/acupuncture" class="scroll-reveal bento-tilt group bg-white rounded-[1.5rem] p-7 lg:p-8 border border-sage-pale/40 shadow-sm hover:shadow-xl transition-all duration-500 block relative" style="transition-delay: 0.16s;">
+          <span class="absolute top-4 right-4 bg-terracotta/15 text-terracotta text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">High Demand</span>
+          <div class="w-14 h-14 rounded-2xl bg-sage/10 flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-sage ico-pulse-anim" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M12 2v4m0 12v4m10-10h-4M6 12H2" stroke-linecap="round"/>
+              <path d="M18.36 5.64l-2.83 2.83m-7.07 7.07l-2.83 2.83m14.73 0l-2.83-2.83M8.46 8.46L5.64 5.64" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-black text-charcoal mb-2 group-hover:text-sage transition-colors">Acupuncture</h3>
+          <p class="text-sm text-text-light leading-relaxed mb-4">Dr. Bailey brings ancient wisdom to modern health. Pain relief, fertility support, stress management, and more.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-sage/10 text-sage text-xs font-medium px-3 py-1 rounded-full">Pain Relief</span>
+            <span class="bg-sage/10 text-sage text-xs font-medium px-3 py-1 rounded-full">Fertility</span>
+            <span class="bg-sage/10 text-sage text-xs font-medium px-3 py-1 rounded-full">Stress</span>
+          </div>
+          <span class="inline-flex items-center gap-1.5 text-sm font-bold text-sage group-hover:text-sage-dark transition-colors">
+            Learn more
+            <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+
+        <!-- Lab & Testing -->
+        <a href="/services/lab-testing" class="scroll-reveal bento-tilt group bg-white rounded-[1.5rem] p-7 lg:p-8 border border-sage-pale/40 shadow-sm hover:shadow-xl transition-all duration-500 block" style="transition-delay: 0.24s;">
+          <div class="w-14 h-14 rounded-2xl bg-terracotta/10 flex items-center justify-center mb-5">
+            <svg class="w-7 h-7 text-terracotta ico-bubble-anim" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path d="M9 3h6m-5 0v6.5L4.5 18a1.5 1.5 0 001.28 2.28h12.44A1.5 1.5 0 0019.5 18L14 9.5V3"/>
+              <path d="M7.5 15h9" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-black text-charcoal mb-2 group-hover:text-sage transition-colors">Lab &amp; Testing</h3>
+          <p class="text-sm text-text-light leading-relaxed mb-4">In-office blood draws and specialty diagnostics most doctors never order. SIBO breath tests, mycotoxins, and more.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-terracotta/10 text-terracotta text-xs font-medium px-3 py-1 rounded-full">Blood Draws</span>
+            <span class="bg-terracotta/10 text-terracotta text-xs font-medium px-3 py-1 rounded-full">Specialty Labs</span>
+            <span class="bg-terracotta/10 text-terracotta text-xs font-medium px-3 py-1 rounded-full">In-Office</span>
+          </div>
+          <span class="inline-flex items-center gap-1.5 text-sm font-bold text-sage group-hover:text-sage-dark transition-colors">
+            Learn more
+            <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3. CONDITIONS BENTO ==================== -->
+  <section class="section-padding bg-[#F5E0D0] relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-white/15 blur-[120px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-14 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Conditions We Treat</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          We specialize in the cases others <span class="text-sage">give up on.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-4 md:grid-cols-12 auto-rows-[minmax(140px,auto)] gap-4">
+
+        <!-- Gut Health (tall sage) -->
+        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-5 md:row-span-2 bg-sage rounded-[1.5rem] p-8 relative overflow-hidden group hover:shadow-xl transition-all duration-300">
+          <div class="absolute -top-10 -right-10 w-40 h-40 rounded-full border border-white/10" aria-hidden="true"></div>
+          <div class="absolute -bottom-6 -left-6 w-28 h-28 rounded-full border border-white/10" aria-hidden="true"></div>
+          <div class="relative z-10 h-full flex flex-col justify-between">
+            <div>
+              <p class="text-white/70 text-sm font-medium uppercase tracking-widest mb-3">Specialty</p>
+              <p class="text-2xl font-black text-white leading-snug mb-3">Gut Health &amp; Digestion</p>
+              <p class="text-sm text-white/80 leading-relaxed">IBS, SIBO, bloating, food sensitivities, leaky gut &mdash; we find what's actually driving your symptoms.</p>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-6">
+              <span class="bg-white/15 text-white text-xs font-medium px-3 py-1 rounded-full">IBS</span>
+              <span class="bg-white/15 text-white text-xs font-medium px-3 py-1 rounded-full">SIBO</span>
+              <span class="bg-white/15 text-white text-xs font-medium px-3 py-1 rounded-full">Food Sensitivities</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hormones -->
+        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-7 bg-white rounded-[1.5rem] p-8 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.06s;">
+          <div class="relative z-10">
+            <p class="text-xs font-bold uppercase tracking-widest text-terracotta mb-2">Hormones &amp; Endocrine</p>
+            <p class="font-bold text-charcoal text-xl leading-snug mb-2">Thyroid, PCOS, menopause, adrenal fatigue.</p>
+            <p class="text-sm text-text-light leading-relaxed mb-4">We don't just check TSH. We run the full panel and actually interpret it.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-terracotta/10 text-terracotta text-xs font-medium px-3 py-1 rounded-full">Thyroid</span>
+              <span class="bg-terracotta/10 text-terracotta text-xs font-medium px-3 py-1 rounded-full">PCOS</span>
+              <span class="bg-terracotta/10 text-terracotta text-xs font-medium px-3 py-1 rounded-full">Menopause</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mold Illness -->
+        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-4 bg-white rounded-[1.5rem] p-8 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.12s;">
+          <div class="relative z-10">
+            <p class="text-xs font-bold uppercase tracking-widest text-sage mb-2">Mold &amp; Toxin Illness</p>
+            <p class="font-bold text-charcoal text-lg leading-snug mb-2">Brain fog, fatigue, mycotoxins.</p>
+            <p class="text-sm text-text-light leading-relaxed">Most doctors miss this entirely. We test for it and treat it.</p>
+          </div>
+        </div>
+
+        <!-- Autoimmune (charcoal) -->
+        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-3 bg-charcoal rounded-[1.5rem] p-8 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.18s;">
+          <div class="relative z-10 h-full flex flex-col justify-between">
+            <p class="text-white/70 text-xs font-bold uppercase tracking-widest mb-2">Autoimmune</p>
+            <div>
+              <p class="font-bold text-white text-lg mb-2">Hashimoto's, Lupus, RA</p>
+              <p class="text-sm text-white/70 leading-relaxed">Root-cause autoimmune care that goes beyond immunosuppressants.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Women's Health (sage-pale) -->
+        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-7 bg-sage-pale rounded-[1.5rem] p-8 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.24s;">
+          <div class="relative z-10">
+            <p class="text-xs font-bold uppercase tracking-widest text-sage mb-2">Women's Health</p>
+            <p class="font-bold text-charcoal text-xl leading-snug mb-2">Fertility, PCOS, preconception, cycle optimization.</p>
+            <p class="text-sm text-text leading-relaxed">From trying to conceive to perimenopause &mdash; care designed for every stage.</p>
+          </div>
+        </div>
+
+        <!-- Mental Health -->
+        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-5 bg-white rounded-[1.5rem] p-8 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.3s;">
+          <div class="relative z-10">
+            <p class="text-xs font-bold uppercase tracking-widest text-terracotta mb-2">Mental Health</p>
+            <p class="font-bold text-charcoal text-xl leading-snug mb-2">Anxiety, depression, burnout.</p>
+            <p class="text-sm text-text-light leading-relaxed">We look for root biochemical causes &mdash; not just prescribe and move on.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. WHY US ==================== -->
+  <section class="section-padding bg-cream relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-[#F5E0D0]/20 blur-[140px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-14 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Why Us</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          Not your typical <span class="text-sage">doctor's office.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Pillar 1 -->
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 text-center">
+          <div class="w-16 h-16 rounded-2xl bg-sage/10 flex items-center justify-center mx-auto mb-5">
+            <svg class="w-8 h-8 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 00-3-3.87" /><path d="M16 3.13a4 4 0 010 7.75" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-black text-charcoal mb-2">3 Doctors Every Case</h3>
+          <p class="text-sm text-text-light leading-relaxed">No siloed care. All three doctors collaborate, cross-reference findings, and build a unified treatment plan.</p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 text-center" style="transition-delay: 0.08s;">
+          <div class="w-16 h-16 rounded-2xl bg-terracotta/10 flex items-center justify-center mx-auto mb-5">
+            <svg class="w-8 h-8 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-black text-charcoal mb-2">75-90 Min First Visits</h3>
+          <p class="text-sm text-text-light leading-relaxed">Your first appointment isn't 10 minutes and out the door. It's a real, thorough investigation into what's going on.</p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 text-center" style="transition-delay: 0.16s;">
+          <div class="w-16 h-16 rounded-2xl bg-sage/10 flex items-center justify-center mx-auto mb-5">
+            <svg class="w-8 h-8 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-black text-charcoal mb-2">Root-Cause Not Band-Aids</h3>
+          <p class="text-sm text-text-light leading-relaxed">We don't mask symptoms. We investigate, test, and treat the actual cause so your body can heal for good.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. MEET THE TEAM ==================== -->
+  <section class="section-padding bg-warm-white relative overflow-hidden">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[60rem] h-[60rem] rounded-full bg-sage-pale/20 blur-[140px] -translate-y-1/2 pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-14 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Your Care Team</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          The doctors behind <span class="text-sage">the medicine.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Dr. Spencer Warren -->
+        <a href="/doctors/dr-warren" class="scroll-reveal bento-tilt group relative bg-white rounded-[1.5rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 block">
+          <div class="relative overflow-hidden">
+            <img src="/images/doctors/spencer-headshot.jpg" alt="Dr. Spencer Warren, NMD" class="w-full aspect-[3/4] object-cover object-top transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/10 to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-sage text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full">Co-Founder</span>
+            <div class="absolute bottom-0 inset-x-0 p-6">
+              <p class="text-xl font-black text-white">Dr. Spencer Warren</p>
+              <p class="text-sm text-white/80 font-semibold">NMD &middot; Fertility Specialist</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="bg-sage/10 text-sage text-xs font-medium px-3 py-1 rounded-full">Fertility</span>
+              <span class="bg-sage/10 text-sage text-xs font-medium px-3 py-1 rounded-full">GI Health</span>
+              <span class="bg-sage/10 text-sage text-xs font-medium px-3 py-1 rounded-full">Cardiovascular</span>
+            </div>
+            <span class="inline-flex items-center gap-1.5 text-sm font-bold text-sage group-hover:text-sage-dark transition-colors">
+              Meet Dr. Warren
+              <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Dr. Carie Perrino -->
+        <a href="/doctors/dr-perrino" class="scroll-reveal bento-tilt group relative bg-white rounded-[1.5rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 block" style="transition-delay: 0.08s;">
+          <div class="relative overflow-hidden">
+            <img src="/images/doctors/team-photo.jpg" alt="Dr. Carie Perrino, NMD, RDN, CLT" class="w-full aspect-[3/4] object-cover object-top transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/10 to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-terracotta text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full">Co-Founder</span>
+            <div class="absolute bottom-0 inset-x-0 p-6">
+              <p class="text-xl font-black text-white">Dr. Carie Perrino</p>
+              <p class="text-sm text-white/80 font-semibold">NMD, RDN, CLT &middot; Compassionate Care</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="bg-terracotta/10 text-terracotta text-xs font-medium px-3 py-1 rounded-full">Gut Health</span>
+              <span class="bg-terracotta/10 text-terracotta text-xs font-medium px-3 py-1 rounded-full">Mold Illness</span>
+              <span class="bg-terracotta/10 text-terracotta text-xs font-medium px-3 py-1 rounded-full">Nutrition</span>
+            </div>
+            <span class="inline-flex items-center gap-1.5 text-sm font-bold text-sage group-hover:text-sage-dark transition-colors">
+              Meet Dr. Perrino
+              <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Dr. Bailey Newman -->
+        <a href="/doctors/dr-newman" class="scroll-reveal bento-tilt group relative bg-white rounded-[1.5rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 block" style="transition-delay: 0.16s;">
+          <div class="relative overflow-hidden">
+            <img src="/images/doctors/bailey-headshot.jpeg" alt="Dr. Bailey Newman, NMD" class="w-full aspect-[3/4] object-cover object-top transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/10 to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-earth text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full">Naturopathic Doctor</span>
+            <div class="absolute bottom-0 inset-x-0 p-6">
+              <p class="text-xl font-black text-white">Dr. Bailey Newman</p>
+              <p class="text-sm text-white/80 font-semibold">NMD &middot; Digestive Expert</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="bg-sage/10 text-sage text-xs font-medium px-3 py-1 rounded-full">Digestive Health</span>
+              <span class="bg-sage/10 text-sage text-xs font-medium px-3 py-1 rounded-full">Women's Health</span>
+              <span class="bg-sage/10 text-sage text-xs font-medium px-3 py-1 rounded-full">Acupuncture</span>
+            </div>
+            <span class="inline-flex items-center gap-1.5 text-sm font-bold text-sage group-hover:text-sage-dark transition-colors">
+              Meet Dr. Newman
+              <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. DARK TRUST BAND ==================== -->
+  <section class="section-padding bg-[#1a2516] relative overflow-hidden">
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-14 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-sage-light mb-4">Trusted Credentials</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-white">
+          Backed by training. Driven by <span class="text-sage-light">purpose.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="scroll-reveal bg-white/5 border border-white/10 rounded-[1.5rem] p-6 text-center hover:bg-white/10 transition-all duration-300">
+          <div class="w-12 h-12 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-sage-light" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+            </svg>
+          </div>
+          <p class="text-white font-bold text-sm mb-1">Sonoran Trained</p>
+          <p class="text-white/50 text-xs">Top naturopathic university</p>
+        </div>
+
+        <div class="scroll-reveal bg-white/5 border border-white/10 rounded-[1.5rem] p-6 text-center hover:bg-white/10 transition-all duration-300" style="transition-delay: 0.06s;">
+          <div class="w-12 h-12 rounded-full bg-terracotta/20 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-terracotta-light" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+            </svg>
+          </div>
+          <p class="text-white font-bold text-sm mb-1">Women-Owned</p>
+          <p class="text-white/50 text-xs">Founded by women doctors</p>
+        </div>
+
+        <div class="scroll-reveal bg-white/5 border border-white/10 rounded-[1.5rem] p-6 text-center hover:bg-white/10 transition-all duration-300" style="transition-delay: 0.12s;">
+          <div class="w-12 h-12 rounded-full bg-sage/20 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-sage-light" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+            </svg>
+          </div>
+          <p class="text-white font-bold text-sm mb-1">LGBTQ+ Friendly</p>
+          <p class="text-white/50 text-xs">Inclusive, affirming care</p>
+        </div>
+
+        <div class="scroll-reveal bg-white/5 border border-white/10 rounded-[1.5rem] p-6 text-center hover:bg-white/10 transition-all duration-300" style="transition-delay: 0.18s;">
+          <div class="w-12 h-12 rounded-full bg-terracotta/20 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-terracotta-light" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+            </svg>
+          </div>
+          <p class="text-white font-bold text-sm mb-1">5.0 Google Rating</p>
+          <p class="text-white/50 text-xs">100+ five-star reviews</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7. CTA ==================== -->
+  <section class="section-padding bg-cream relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-[#F5E0D0]/20 blur-[140px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Let's get started</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal mb-5">
+          Ready to find your <span class="text-sage">root cause?</span>
+        </h2>
+        <p class="text-base md:text-lg text-text-light leading-relaxed mb-8">
+          Whether you've been searching for answers for years or you're just starting your health journey, we're here for it. Book your first visit and experience what root-cause medicine actually feels like.
+        </p>
+        <div class="flex flex-row flex-wrap justify-center gap-4">
+          <a href="/book" class="magnetic-btn cta-shine group relative inline-flex items-center justify-center gap-2 bg-sage hover:bg-sage-dark text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-sage/25 overflow-hidden">
+            <span class="relative z-10 flex items-center gap-2">
+              Book Your First Visit
+              <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+          <a href="tel:+14809140521" class="magnetic-btn relative inline-flex items-center justify-center gap-2 bg-white hover:bg-sage-pale text-charcoal font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-md border border-sage-pale/60 overflow-hidden">
+            Call (480) 914-0521
+          </a>
+        </div>
+        <p class="text-xs text-text-light/50 mt-5">No referral needed &middot; In-person in Tempe or virtual across Arizona</p>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* ===== HERO ELEMENT STAGGER ===== */
+  .hero-el {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: heroElIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  .hero-el:nth-child(1) { animation-delay: 0.1s; }
+  .hero-el:nth-child(2) { animation-delay: 0.2s; }
+  .hero-el:nth-child(3) { animation-delay: 0.3s; }
+  .hero-el:nth-child(4) { animation-delay: 0.4s; }
+  .hero-el:nth-child(5) { animation-delay: 0.5s; }
+
+  @keyframes heroElIn {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ===== SIGNAL RINGS ===== */
+  .signal-ring {
+    animation: signalPulse 3.5s ease-out infinite;
+  }
+  @keyframes signalPulse {
+    0% { transform: scale(0.85); opacity: 1; }
+    70% { transform: scale(1.1); opacity: 0.3; }
+    100% { transform: scale(1.2); opacity: 0; }
+  }
+
+  /* ===== SCROLL REVEAL ===== */
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== CTA SHINE SWEEP ===== */
+  .cta-shine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+    transition: none;
+    pointer-events: none;
+  }
+  .cta-shine:hover::before {
+    animation: shineSweep 0.6s ease forwards;
+  }
+  @keyframes shineSweep {
+    to { left: 125%; }
+  }
+
+  /* ===== MAGNETIC BUTTONS ===== */
+  .magnetic-btn {
+    transition: transform 0.3s cubic-bezier(0.03, 0.98, 0.52, 0.99), background-color 0.3s, box-shadow 0.3s;
+  }
+
+  /* ===== BENTO TILT ===== */
+  .bento-tilt {
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform 0.35s cubic-bezier(0.03, 0.98, 0.52, 0.99), box-shadow 0.35s ease;
+  }
+  .bento-tilt .bento-glow {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+    border-radius: inherit;
+    z-index: 1;
+  }
+  .bento-tilt:hover .bento-glow {
+    opacity: 1;
+  }
+
+  /* ===== ICON ANIMATIONS ===== */
+  .ico-sway {
+    animation: sway 2s ease-in-out infinite;
+  }
+  @keyframes sway {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(6deg); }
+    75% { transform: rotate(-6deg); }
+  }
+
+  .ico-spin {
+    animation: spin-slow 4s linear infinite;
+  }
+  @keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .ico-pulse-anim {
+    animation: pulseAnim 2.5s ease-in-out infinite;
+  }
+  @keyframes pulseAnim {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+
+  .ico-bubble-anim {
+    animation: bubbleAnim 2s ease-in-out infinite;
+  }
+  @keyframes bubbleAnim {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+  }
+
+  /* ===== REDUCED MOTION ===== */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-el {
+      opacity: 1;
+      transform: none;
+      animation: none;
+    }
+    .scroll-reveal {
+      opacity: 1;
+      transform: none;
+    }
+    .cta-shine::before {
+      display: none;
+    }
+    .bento-tilt {
+      transform: none !important;
+    }
+    .signal-ring {
+      animation: none;
+    }
+    .ico-sway,
+    .ico-spin,
+    .ico-pulse-anim,
+    .ico-bubble-anim {
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ===== SCROLL REVEAL =====
+  const revealElements = document.querySelectorAll('.scroll-reveal');
+  if (revealElements.length) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    revealElements.forEach((el) => {
+      if (prefersReduced) {
+        el.classList.add('visible');
+      } else {
+        observer.observe(el);
+      }
+    });
+  }
+
+  // ===== BENTO CARD TILT + GLOW =====
+  document.querySelectorAll('.bento-tilt').forEach((card) => {
+    if (window.innerWidth < 1024 || prefersReduced) return;
+    const glow = document.createElement('div');
+    glow.classList.add('bento-glow');
+    card.appendChild(glow);
+    const maxTilt = 8;
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width;
+      const y = (e.clientY - rect.top) / rect.height;
+      const rotateY = (x - 0.5) * maxTilt * 2;
+      const rotateX = (0.5 - y) * maxTilt * 2;
+      card.style.transform = `perspective(600px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+      glow.style.background = `radial-gradient(circle at ${x * 100}% ${y * 100}%, rgba(255,255,255,0.15) 0%, transparent 60%)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(600px) rotateX(0) rotateY(0) scale(1)';
+    });
+  });
+
+  // ===== MAGNETIC CTA BUTTONS =====
+  document.querySelectorAll('.magnetic-btn').forEach((btn) => {
+    if (window.innerWidth < 1024) return;
+    const strength = 0.3;
+    btn.addEventListener('mousemove', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      btn.style.transform = `translate(${x * strength}px, ${y * strength}px)`;
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = 'translate(0, 0)';
+    });
+  });
+</script>

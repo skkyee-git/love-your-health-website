@@ -1,0 +1,820 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Weight Management Treatment · Love Your Health Natural Medicine" description="Root-cause metabolic support for weight resistance, insulin resistance, and stubborn weight gain. Advanced metabolic testing, hormone optimization, and naturopathic protocols. Three naturopathic doctors in Tempe, AZ.">
+
+  <!-- ==================== 1. HERO — WARM BLUSH GRADIENT + METABOLIC DASHBOARD (UNIQUE) ==================== -->
+  <section class="relative overflow-hidden bg-cream">
+    <div class="relative z-10 pt-[0.75rem] md:pt-[1rem] pb-4">
+      <div class="container-main">
+
+        <!-- Breadcrumb -->
+        <nav class="hero-el flex items-center gap-2 text-xs text-text-light mb-4 pt-2" aria-label="Breadcrumb">
+          <a href="/conditions" class="hover:text-sage transition-colors">Conditions</a>
+          <span class="text-sage/40">/</span>
+          <span class="text-charcoal font-medium">Weight Management</span>
+        </nav>
+
+        <div class="bg-gradient-to-br from-[#F5E0D0] to-[#FAF8F5] rounded-[1.5rem] md:rounded-[2.5rem] px-5 py-8 md:px-10 md:py-14 relative overflow-hidden">
+          <!-- Soft radial glow -->
+          <div class="absolute top-0 right-0 w-[30rem] h-[30rem] rounded-full bg-white/20 blur-[120px] -translate-y-1/3 translate-x-1/4 pointer-events-none" aria-hidden="true"></div>
+
+          <div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 items-center">
+
+            <!-- Left: text content -->
+            <div class="md:col-span-7">
+              <div class="hero-el flex flex-wrap gap-2.5 mb-5">
+                <span class="bg-terracotta/10 rounded-full px-3.5 py-1.5 text-xs font-bold text-terracotta">Insulin Resistance</span>
+                <span class="bg-sage/10 rounded-full px-3.5 py-1.5 text-xs font-bold text-sage">Metabolic</span>
+                <span class="bg-earth/10 rounded-full px-3.5 py-1.5 text-xs font-bold text-earth">Hormonal</span>
+              </div>
+
+              <h1 class="hero-el text-[clamp(2.2rem,5.5vw,4rem)] font-black leading-[1.06] tracking-[-0.03em] text-charcoal mb-5">
+                It's not willpower. It's <span class="text-terracotta">biology.</span>
+              </h1>
+              <p class="hero-el text-base md:text-lg text-charcoal leading-relaxed max-w-xl mb-8">
+                You've counted every calorie, tried every diet. The scale won't move. That's because your metabolism has a story &mdash; and nobody's read it yet.
+              </p>
+
+              <div class="hero-el flex flex-row flex-wrap gap-3 mb-5">
+                <a href="/contact" class="magnetic-btn cta-shine group relative inline-flex items-center justify-center gap-2 bg-sage hover:bg-sage-dark text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-sage/25 overflow-hidden">
+                  <span class="relative z-10 flex items-center gap-2">
+                    Start Your Metabolic Reset
+                    <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </span>
+                </a>
+                <a href="tel:+14809140521" class="magnetic-btn relative inline-flex items-center justify-center gap-2 bg-white/70 hover:bg-white text-charcoal font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-md overflow-hidden">
+                  Call (480) 914-0521
+                </a>
+              </div>
+
+              <div class="hero-el flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-charcoal/70 font-medium">
+                <span class="flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-sage" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  No referral needed
+                </span>
+                <span class="w-px h-3 bg-charcoal/25"></span>
+                <span>Tempe or virtual across AZ</span>
+              </div>
+            </div>
+
+            <!-- Right: Metabolic Dashboard card -->
+            <div class="md:col-span-5 hero-el">
+              <div class="bg-white rounded-[1.5rem] shadow-lg border border-sage-pale/30 overflow-hidden">
+                <div class="bg-charcoal px-6 py-4">
+                  <p class="text-xs font-bold text-white/60 uppercase tracking-widest">Metabolic Snapshot</p>
+                  <p class="text-sm text-white/90 mt-0.5">What we measure that others miss</p>
+                </div>
+                <div class="divide-y divide-sage-pale/30">
+                  <div class="px-6 py-4 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-8 h-8 rounded-lg bg-terracotta/10 flex items-center justify-center">
+                        <svg class="w-4 h-4 text-terracotta" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+                      </div>
+                      <span class="text-sm font-bold text-charcoal">Fasting Insulin</span>
+                    </div>
+                    <span class="text-xs font-medium text-terracotta bg-terracotta/8 px-2.5 py-1 rounded-full">Often missed</span>
+                  </div>
+                  <div class="px-6 py-4 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-8 h-8 rounded-lg bg-sage/10 flex items-center justify-center">
+                        <svg class="w-4 h-4 text-sage" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+                      </div>
+                      <span class="text-sm font-bold text-charcoal">Full Thyroid Panel</span>
+                    </div>
+                    <span class="text-xs font-medium text-sage bg-sage/8 px-2.5 py-1 rounded-full">5 markers</span>
+                  </div>
+                  <div class="px-6 py-4 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-8 h-8 rounded-lg bg-terracotta/10 flex items-center justify-center">
+                        <svg class="w-4 h-4 text-terracotta" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5m-6 1.5v-1.5m12 9.75l-1.5.75a3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0L3 16.5m15-3.379a48.474 48.474 0 00-6-.371c-2.032 0-4.034.126-6 .371m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.169c0 .621-.504 1.125-1.125 1.125H4.125A1.125 1.125 0 013 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 016 13.12"/></svg>
+                      </div>
+                      <span class="text-sm font-bold text-charcoal">Cortisol Curve</span>
+                    </div>
+                    <span class="text-xs font-medium text-terracotta bg-terracotta/8 px-2.5 py-1 rounded-full">DUTCH test</span>
+                  </div>
+                  <div class="px-6 py-4 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-8 h-8 rounded-lg bg-sage/10 flex items-center justify-center">
+                        <svg class="w-4 h-4 text-sage" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+                      </div>
+                      <span class="text-sm font-bold text-charcoal">Hormone Panel</span>
+                    </div>
+                    <span class="text-xs font-medium text-sage bg-sage/8 px-2.5 py-1 rounded-full">Estrogen + progesterone</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 2. SYMPTOMS — "THE WILLPOWER MYTH" DUAL COLUMN (UNIQUE) ==================== -->
+  <section class="section-padding bg-warm-white relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-[40rem] h-[40rem] rounded-full bg-terracotta/4 blur-[140px] -translate-y-1/2 translate-x-1/4 pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-12 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">The Willpower Myth</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          What they told you vs. what's <span class="text-sage">actually happening.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-5xl mx-auto">
+        <!-- Myth column -->
+        <div class="space-y-4">
+          <div class="scroll-reveal flex items-center gap-3 mb-2">
+            <div class="w-8 h-8 rounded-full bg-[#E8B4B4] flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+            </div>
+            <p class="text-sm font-black uppercase tracking-widest text-[#C07070]">What They Told You</p>
+          </div>
+
+          <div class="scroll-reveal bento-tilt bg-[#FDF0F0] rounded-[1.5rem] p-6 border border-[#E8B4B4]/30 relative overflow-hidden">
+            <p class="text-base font-black text-charcoal mb-1.5">"Just eat less and move more."</p>
+            <p class="text-sm text-text-light leading-relaxed">Calorie math ignores insulin, thyroid hormones, cortisol, and leptin resistance &mdash; all of which determine whether your body stores or burns fat.</p>
+          </div>
+          <div class="scroll-reveal bento-tilt bg-[#FDF0F0] rounded-[1.5rem] p-6 border border-[#E8B4B4]/30 relative overflow-hidden" style="transition-delay: 0.06s;">
+            <p class="text-base font-black text-charcoal mb-1.5">"Your labs are normal."</p>
+            <p class="text-sm text-text-light leading-relaxed">Standard labs don't check fasting insulin, reverse T3, or cortisol rhythm. "Normal" TSH with tanked Free T3 means your thyroid is underperforming.</p>
+          </div>
+          <div class="scroll-reveal bento-tilt bg-[#FDF0F0] rounded-[1.5rem] p-6 border border-[#E8B4B4]/30 relative overflow-hidden" style="transition-delay: 0.12s;">
+            <p class="text-base font-black text-charcoal mb-1.5">"You need more discipline."</p>
+            <p class="text-sm text-text-light leading-relaxed">Cravings from blood sugar crashes, fatigue from adrenal dysfunction, and hunger from leptin resistance aren't character flaws &mdash; they're metabolic signals.</p>
+          </div>
+          <div class="scroll-reveal bento-tilt bg-[#FDF0F0] rounded-[1.5rem] p-6 border border-[#E8B4B4]/30 relative overflow-hidden" style="transition-delay: 0.18s;">
+            <p class="text-base font-black text-charcoal mb-1.5">"Try this medication."</p>
+            <p class="text-sm text-text-light leading-relaxed">Medications may suppress appetite or block absorption, but they don't ask <em>why</em> your metabolism stalled. We do.</p>
+          </div>
+        </div>
+
+        <!-- Truth column -->
+        <div class="space-y-4">
+          <div class="scroll-reveal flex items-center gap-3 mb-2">
+            <div class="w-8 h-8 rounded-full bg-sage flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <p class="text-sm font-black uppercase tracking-widest text-sage">What's Actually Happening</p>
+          </div>
+
+          <div class="scroll-reveal bento-tilt bg-sage-pale rounded-[1.5rem] p-6 border border-sage/15 relative overflow-hidden" style="transition-delay: 0.04s;">
+            <p class="text-base font-black text-charcoal mb-1.5">Insulin is locking fat in storage.</p>
+            <p class="text-sm text-text-light leading-relaxed">Elevated fasting insulin keeps your body in storage mode 24/7. Until insulin comes down, no amount of exercise unlocks those fat cells.</p>
+          </div>
+          <div class="scroll-reveal bento-tilt bg-sage-pale rounded-[1.5rem] p-6 border border-sage/15 relative overflow-hidden" style="transition-delay: 0.1s;">
+            <p class="text-base font-black text-charcoal mb-1.5">Your thyroid is underconverting.</p>
+            <p class="text-sm text-text-light leading-relaxed">T4 isn't converting to active T3. Your metabolism is running at 60% capacity &mdash; and standard labs completely miss this because they only check TSH.</p>
+          </div>
+          <div class="scroll-reveal bento-tilt bg-sage-pale rounded-[1.5rem] p-6 border border-sage/15 relative overflow-hidden" style="transition-delay: 0.16s;">
+            <p class="text-base font-black text-charcoal mb-1.5">Cortisol is driving belly fat.</p>
+            <p class="text-sm text-text-light leading-relaxed">Chronic stress keeps cortisol elevated, which tells your body to store visceral fat around the midsection. DUTCH testing maps your full cortisol curve.</p>
+          </div>
+          <div class="scroll-reveal bento-tilt bg-sage-pale rounded-[1.5rem] p-6 border border-sage/15 relative overflow-hidden" style="transition-delay: 0.22s;">
+            <p class="text-base font-black text-charcoal mb-1.5">Hormones are shifting your set point.</p>
+            <p class="text-sm text-text-light leading-relaxed">Perimenopause, low progesterone, and estrogen dominance directly change where and how your body stores fat. This isn't aging &mdash; it's treatable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3. ROOT CAUSES — FEATURED CARD + 4-CARD GRID (UNIQUE) ==================== -->
+  <section class="section-padding bg-cream relative overflow-hidden">
+    <div class="absolute bottom-0 left-0 w-[50rem] h-[50rem] rounded-full bg-sage/5 blur-[160px] translate-y-1/2 -translate-x-1/4 pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-sage mb-4">Root Causes</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          Five metabolic blockers keeping the <span class="text-terracotta">weight on.</span>
+        </h2>
+      </div>
+
+      <!-- Featured card: Insulin Resistance -->
+      <div class="scroll-reveal bento-tilt bg-charcoal rounded-[1.5rem] p-7 md:p-10 mb-5 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-[20rem] h-[20rem] rounded-full bg-terracotta/8 blur-[100px] -translate-y-1/3 translate-x-1/4 pointer-events-none" aria-hidden="true"></div>
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 items-center">
+          <div class="md:col-span-8">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="icon-float w-12 h-12 rounded-2xl bg-terracotta/15 flex items-center justify-center">
+                <svg class="w-6 h-6 text-terracotta-light" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+              </div>
+              <span class="text-xs font-bold text-terracotta-light uppercase tracking-widest">#1 Root Cause</span>
+            </div>
+            <h3 class="text-2xl md:text-3xl font-black text-white mb-3">Insulin Resistance</h3>
+            <p class="text-base text-white/70 leading-relaxed mb-5 max-w-2xl">Your body is producing more insulin than it should to manage blood sugar. High insulin locks fat cells in storage mode and blocks your body from burning fat as fuel &mdash; no matter how little you eat. This is the #1 reason diets fail, and standard labs almost never check it.</p>
+            <a href="/contact" class="inline-flex items-center gap-1.5 text-sm font-bold text-terracotta-light hover:text-terracotta transition-colors">
+              Get your insulin tested
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+          <div class="md:col-span-4 flex flex-col gap-3">
+            <div class="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
+              <p class="text-3xl font-black text-terracotta-light mb-1"><span class="counter" data-target="88">0</span>%</p>
+              <p class="text-xs text-white/50">of overweight adults have some degree of insulin resistance</p>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
+              <p class="text-3xl font-black text-sage-light mb-1"><span class="counter" data-target="70">0</span>%</p>
+              <p class="text-xs text-white/50">don't know they have it because doctors never check fasting insulin</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4-card grid: Other root causes -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden">
+          <div class="icon-float w-12 h-12 rounded-2xl bg-sage/10 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+          </div>
+          <h3 class="text-lg font-black text-charcoal mb-2">Thyroid Underconversion</h3>
+          <p class="text-sm text-text-light leading-relaxed">TSH looks "normal" but Free T3 is tanked. Your cells aren't getting the active thyroid hormone they need to maintain metabolic rate. We run the full panel: TSH, Free T3, Free T4, reverse T3, and antibodies.</p>
+        </div>
+
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.06s;">
+          <div class="icon-float w-12 h-12 rounded-2xl bg-terracotta/10 flex items-center justify-center mb-4" style="animation-delay: 0.4s;">
+            <svg class="w-6 h-6 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/><path d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"/></svg>
+          </div>
+          <h3 class="text-lg font-black text-charcoal mb-2">Cortisol Dysregulation</h3>
+          <p class="text-sm text-text-light leading-relaxed">Chronic stress floods your system with cortisol, which tells your body to store visceral fat &mdash; especially around your midsection. DUTCH testing maps your full 24-hour cortisol curve so we can see the pattern.</p>
+        </div>
+
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.12s;">
+          <div class="icon-float w-12 h-12 rounded-2xl bg-sage/10 flex items-center justify-center mb-4" style="animation-delay: 0.8s;">
+            <svg class="w-6 h-6 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+          </div>
+          <h3 class="text-lg font-black text-charcoal mb-2">Estrogen Dominance</h3>
+          <p class="text-sm text-text-light leading-relaxed">When estrogen is high relative to progesterone &mdash; common in perimenopause, PCOS, and xenoestrogen exposure &mdash; your body stores fat in the hips, thighs, and lower abdomen. Hormone testing reveals the imbalance.</p>
+        </div>
+
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.18s;">
+          <div class="icon-float w-12 h-12 rounded-2xl bg-terracotta/10 flex items-center justify-center mb-4" style="animation-delay: 1.2s;">
+            <svg class="w-6 h-6 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5m-6 1.5v-1.5m12 9.75l-1.5.75a3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0L3 16.5m15-3.379a48.474 48.474 0 00-6-.371c-2.032 0-4.034.126-6 .371m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.169c0 .621-.504 1.125-1.125 1.125H4.125A1.125 1.125 0 013 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 016 13.12"/></svg>
+          </div>
+          <h3 class="text-lg font-black text-charcoal mb-2">Gut Dysbiosis &amp; Inflammation</h3>
+          <p class="text-sm text-text-light leading-relaxed">Your gut bacteria directly influence how you extract and store calories, regulate hunger hormones (ghrelin &amp; leptin), and manage systemic inflammation &mdash; all of which drive weight resistance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. TESTING — WIDE LAB REPORT CARDS (UNIQUE) ==================== -->
+  <section class="section-padding bg-warm-white relative overflow-hidden">
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Advanced Testing</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          The labs your doctor <span class="text-sage">never ordered.</span>
+        </h2>
+        <p class="text-base text-text-light mt-4 leading-relaxed">Standard bloodwork misses the metabolic markers that actually explain weight resistance. Here's what we run &mdash; and what each test reveals.</p>
+      </div>
+
+      <div class="space-y-3 max-w-4xl mx-auto">
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] shadow-sm border border-sage-pale/40 hover:shadow-lg transition-all duration-300 relative overflow-hidden">
+          <div class="p-5 md:p-6 flex flex-col md:flex-row md:items-center gap-4">
+            <div class="flex items-center gap-4 md:w-[280px] shrink-0">
+              <div class="icon-pulse w-10 h-10 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-terracotta" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+              </div>
+              <p class="text-base font-black text-charcoal">Fasting Insulin + HOMA-IR</p>
+            </div>
+            <p class="text-sm text-text-light leading-relaxed flex-1">Reveals insulin resistance years before blood sugar rises. Standard labs only check glucose &mdash; by the time that's high, insulin has been elevated for a decade.</p>
+            <span class="text-xs font-bold text-terracotta bg-terracotta/8 px-3 py-1.5 rounded-full shrink-0 self-start md:self-center">Fat storage trigger</span>
+          </div>
+        </div>
+
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] shadow-sm border border-sage-pale/40 hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.06s;">
+          <div class="p-5 md:p-6 flex flex-col md:flex-row md:items-center gap-4">
+            <div class="flex items-center gap-4 md:w-[280px] shrink-0">
+              <div class="icon-pulse w-10 h-10 rounded-xl bg-sage/10 flex items-center justify-center shrink-0" style="animation-delay: 0.3s;">
+                <svg class="w-5 h-5 text-sage" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+              </div>
+              <p class="text-base font-black text-charcoal">Full Thyroid Panel</p>
+            </div>
+            <p class="text-sm text-text-light leading-relaxed flex-1">TSH, Free T3, Free T4, reverse T3, TPO &amp; TG antibodies. Shows whether your thyroid is actually converting and delivering active hormone to cells.</p>
+            <span class="text-xs font-bold text-sage bg-sage/8 px-3 py-1.5 rounded-full shrink-0 self-start md:self-center">Metabolic rate</span>
+          </div>
+        </div>
+
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] shadow-sm border border-sage-pale/40 hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.12s;">
+          <div class="p-5 md:p-6 flex flex-col md:flex-row md:items-center gap-4">
+            <div class="flex items-center gap-4 md:w-[280px] shrink-0">
+              <div class="icon-pulse w-10 h-10 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0" style="animation-delay: 0.6s;">
+                <svg class="w-5 h-5 text-terracotta" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513"/></svg>
+              </div>
+              <p class="text-base font-black text-charcoal">DUTCH Complete</p>
+            </div>
+            <p class="text-sm text-text-light leading-relaxed flex-1">Full cortisol rhythm mapping plus estrogen, progesterone, testosterone, and their metabolites. Shows exactly how your hormones are driving fat storage patterns.</p>
+            <span class="text-xs font-bold text-terracotta bg-terracotta/8 px-3 py-1.5 rounded-full shrink-0 self-start md:self-center">Hormone + cortisol</span>
+          </div>
+        </div>
+
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] shadow-sm border border-sage-pale/40 hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.18s;">
+          <div class="p-5 md:p-6 flex flex-col md:flex-row md:items-center gap-4">
+            <div class="flex items-center gap-4 md:w-[280px] shrink-0">
+              <div class="icon-pulse w-10 h-10 rounded-xl bg-sage/10 flex items-center justify-center shrink-0" style="animation-delay: 0.9s;">
+                <svg class="w-5 h-5 text-sage" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082"/></svg>
+              </div>
+              <p class="text-base font-black text-charcoal">GI-MAP Stool Test</p>
+            </div>
+            <p class="text-sm text-text-light leading-relaxed flex-1">Gut bacterial balance, inflammation markers, and immune activation. Dysbiosis shifts how you extract calories and regulates hunger hormones like ghrelin and leptin.</p>
+            <span class="text-xs font-bold text-sage bg-sage/8 px-3 py-1.5 rounded-full shrink-0 self-start md:self-center">Gut-weight axis</span>
+          </div>
+        </div>
+
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] shadow-sm border border-sage-pale/40 hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.24s;">
+          <div class="p-5 md:p-6 flex flex-col md:flex-row md:items-center gap-4">
+            <div class="flex items-center gap-4 md:w-[280px] shrink-0">
+              <div class="icon-pulse w-10 h-10 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0" style="animation-delay: 1.2s;">
+                <svg class="w-5 h-5 text-terracotta" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/></svg>
+              </div>
+              <p class="text-base font-black text-charcoal">Inflammatory Markers</p>
+            </div>
+            <p class="text-sm text-text-light leading-relaxed flex-1">hs-CRP, homocysteine, and nutrient panels. Chronic low-grade inflammation blocks leptin signaling and impairs mitochondrial fat burning. We find it and resolve it.</p>
+            <span class="text-xs font-bold text-terracotta bg-terracotta/8 px-3 py-1.5 rounded-full shrink-0 self-start md:self-center">Hidden inflammation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. TREATMENT — BENTO GRID: 1 LARGE + 4 SMALL (UNIQUE) ==================== -->
+  <section class="section-padding bg-sage-pale relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-sage/8 blur-[120px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">How We Treat</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          A metabolic reset &mdash; not another <span class="text-sage">diet plan.</span>
+        </h2>
+      </div>
+
+      <!-- Bento grid: featured left + 4 stacked right -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-5">
+        <!-- Featured large card -->
+        <div class="scroll-reveal bento-tilt md:col-span-7 bg-charcoal rounded-[1.5rem] p-7 md:p-9 relative overflow-hidden flex flex-col justify-between min-h-[24rem]">
+          <div class="absolute bottom-0 right-0 w-[18rem] h-[18rem] rounded-full bg-sage/10 blur-[80px] translate-y-1/3 translate-x-1/4 pointer-events-none" aria-hidden="true"></div>
+          <div class="relative z-10">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="icon-float w-12 h-12 rounded-2xl bg-sage/15 flex items-center justify-center">
+                <svg class="w-6 h-6 text-sage-light" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg>
+              </div>
+              <span class="text-xs font-bold text-sage-light uppercase tracking-widest">Primary Modality</span>
+            </div>
+            <h3 class="text-2xl md:text-3xl font-black text-white mb-3">Metabolic &amp; Nutritional Medicine</h3>
+            <p class="text-base text-white/70 leading-relaxed mb-6 max-w-lg">We don't prescribe meal plans. We identify your specific metabolic blockers &mdash; insulin resistance, thyroid underconversion, cortisol patterns &mdash; and build a protocol that addresses the biology. When your metabolism works, the weight follows.</p>
+          </div>
+          <a href="/contact" class="relative z-10 inline-flex items-center gap-1.5 text-sm font-bold text-sage-light hover:text-white transition-colors">
+            Start your metabolic protocol
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- 4 smaller cards stacked in 2x2 -->
+        <div class="md:col-span-5 grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-6 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.06s;">
+            <div class="icon-float w-10 h-10 rounded-xl bg-terracotta/10 flex items-center justify-center mb-3" style="animation-delay: 0.3s;">
+              <svg class="w-5 h-5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+            </div>
+            <h3 class="text-sm font-black text-charcoal mb-1.5">Thyroid Optimization</h3>
+            <p class="text-xs text-text-light leading-relaxed">T3/T4 conversion support, selenium, zinc, and targeted thyroid protocols.</p>
+          </div>
+
+          <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-6 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.12s;">
+            <div class="icon-float w-10 h-10 rounded-xl bg-sage/10 flex items-center justify-center mb-3" style="animation-delay: 0.6s;">
+              <svg class="w-5 h-5 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+            </div>
+            <h3 class="text-sm font-black text-charcoal mb-1.5">Hormone Balancing</h3>
+            <p class="text-xs text-text-light leading-relaxed">Estrogen/progesterone optimization, PCOS protocols, and adrenal support.</p>
+          </div>
+
+          <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-6 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.18s;">
+            <div class="icon-float w-10 h-10 rounded-xl bg-terracotta/10 flex items-center justify-center mb-3" style="animation-delay: 0.9s;">
+              <svg class="w-5 h-5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5m-6 1.5v-1.5m12 9.75l-1.5.75a3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0L3 16.5m15-3.379a48.474 48.474 0 00-6-.371c-2.032 0-4.034.126-6 .371m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.169c0 .621-.504 1.125-1.125 1.125H4.125A1.125 1.125 0 013 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 016 13.12"/></svg>
+            </div>
+            <h3 class="text-sm font-black text-charcoal mb-1.5">Gut Restoration</h3>
+            <p class="text-xs text-text-light leading-relaxed">Microbiome rebalancing, SIBO treatment, and inflammation reduction.</p>
+          </div>
+
+          <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-6 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.24s;">
+            <div class="icon-float w-10 h-10 rounded-xl bg-sage/10 flex items-center justify-center mb-3" style="animation-delay: 1.2s;">
+              <svg class="w-5 h-5 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg>
+            </div>
+            <h3 class="text-sm font-black text-charcoal mb-1.5">Acupuncture</h3>
+            <p class="text-xs text-text-light leading-relaxed">Appetite regulation, stress reduction, and metabolic stimulation points.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. DARK SECTION — "YOUR METABOLIC RESET" 4-PHASE JOURNEY (UNIQUE) ==================== -->
+  <section class="section-padding bg-[#1a2516] relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-sage/6 blur-[160px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-12 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta-light mb-4">The Process</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-white">
+          Your metabolic reset in <span class="text-sage-light">four phases.</span>
+        </h2>
+      </div>
+
+      <!-- 4-phase flow -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-5 relative">
+        <!-- Connector line (desktop only) -->
+        <div class="hidden md:block absolute top-[3.25rem] left-[12%] right-[12%] h-px bg-gradient-to-r from-sage/30 via-terracotta/30 to-sage/30 pointer-events-none" aria-hidden="true"></div>
+
+        <div class="scroll-reveal text-center relative">
+          <div class="icon-pulse w-16 h-16 rounded-2xl bg-sage/15 border border-sage/20 flex items-center justify-center mx-auto mb-5 relative z-10">
+            <span class="text-2xl font-black text-sage-light">01</span>
+          </div>
+          <h3 class="text-base font-black text-white mb-2">Test</h3>
+          <p class="text-sm text-white/60 leading-relaxed">Comprehensive metabolic panel: fasting insulin, full thyroid, DUTCH cortisol, hormones, gut, and inflammatory markers.</p>
+        </div>
+
+        <div class="scroll-reveal text-center relative" style="transition-delay: 0.08s;">
+          <div class="icon-pulse w-16 h-16 rounded-2xl bg-terracotta/15 border border-terracotta/20 flex items-center justify-center mx-auto mb-5 relative z-10" style="animation-delay: 0.5s;">
+            <span class="text-2xl font-black text-terracotta-light">02</span>
+          </div>
+          <h3 class="text-base font-black text-white mb-2">Identify</h3>
+          <p class="text-sm text-white/60 leading-relaxed">Map your specific metabolic blockers. Insulin? Thyroid? Cortisol? Hormones? Most patients have 2&ndash;3 overlapping factors.</p>
+        </div>
+
+        <div class="scroll-reveal text-center relative" style="transition-delay: 0.16s;">
+          <div class="icon-pulse w-16 h-16 rounded-2xl bg-sage/15 border border-sage/20 flex items-center justify-center mx-auto mb-5 relative z-10" style="animation-delay: 1s;">
+            <span class="text-2xl font-black text-sage-light">03</span>
+          </div>
+          <h3 class="text-base font-black text-white mb-2">Treat</h3>
+          <p class="text-sm text-white/60 leading-relaxed">Custom protocol: targeted supplements, hormone optimization, nutrition shifts, gut repair, and acupuncture &mdash; all based on your labs.</p>
+        </div>
+
+        <div class="scroll-reveal text-center relative" style="transition-delay: 0.24s;">
+          <div class="icon-pulse w-16 h-16 rounded-2xl bg-terracotta/15 border border-terracotta/20 flex items-center justify-center mx-auto mb-5 relative z-10" style="animation-delay: 1.5s;">
+            <span class="text-2xl font-black text-terracotta-light">04</span>
+          </div>
+          <h3 class="text-base font-black text-white mb-2">Sustain</h3>
+          <p class="text-sm text-white/60 leading-relaxed">Re-test at 90 days. Adjust your protocol. Build lasting metabolic health &mdash; not a temporary fix that rebounds the moment you stop.</p>
+        </div>
+      </div>
+
+      <!-- Bottom stat bar -->
+      <div class="scroll-reveal grid grid-cols-1 md:grid-cols-3 gap-4 mt-12">
+        <div class="bento-tilt bg-white/5 border border-white/10 rounded-[1.5rem] p-5 text-center relative overflow-hidden">
+          <p class="text-3xl font-black text-sage-light mb-1"><span class="counter" data-target="75">0</span>&ndash;90 min</p>
+          <p class="text-xs text-white/50">first visit — deep metabolic intake</p>
+        </div>
+        <div class="bento-tilt bg-white/5 border border-white/10 rounded-[1.5rem] p-5 text-center relative overflow-hidden">
+          <p class="text-3xl font-black text-terracotta-light mb-1"><span class="counter" data-target="5">0</span>+ labs</p>
+          <p class="text-xs text-white/50">comprehensive panels — not just TSH and glucose</p>
+        </div>
+        <div class="bento-tilt bg-white/5 border border-white/10 rounded-[1.5rem] p-5 text-center relative overflow-hidden">
+          <p class="text-3xl font-black text-sage-light mb-1"><span class="counter" data-target="90">0</span> days</p>
+          <p class="text-xs text-white/50">re-test cycle — measurable progress, not guessing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7. DOCTORS — FULL-WIDTH HORIZONTAL ROWS (UNIQUE) ==================== -->
+  <section class="section-padding bg-cream relative overflow-hidden">
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Your Team</p>
+        <h2 class="text-[clamp(1.6rem,3.5vw,2.5rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          Three doctors collaborating on <span class="text-sage">your metabolism.</span>
+        </h2>
+      </div>
+
+      <div class="space-y-4 max-w-4xl mx-auto">
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] shadow-sm border border-sage-pale/40 hover:shadow-lg transition-all duration-300 relative overflow-hidden">
+          <div class="p-6 md:p-7 flex flex-col md:flex-row md:items-center gap-5">
+            <div class="flex items-center gap-4 md:w-[220px] shrink-0">
+              <div class="icon-float w-14 h-14 rounded-full bg-sage/15 flex items-center justify-center text-xl font-black text-sage shrink-0">S</div>
+              <div>
+                <p class="text-base font-black text-charcoal">Dr. Spencer Warren</p>
+                <p class="text-xs text-text-light">NMD</p>
+              </div>
+            </div>
+            <div class="flex-1">
+              <div class="bg-sage/8 rounded-lg px-3 py-1.5 inline-block mb-2">
+                <p class="text-xs font-bold text-sage">Insulin &amp; Metabolic Testing</p>
+              </div>
+              <p class="text-sm text-text-light leading-relaxed">HOMA-IR analysis, fasting insulin interpretation, thyroid optimization, and advanced metabolic panel design. Translates your labs into a targeted protocol.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] shadow-sm border border-sage-pale/40 hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.06s;">
+          <div class="p-6 md:p-7 flex flex-col md:flex-row md:items-center gap-5">
+            <div class="flex items-center gap-4 md:w-[220px] shrink-0">
+              <div class="icon-float w-14 h-14 rounded-full bg-terracotta/10 flex items-center justify-center text-xl font-black text-terracotta shrink-0" style="animation-delay: 0.4s;">B</div>
+              <div>
+                <p class="text-base font-black text-charcoal">Dr. Bailey Newman</p>
+                <p class="text-xs text-text-light">NMD</p>
+              </div>
+            </div>
+            <div class="flex-1">
+              <div class="bg-terracotta/8 rounded-lg px-3 py-1.5 inline-block mb-2">
+                <p class="text-xs font-bold text-terracotta">Acupuncture &amp; Stress</p>
+              </div>
+              <p class="text-sm text-text-light leading-relaxed">Metabolic acupuncture, cortisol regulation, appetite signaling, and stress-driven weight protocols. Addresses the nervous system side of weight resistance.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] shadow-sm border border-sage-pale/40 hover:shadow-lg transition-all duration-300 relative overflow-hidden" style="transition-delay: 0.12s;">
+          <div class="p-6 md:p-7 flex flex-col md:flex-row md:items-center gap-5">
+            <div class="flex items-center gap-4 md:w-[220px] shrink-0">
+              <div class="icon-float w-14 h-14 rounded-full bg-earth/10 flex items-center justify-center text-xl font-black text-earth shrink-0" style="animation-delay: 0.8s;">C</div>
+              <div>
+                <p class="text-base font-black text-charcoal">Dr. Carie Perrino</p>
+                <p class="text-xs text-text-light">NMD, RDN, CLT</p>
+              </div>
+            </div>
+            <div class="flex-1">
+              <div class="bg-earth/8 rounded-lg px-3 py-1.5 inline-block mb-2">
+                <p class="text-xs font-bold text-earth">Nutrition &amp; Gut Health</p>
+              </div>
+              <p class="text-sm text-text-light leading-relaxed">Blood sugar optimization, gut microbiome restoration, food sensitivity protocols, and anti-inflammatory nutrition. Builds the dietary foundation for lasting metabolic change.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-6 scroll-reveal">
+        <a href="/doctors" class="inline-flex items-center gap-1.5 text-sm font-semibold text-sage hover:text-sage-dark transition-colors">
+          Meet our full team
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 8. RELATED CONDITIONS — PILL ROW ==================== -->
+  <section class="py-10 md:py-14 bg-warm-white">
+    <div class="container-main">
+      <div class="scroll-reveal text-center">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-5">Related Conditions</p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <a href="/conditions/hormonal-balance" class="bg-white border border-sage-pale/40 rounded-full px-5 py-2.5 text-sm font-medium text-charcoal hover:bg-sage hover:text-white hover:border-sage transition-all duration-300 shadow-sm">Hormonal Balance</a>
+          <a href="/conditions/digestive-health" class="bg-white border border-sage-pale/40 rounded-full px-5 py-2.5 text-sm font-medium text-charcoal hover:bg-sage hover:text-white hover:border-sage transition-all duration-300 shadow-sm">Digestive Health</a>
+          <a href="/conditions/stress-anxiety" class="bg-white border border-sage-pale/40 rounded-full px-5 py-2.5 text-sm font-medium text-charcoal hover:bg-sage hover:text-white hover:border-sage transition-all duration-300 shadow-sm">Stress &amp; Anxiety</a>
+          <a href="/conditions/chronic-pain" class="bg-white border border-sage-pale/40 rounded-full px-5 py-2.5 text-sm font-medium text-charcoal hover:bg-sage hover:text-white hover:border-sage transition-all duration-300 shadow-sm">Chronic Pain</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 9. CTA ==================== -->
+  <section class="section-padding bg-cream relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-terracotta/5 blur-[140px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Take the First Step</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal mb-5">
+          Stop blaming yourself. Start fixing your <span class="text-sage">metabolism.</span>
+        </h2>
+        <p class="text-base md:text-lg text-text-light leading-relaxed mb-8">
+          Your first visit is 75&ndash;90 minutes. We'll run the labs your doctor never ordered, map your metabolic blockers, and build a protocol that actually works &mdash; because it's based on <em>your</em> biology, not a generic plan.
+        </p>
+        <div class="flex flex-row flex-wrap justify-center gap-4">
+          <a href="/contact" class="magnetic-btn cta-shine group relative inline-flex items-center justify-center gap-2 bg-sage hover:bg-sage-dark text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-sage/25 overflow-hidden">
+            <span class="relative z-10 flex items-center gap-2">
+              Book Your Metabolic Consult
+              <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+          <a href="tel:+14809140521" class="magnetic-btn relative inline-flex items-center justify-center gap-2 bg-white hover:bg-sage-pale text-charcoal font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-md border border-sage-pale/60 overflow-hidden">
+            Call (480) 914-0521
+          </a>
+        </div>
+        <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-1.5 text-xs text-text-light/50 mt-5">
+          <span>No referral needed</span>
+          <span class="w-px h-3 bg-sage/15"></span>
+          <span>In-person in Tempe or virtual across Arizona</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* ===== HERO ELEMENT STAGGER ===== */
+  .hero-el {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: heroElIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  .hero-el:nth-child(1) { animation-delay: 0.1s; }
+  .hero-el:nth-child(2) { animation-delay: 0.2s; }
+  .hero-el:nth-child(3) { animation-delay: 0.3s; }
+  .hero-el:nth-child(4) { animation-delay: 0.4s; }
+  .hero-el:nth-child(5) { animation-delay: 0.5s; }
+  .hero-el:nth-child(6) { animation-delay: 0.6s; }
+
+  @keyframes heroElIn {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ===== ICON FLOAT ===== */
+  .icon-float {
+    animation: iconFloat 3s ease-in-out infinite;
+  }
+  @keyframes iconFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  /* ===== ICON PULSE ===== */
+  .icon-pulse {
+    animation: iconPulse 2.5s ease-in-out infinite;
+  }
+  @keyframes iconPulse {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(91, 140, 111, 0.2); }
+    50% { transform: scale(1.08); box-shadow: 0 0 0 6px rgba(91, 140, 111, 0); }
+  }
+
+  /* ===== SCROLL REVEAL ===== */
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== BENTO TILT ===== */
+  .bento-tilt {
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform 0.35s cubic-bezier(0.03, 0.98, 0.52, 0.99), box-shadow 0.35s ease;
+  }
+  .bento-tilt .bento-glow {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+    border-radius: inherit;
+    z-index: 1;
+  }
+  .bento-tilt:hover .bento-glow {
+    opacity: 1;
+  }
+
+  /* ===== COUNTER ANIMATION ===== */
+  .counter {
+    display: inline-block;
+  }
+
+  /* ===== CTA SHINE SWEEP ===== */
+  .cta-shine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+    transition: none;
+    pointer-events: none;
+  }
+  .cta-shine:hover::before {
+    animation: shineSweep 0.6s ease forwards;
+  }
+  @keyframes shineSweep {
+    to { left: 125%; }
+  }
+
+  /* ===== MAGNETIC BUTTONS ===== */
+  .magnetic-btn {
+    transition: transform 0.3s cubic-bezier(0.03, 0.98, 0.52, 0.99), background-color 0.3s, box-shadow 0.3s;
+  }
+
+  /* ===== REDUCED MOTION ===== */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-el {
+      opacity: 1;
+      transform: none;
+      animation: none;
+    }
+    .scroll-reveal {
+      opacity: 1;
+      transform: none;
+    }
+    .cta-shine::before {
+      display: none;
+    }
+    .icon-float {
+      animation: none;
+    }
+    .icon-pulse {
+      animation: none;
+    }
+    .bento-tilt {
+      transform: none !important;
+    }
+  }
+</style>
+
+<script>
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ===== SCROLL REVEAL =====
+  const revealElements = document.querySelectorAll('.scroll-reveal');
+  if (revealElements.length) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    revealElements.forEach((el) => {
+      if (prefersReduced) {
+        el.classList.add('visible');
+      } else {
+        observer.observe(el);
+      }
+    });
+  }
+
+  // ===== COUNTER ANIMATION =====
+  const counters = document.querySelectorAll('.counter');
+  if (counters.length) {
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = entry.target as HTMLElement;
+          const target = parseInt(el.dataset.target || '0', 10);
+          const duration = 1200;
+          const start = performance.now();
+          const animate = (now: number) => {
+            const progress = Math.min((now - start) / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            el.textContent = String(Math.round(target * eased));
+            if (progress < 1) requestAnimationFrame(animate);
+          };
+          if (!prefersReduced) {
+            requestAnimationFrame(animate);
+          } else {
+            el.textContent = String(target);
+          }
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach((el) => counterObserver.observe(el));
+  }
+
+  // ===== BENTO CARD TILT + GLOW =====
+  document.querySelectorAll('.bento-tilt').forEach((card) => {
+    if (window.innerWidth < 1024 || prefersReduced) return;
+    const el = card as HTMLElement;
+    const glow = document.createElement('div');
+    glow.classList.add('bento-glow');
+    el.appendChild(glow);
+    const maxTilt = 6;
+    el.addEventListener('mousemove', (e: MouseEvent) => {
+      const rect = el.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width;
+      const y = (e.clientY - rect.top) / rect.height;
+      const rotateY = (x - 0.5) * maxTilt * 2;
+      const rotateX = (0.5 - y) * maxTilt * 2;
+      el.style.transform = `perspective(600px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.015)`;
+      glow.style.background = `radial-gradient(circle at ${x * 100}% ${y * 100}%, rgba(255,255,255,0.12) 0%, transparent 60%)`;
+    });
+    el.addEventListener('mouseleave', () => {
+      el.style.transform = 'perspective(600px) rotateX(0) rotateY(0) scale(1)';
+    });
+  });
+
+  // ===== MAGNETIC CTA BUTTONS =====
+  document.querySelectorAll('.magnetic-btn').forEach((btn) => {
+    if (window.innerWidth < 1024) return;
+    const el = btn as HTMLElement;
+    const strength = 0.3;
+    el.addEventListener('mousemove', (e: MouseEvent) => {
+      const rect = el.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      el.style.transform = `translate(${x * strength}px, ${y * strength}px)`;
+    });
+    el.addEventListener('mouseleave', () => {
+      el.style.transform = 'translate(0, 0)';
+    });
+  });
+</script>

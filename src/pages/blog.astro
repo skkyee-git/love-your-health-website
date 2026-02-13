@@ -1,0 +1,684 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const categories = [
+  { id: 'all', label: 'All Posts' },
+  { id: 'thyroid', label: 'Thyroid' },
+  { id: 'hormones', label: 'Hormones' },
+  { id: 'gut', label: 'Gut Health' },
+  { id: 'weight', label: 'Weight' },
+  { id: 'mental-health', label: 'Mental Health' },
+  { id: 'wellness', label: 'Wellness' },
+];
+
+const featured = {
+  title: 'Why Your Thyroid Labs Are "Normal" But You Still Feel Terrible',
+  excerpt: 'Standard thyroid panels only test TSH — sometimes T4. That misses the full picture. Here\'s what a complete thyroid workup actually looks like, and why functional ranges matter more than lab reference ranges.',
+  category: 'thyroid',
+  date: 'Jan 15, 2025',
+  readTime: '8 min read',
+  author: 'Dr. Warren, NMD',
+};
+
+const posts = [
+  {
+    title: '5 Signs Your Fatigue Isn\'t "Just Stress"',
+    excerpt: 'Chronic fatigue has measurable, testable root causes — from iron storage to cortisol rhythm disruption. If rest isn\'t fixing it, here\'s what to investigate.',
+    category: 'wellness',
+    date: 'Jan 8, 2025',
+    readTime: '6 min read',
+    author: 'Dr. Newman, NMD',
+    color: 'sage',
+  },
+  {
+    title: 'The GI-MAP Test: What It Reveals About Your Gut',
+    excerpt: 'A stool test that goes far beyond basic cultures. GI-MAP measures parasites, bacterial overgrowth, inflammation markers, and digestive enzyme output in a single panel.',
+    category: 'gut',
+    date: 'Dec 28, 2024',
+    readTime: '7 min read',
+    author: 'Dr. Perrino, NMD',
+    color: 'terracotta',
+  },
+  {
+    title: 'DUTCH Test vs. Blood Serum: Which Hormone Test Is Better?',
+    excerpt: 'Blood tests capture a single moment. The DUTCH test maps your full 24-hour hormone metabolite pattern — including how your body processes and clears hormones.',
+    category: 'hormones',
+    date: 'Dec 18, 2024',
+    readTime: '9 min read',
+    author: 'Dr. Warren, NMD',
+    color: 'earth',
+  },
+  {
+    title: 'Why the Scale Won\'t Move: Insulin Resistance Explained',
+    excerpt: 'You can eat 1,200 calories and still gain weight if your insulin is chronically elevated. Understanding insulin resistance is the first step to breaking the cycle.',
+    category: 'weight',
+    date: 'Dec 10, 2024',
+    readTime: '7 min read',
+    author: 'Dr. Newman, NMD',
+    color: 'sage',
+  },
+  {
+    title: 'Hashimoto\'s: The Autoimmune Condition Behind Most Thyroid Issues',
+    excerpt: 'Over 90% of hypothyroidism in the US is autoimmune. Yet most patients are never tested for thyroid antibodies. Here\'s what Hashimoto\'s looks like — and how we treat it differently.',
+    category: 'thyroid',
+    date: 'Nov 30, 2024',
+    readTime: '10 min read',
+    author: 'Dr. Warren, NMD',
+    color: 'terracotta',
+  },
+  {
+    title: 'Anxiety, Gut Health, and the Vagus Nerve Connection',
+    excerpt: 'Your gut produces 90% of your serotonin. When gut health declines, mood often follows. The vagus nerve is the communication highway between the two — and it\'s trainable.',
+    category: 'mental-health',
+    date: 'Nov 20, 2024',
+    readTime: '6 min read',
+    author: 'Dr. Perrino, NMD',
+    color: 'earth',
+  },
+  {
+    title: 'What to Expect at Your First Naturopathic Visit',
+    excerpt: 'A 75–90 minute deep dive into your health history, goals, and the advanced testing we\'ll order. Here\'s a step-by-step walkthrough so you know exactly what to expect.',
+    category: 'wellness',
+    date: 'Nov 10, 2024',
+    readTime: '5 min read',
+    author: 'Dr. Newman, NMD',
+    color: 'sage',
+  },
+  {
+    title: 'Cortisol, Adrenal Fatigue, and Why You Crash at 3 PM',
+    excerpt: 'Your cortisol should peak in the morning and taper by evening. When that rhythm flattens or inverts, energy, sleep, and weight all suffer. Here\'s what we test and how we fix it.',
+    category: 'hormones',
+    date: 'Oct 28, 2024',
+    readTime: '8 min read',
+    author: 'Dr. Perrino, NMD',
+    color: 'terracotta',
+  },
+  {
+    title: 'SIBO: The Hidden Cause of Bloating, Gas, and Food Reactions',
+    excerpt: 'Small Intestinal Bacterial Overgrowth affects up to 80% of IBS patients. A simple breath test can detect it — and targeted treatment can resolve symptoms in weeks.',
+    category: 'gut',
+    date: 'Oct 15, 2024',
+    readTime: '7 min read',
+    author: 'Dr. Warren, NMD',
+    color: 'earth',
+  },
+];
+
+const colorMap: Record<string, { bg: string; text: string; pill: string }> = {
+  sage: { bg: 'bg-sage-pale/40', text: 'text-sage', pill: 'bg-sage/10 text-sage' },
+  terracotta: { bg: 'bg-[#F5E0D0]/40', text: 'text-terracotta', pill: 'bg-terracotta/10 text-terracotta' },
+  earth: { bg: 'bg-[#F5E0D0]/25', text: 'text-earth', pill: 'bg-earth/10 text-earth' },
+};
+---
+
+<BaseLayout title="Blog & Health Tips | Love Your Health Natural Medicine">
+
+  <!-- ==================== 1. HERO ==================== -->
+  <section class="relative overflow-hidden bg-[#1a2516]">
+    <!-- Decorative glows -->
+    <div class="absolute top-0 left-1/3 w-[35rem] h-[35rem] rounded-full bg-sage/15 blur-[160px] pointer-events-none" aria-hidden="true"></div>
+    <div class="absolute bottom-0 right-1/4 w-[25rem] h-[25rem] rounded-full bg-terracotta/8 blur-[120px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main section-padding relative z-10">
+      <div class="max-w-3xl">
+        <div class="hero-el inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-1.5 mb-6">
+          <svg class="w-3.5 h-3.5 text-sage-light" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+          <span class="text-xs font-semibold uppercase tracking-[0.2em] text-sage-light">Blog & Health Tips</span>
+        </div>
+
+        <h1 class="hero-el text-[clamp(2rem,5vw,3.5rem)] font-black leading-[1.05] tracking-[-0.03em] text-white mb-5">
+          Root-cause insights for <span class="text-sage-light">real health.</span>
+        </h1>
+
+        <p class="hero-el text-white/60 text-base md:text-lg leading-relaxed max-w-xl mb-8">
+          Evidence-based articles from our 3-doctor team on thyroid health, hormones, gut healing, and the functional medicine approach.
+        </p>
+
+        <div class="hero-el flex flex-wrap gap-3">
+          <div class="flex items-center gap-2 bg-white/8 rounded-full px-4 py-2 border border-white/10">
+            <span class="w-2 h-2 rounded-full bg-sage-light"></span>
+            <span class="text-sm font-medium text-white/80">Dr. Warren</span>
+          </div>
+          <div class="flex items-center gap-2 bg-white/8 rounded-full px-4 py-2 border border-white/10">
+            <span class="w-2 h-2 rounded-full bg-terracotta"></span>
+            <span class="text-sm font-medium text-white/80">Dr. Perrino</span>
+          </div>
+          <div class="flex items-center gap-2 bg-white/8 rounded-full px-4 py-2 border border-white/10">
+            <span class="w-2 h-2 rounded-full bg-earth"></span>
+            <span class="text-sm font-medium text-white/80">Dr. Newman</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 2. FEATURED ARTICLE — Full-width banner ==================== -->
+  <section class="bg-white relative overflow-hidden">
+    <div class="container-main section-padding">
+      <div class="scroll-reveal">
+        <div class="relative bg-gradient-to-br from-sage-pale/50 via-cream to-[#F5E0D0]/30 rounded-[2rem] border border-sage-pale shadow-sm overflow-hidden">
+          <div class="p-8 md:p-12">
+            <div class="flex items-center gap-3 mb-5">
+              <span class="text-xs font-semibold uppercase tracking-[0.2em] bg-sage/10 text-sage px-3 py-1 rounded-full">Featured</span>
+              <span class="text-xs font-semibold uppercase tracking-[0.2em] bg-terracotta/10 text-terracotta px-3 py-1 rounded-full">Thyroid</span>
+            </div>
+            <h2 class="text-[clamp(1.4rem,3.5vw,2.25rem)] font-black leading-[1.15] tracking-[-0.02em] text-charcoal mb-4 max-w-2xl">
+              {featured.title}
+            </h2>
+            <p class="text-sm md:text-base text-text-light leading-relaxed mb-6 max-w-2xl">
+              {featured.excerpt}
+            </p>
+            <div class="flex flex-wrap items-center gap-4">
+              <div class="flex items-center gap-4 text-xs text-text-light">
+                <span class="font-semibold text-charcoal">{featured.author}</span>
+                <span class="w-1 h-1 rounded-full bg-text-light/30"></span>
+                <span>{featured.date}</span>
+                <span class="w-1 h-1 rounded-full bg-text-light/30"></span>
+                <span>{featured.readTime}</span>
+              </div>
+              <div class="flex items-center gap-3 ml-auto">
+                <div class="flex items-center gap-2 bg-white/60 rounded-full px-3 py-1.5 border border-sage-pale/30">
+                  <svg class="w-3.5 h-3.5 text-sage" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+                  <span class="text-xs font-semibold text-charcoal">90% autoimmune</span>
+                </div>
+                <div class="hidden sm:flex items-center gap-2 bg-white/60 rounded-full px-3 py-1.5 border border-sage-pale/30">
+                  <svg class="w-3.5 h-3.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  <span class="text-xs font-semibold text-charcoal">6+ markers tested</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3. CATEGORY FILTER + ARTICLE GRID ==================== -->
+  <section class="section-padding bg-warm-white relative overflow-hidden pt-0 md:pt-0">
+    <div class="container-main">
+      <!-- Category filter pills -->
+      <div class="scroll-reveal flex flex-wrap gap-2 mb-10">
+        {categories.map((cat, i) => (
+          <button
+            class={`filter-pill text-xs font-semibold px-4 py-2 rounded-full border transition-all duration-300 cursor-pointer ${
+              i === 0
+                ? 'bg-charcoal text-white border-charcoal active'
+                : 'bg-white text-text-light border-sage-pale/40 hover:border-sage hover:text-sage'
+            }`}
+            data-category={cat.id}
+          >
+            {cat.label}
+          </button>
+        ))}
+      </div>
+
+      <!-- Article grid — magazine layout -->
+      <div class="grid md:grid-cols-12 gap-5" id="article-grid">
+
+        <!-- Row 1: Large left + stacked right -->
+        <div class="md:col-span-7 scroll-reveal article-card" data-category={posts[0].category}>
+          <div class={`group h-full ${colorMap[posts[0].color].bg} rounded-[1.5rem] border border-sage-pale/30 overflow-hidden hover:shadow-lg transition-all duration-300`}>
+            <div class="p-7 md:p-8 flex flex-col h-full">
+              <div class="flex items-center gap-2 mb-4">
+                <span class={`text-xs font-semibold uppercase tracking-[0.15em] ${colorMap[posts[0].color].pill} px-2.5 py-1 rounded-full`}>{posts[0].category}</span>
+                <span class="text-xs text-text-light">{posts[0].readTime}</span>
+              </div>
+              <h3 class="text-lg md:text-xl font-black leading-[1.15] tracking-[-0.02em] text-charcoal mb-3 group-hover:text-sage transition-colors">
+                {posts[0].title}
+              </h3>
+              <p class="text-sm text-text-light leading-relaxed mb-5 flex-1">{posts[0].excerpt}</p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-7 h-7 rounded-full bg-white/80 border border-sage-pale/30 flex items-center justify-center">
+                    <span class="text-[10px] font-black text-sage">N</span>
+                  </div>
+                  <div>
+                    <p class="text-xs font-semibold text-charcoal">{posts[0].author}</p>
+                    <p class="text-[10px] text-text-light">{posts[0].date}</p>
+                  </div>
+                </div>
+                <svg class="w-5 h-5 text-sage opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-5 flex flex-col gap-5">
+          {posts.slice(1, 3).map((post) => (
+            <div class="scroll-reveal article-card flex-1" data-category={post.category}>
+              <div class={`group h-full bg-white rounded-[1.5rem] border border-sage-pale/40 shadow-sm overflow-hidden hover:shadow-md transition-all duration-300`}>
+                <div class={`h-1 ${post.color === 'sage' ? 'bg-sage' : post.color === 'terracotta' ? 'bg-terracotta' : 'bg-earth'}`}></div>
+                <div class="p-5 md:p-6 flex flex-col h-full">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class={`text-xs font-semibold uppercase tracking-[0.15em] ${colorMap[post.color].pill} px-2.5 py-1 rounded-full`}>{post.category}</span>
+                    <span class="text-xs text-text-light">{post.readTime}</span>
+                  </div>
+                  <h3 class="text-sm md:text-base font-bold leading-[1.2] text-charcoal mb-2 group-hover:text-sage transition-colors">
+                    {post.title}
+                  </h3>
+                  <p class="text-xs text-text-light leading-relaxed mb-4 flex-1 line-clamp-2">{post.excerpt}</p>
+                  <div class="flex items-center gap-2">
+                    <p class="text-xs font-semibold text-charcoal">{post.author}</p>
+                    <span class="text-xs text-text-light">&middot; {post.date}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <!-- Row 2: Three equal columns -->
+        <!-- Weight card -->
+        <div class="md:col-span-4 scroll-reveal article-card" data-category={posts[3].category}>
+          <div class="group h-full bg-white rounded-[1.5rem] border border-sage-pale/40 shadow-sm overflow-hidden hover:shadow-md transition-all duration-300">
+            <div class="h-20 bg-gradient-to-br from-sage-pale/60 to-sage-pale/20 flex items-center justify-between px-6">
+              <span class="text-xs font-semibold uppercase tracking-[0.15em] bg-sage/10 text-sage px-2.5 py-1 rounded-full">{posts[3].category}</span>
+              <svg class="w-8 h-8 text-sage/30" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 20V10M6 20V4M18 20v-4"/></svg>
+            </div>
+            <div class="p-5 md:p-6">
+              <h3 class="text-sm md:text-base font-bold leading-[1.2] text-charcoal mb-2 group-hover:text-sage transition-colors">{posts[3].title}</h3>
+              <p class="text-xs text-text-light leading-relaxed mb-4 line-clamp-3">{posts[3].excerpt}</p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <p class="text-xs font-semibold text-charcoal">{posts[3].author}</p>
+                  <span class="text-xs text-text-light">&middot; {posts[3].readTime}</span>
+                </div>
+                <span class="text-xs text-text-light">{posts[3].date}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thyroid card -->
+        <div class="md:col-span-4 scroll-reveal article-card" data-category={posts[4].category}>
+          <div class="group h-full bg-white rounded-[1.5rem] border border-sage-pale/40 shadow-sm overflow-hidden hover:shadow-md transition-all duration-300">
+            <div class="h-20 bg-gradient-to-br from-[#F5E0D0]/60 to-[#F5E0D0]/20 flex items-center justify-between px-6">
+              <span class="text-xs font-semibold uppercase tracking-[0.15em] bg-terracotta/10 text-terracotta px-2.5 py-1 rounded-full">{posts[4].category}</span>
+              <svg class="w-8 h-8 text-terracotta/30" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="p-5 md:p-6">
+              <h3 class="text-sm md:text-base font-bold leading-[1.2] text-charcoal mb-2 group-hover:text-sage transition-colors">{posts[4].title}</h3>
+              <p class="text-xs text-text-light leading-relaxed mb-4 line-clamp-3">{posts[4].excerpt}</p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <p class="text-xs font-semibold text-charcoal">{posts[4].author}</p>
+                  <span class="text-xs text-text-light">&middot; {posts[4].readTime}</span>
+                </div>
+                <span class="text-xs text-text-light">{posts[4].date}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mental Health card -->
+        <div class="md:col-span-4 scroll-reveal article-card" data-category={posts[5].category}>
+          <div class="group h-full bg-white rounded-[1.5rem] border border-sage-pale/40 shadow-sm overflow-hidden hover:shadow-md transition-all duration-300">
+            <div class="h-20 bg-gradient-to-br from-[#F5E0D0]/40 to-cream flex items-center justify-between px-6">
+              <span class="text-xs font-semibold uppercase tracking-[0.15em] bg-earth/10 text-earth px-2.5 py-1 rounded-full">{posts[5].category}</span>
+              <svg class="w-8 h-8 text-earth/30" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </div>
+            <div class="p-5 md:p-6">
+              <h3 class="text-sm md:text-base font-bold leading-[1.2] text-charcoal mb-2 group-hover:text-sage transition-colors">{posts[5].title}</h3>
+              <p class="text-xs text-text-light leading-relaxed mb-4 line-clamp-3">{posts[5].excerpt}</p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <p class="text-xs font-semibold text-charcoal">{posts[5].author}</p>
+                  <span class="text-xs text-text-light">&middot; {posts[5].readTime}</span>
+                </div>
+                <span class="text-xs text-text-light">{posts[5].date}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3: Wide left + narrow right -->
+        <div class="md:col-span-8 scroll-reveal article-card" data-category={posts[6].category}>
+          <div class="group h-full bg-cream/60 rounded-[1.5rem] border border-sage-pale/30 overflow-hidden hover:shadow-md transition-all duration-300">
+            <div class="p-7 md:p-8">
+              <div class="flex items-center gap-2 mb-3">
+                <span class={`text-xs font-semibold uppercase tracking-[0.15em] ${colorMap[posts[6].color].pill} px-2.5 py-1 rounded-full`}>{posts[6].category}</span>
+                <span class="text-xs text-text-light">{posts[6].readTime}</span>
+              </div>
+              <h3 class="text-base md:text-lg font-black leading-[1.15] text-charcoal mb-3 group-hover:text-sage transition-colors">
+                {posts[6].title}
+              </h3>
+              <p class="text-sm text-text-light leading-relaxed mb-5">{posts[6].excerpt}</p>
+              <div class="flex items-center gap-2 text-xs">
+                <span class="font-semibold text-charcoal">{posts[6].author}</span>
+                <span class="text-text-light">&middot; {posts[6].date}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-4 scroll-reveal article-card" data-category={posts[7].category}>
+          <div class="group h-full bg-[#1a2516] rounded-[1.5rem] overflow-hidden hover:shadow-md transition-all duration-300">
+            <div class="p-6 md:p-7 flex flex-col h-full">
+              <div class="flex items-center gap-2 mb-4">
+                <span class="text-xs font-semibold uppercase tracking-[0.15em] bg-white/10 text-sage-light px-2.5 py-1 rounded-full">{posts[7].category}</span>
+              </div>
+              <h3 class="text-sm md:text-base font-bold leading-[1.2] text-white mb-3 group-hover:text-sage-light transition-colors flex-1">
+                {posts[7].title}
+              </h3>
+              <div class="flex items-center justify-between">
+                <p class="text-xs font-semibold text-white/70">{posts[7].author}</p>
+                <span class="text-xs text-white/40">{posts[7].readTime}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 4: Mirrored — narrow left + wide right -->
+        <div class="md:col-span-4 scroll-reveal article-card" data-category={posts[8].category}>
+          <div class="group h-full bg-sage-pale/30 rounded-[1.5rem] border border-sage-pale/40 overflow-hidden hover:shadow-md transition-all duration-300">
+            <div class="p-6 md:p-7 flex flex-col h-full">
+              <div class="w-10 h-10 rounded-xl bg-earth/10 flex items-center justify-center mb-4">
+                <svg class="w-5 h-5 text-earth" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+              </div>
+              <span class="text-xs font-semibold uppercase tracking-[0.15em] bg-earth/10 text-earth px-2.5 py-1 rounded-full self-start mb-3">{posts[8].category}</span>
+              <h3 class="text-sm md:text-base font-bold leading-[1.2] text-charcoal mb-2 group-hover:text-sage transition-colors flex-1">
+                {posts[8].title}
+              </h3>
+              <div class="flex items-center justify-between text-xs">
+                <span class="font-semibold text-charcoal">{posts[8].author}</span>
+                <span class="text-text-light">{posts[8].readTime}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-8 scroll-reveal">
+          <div class="h-full bg-white rounded-[1.5rem] border border-sage-pale/40 shadow-sm overflow-hidden p-7 md:p-8 flex flex-col justify-center">
+            <p class="text-xs font-medium uppercase tracking-[0.25em] text-sage mb-3">From the Blog</p>
+            <h3 class="text-lg md:text-xl font-black leading-[1.15] tracking-[-0.02em] text-charcoal mb-3">
+              Want to learn more about root-cause medicine?
+            </h3>
+            <p class="text-sm text-text-light leading-relaxed mb-5">
+              Our doctors write in-depth articles on thyroid health, hormone balance, gut healing, and the functional medicine approach. New posts every month.
+            </p>
+            <div class="flex items-center gap-3">
+              <a href="/conditions" class="inline-flex items-center gap-2 text-sm font-semibold text-sage hover:text-sage-dark transition-colors">
+                Explore conditions
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <span class="text-text-light/30">|</span>
+              <a href="/services" class="inline-flex items-center gap-2 text-sm font-semibold text-terracotta hover:text-terracotta-light transition-colors">
+                Our services
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. NEWSLETTER / SUBSCRIBE ==================== -->
+  <section class="section-padding bg-cream relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-[30rem] h-[30rem] rounded-full bg-sage/5 blur-[120px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="scroll-reveal max-w-4xl mx-auto">
+        <div class="grid md:grid-cols-5 gap-8 items-center">
+          <!-- Left -->
+          <div class="md:col-span-3">
+            <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-sage mb-4">Stay Informed</p>
+            <h2 class="text-[clamp(1.5rem,3.5vw,2.25rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal mb-3">
+              Health tips delivered to <span class="text-terracotta">your inbox.</span>
+            </h2>
+            <p class="text-sm text-text-light leading-relaxed">
+              Join our newsletter for monthly insights on thyroid health, hormones, gut healing, and practical wellness strategies from our clinical team.
+            </p>
+          </div>
+
+          <!-- Right — Subscribe card -->
+          <div class="md:col-span-2">
+            <div class="bg-white rounded-[1.5rem] p-6 border border-sage-pale/40 shadow-sm">
+              <p class="text-sm font-bold text-charcoal mb-4">Subscribe to our newsletter</p>
+              <div class="space-y-3">
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  class="w-full text-sm px-4 py-3 rounded-xl border border-sage-pale/50 bg-warm-white focus:outline-none focus:border-sage focus:ring-1 focus:ring-sage/30 transition-all placeholder:text-text-light/50"
+                />
+                <button class="magnetic-btn cta-shine w-full bg-sage hover:bg-sage-dark text-white font-semibold text-sm px-6 py-3 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md">
+                  Subscribe
+                </button>
+              </div>
+              <p class="text-[10px] text-text-light mt-3 leading-relaxed">No spam. Unsubscribe anytime. We respect your inbox.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. TOPICS WE COVER ==================== -->
+  <section class="section-padding bg-white relative overflow-hidden">
+    <div class="container-main">
+      <div class="text-center max-w-2xl mx-auto mb-10 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Topics We Cover</p>
+        <h2 class="text-[clamp(1.5rem,3.5vw,2.25rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          Deep dives into what <span class="text-sage">matters.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+        <!-- Topic cards -->
+        <a href="/conditions/digestive-health" class="scroll-reveal group bg-sage-pale/30 hover:bg-sage-pale/50 rounded-[1.25rem] p-5 border border-sage-pale/40 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
+          <div class="w-10 h-10 rounded-xl bg-sage/10 flex items-center justify-center mb-3">
+            <svg class="w-5 h-5 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <p class="text-sm font-bold text-charcoal mb-1">Gut Health</p>
+          <p class="text-xs text-text-light">SIBO, IBS, microbiome, leaky gut</p>
+        </a>
+
+        <a href="/conditions/hormonal-balance" class="scroll-reveal group bg-[#F5E0D0]/30 hover:bg-[#F5E0D0]/50 rounded-[1.25rem] p-5 border border-[#F5E0D0]/50 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5" style="transition-delay: 0.04s;">
+          <div class="w-10 h-10 rounded-xl bg-terracotta/10 flex items-center justify-center mb-3">
+            <svg class="w-5 h-5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <p class="text-sm font-bold text-charcoal mb-1">Hormones</p>
+          <p class="text-xs text-text-light">DUTCH testing, cortisol, estrogen</p>
+        </a>
+
+        <a href="/conditions" class="scroll-reveal group bg-sage-pale/20 hover:bg-sage-pale/40 rounded-[1.25rem] p-5 border border-earth/10 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5" style="transition-delay: 0.08s;">
+          <div class="w-10 h-10 rounded-xl bg-earth/10 flex items-center justify-center mb-3">
+            <svg class="w-5 h-5 text-earth" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+          </div>
+          <p class="text-sm font-bold text-charcoal mb-1">Thyroid</p>
+          <p class="text-xs text-text-light">Hashimoto's, antibodies, T3/T4</p>
+        </a>
+
+        <a href="/conditions/weight-management" class="scroll-reveal group bg-[#F5E0D0]/25 hover:bg-[#F5E0D0]/40 rounded-[1.25rem] p-5 border border-earth/10 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5" style="transition-delay: 0.12s;">
+          <div class="w-10 h-10 rounded-xl bg-earth/10 flex items-center justify-center mb-3">
+            <svg class="w-5 h-5 text-earth" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 20V10M6 20V4M18 20v-4"/></svg>
+          </div>
+          <p class="text-sm font-bold text-charcoal mb-1">Weight</p>
+          <p class="text-xs text-text-light">Insulin resistance, metabolism</p>
+        </a>
+
+        <a href="/conditions/stress-anxiety" class="scroll-reveal group bg-sage-pale/30 hover:bg-sage-pale/50 rounded-[1.25rem] p-5 border border-sage-pale/40 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5" style="transition-delay: 0.16s;">
+          <div class="w-10 h-10 rounded-xl bg-sage/10 flex items-center justify-center mb-3">
+            <svg class="w-5 h-5 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <p class="text-sm font-bold text-charcoal mb-1">Mental Health</p>
+          <p class="text-xs text-text-light">Anxiety, mood, brain fog</p>
+        </a>
+
+        <a href="/services/lab-testing" class="scroll-reveal group bg-[#F5E0D0]/30 hover:bg-[#F5E0D0]/50 rounded-[1.25rem] p-5 border border-[#F5E0D0]/50 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5" style="transition-delay: 0.2s;">
+          <div class="w-10 h-10 rounded-xl bg-terracotta/10 flex items-center justify-center mb-3">
+            <svg class="w-5 h-5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <p class="text-sm font-bold text-charcoal mb-1">Lab Testing</p>
+          <p class="text-xs text-text-light">GI-MAP, DUTCH, advanced panels</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. CTA ==================== -->
+  <section class="section-padding bg-warm-white relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-sage/5 blur-[140px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10 text-center">
+      <div class="scroll-reveal max-w-2xl mx-auto">
+        <h2 class="text-[clamp(1.5rem,3.5vw,2.25rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal mb-4">
+          Ready to find your <span class="text-sage">root cause?</span>
+        </h2>
+        <p class="text-text-light text-sm md:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+          Reading is great. Results are better. Book a consultation and let our team build you a personalized plan.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a href="https://loveyourhealthnaturalmedicine.com" target="_blank" rel="noopener noreferrer" class="magnetic-btn cta-shine inline-flex items-center justify-center gap-2 bg-sage hover:bg-sage-dark text-white font-semibold text-sm px-7 py-3.5 rounded-full transition-all duration-300 shadow-lg shadow-sage/20 hover:shadow-xl hover:shadow-sage/30 w-full sm:w-auto">
+            Book a Consultation
+          </a>
+          <a href="tel:4809140521" class="magnetic-btn inline-flex items-center justify-center gap-2 bg-white hover:bg-sage-pale/30 text-charcoal font-semibold text-sm px-7 py-3.5 rounded-full border border-sage-pale/50 transition-all duration-300 w-full sm:w-auto">
+            <svg class="w-4 h-4 text-sage" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Call (480) 914-0521
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* ===== HERO STAGGER ===== */
+  .hero-el {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: heroFade 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .hero-el:nth-child(1) { animation-delay: 0.1s; }
+  .hero-el:nth-child(2) { animation-delay: 0.2s; }
+  .hero-el:nth-child(3) { animation-delay: 0.3s; }
+  .hero-el:nth-child(4) { animation-delay: 0.4s; }
+  @keyframes heroFade {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ===== SCROLL REVEAL ===== */
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== FILTER PILLS ===== */
+  .filter-pill.active {
+    background-color: #2D2D2D;
+    color: white;
+    border-color: #2D2D2D;
+  }
+
+  /* ===== LINE CLAMP ===== */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* ===== CTA SHINE ===== */
+  .cta-shine {
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-shine::after {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%; width: 50%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+    transition: left 0.5s ease;
+  }
+  .cta-shine:hover::after {
+    left: 100%;
+  }
+
+  /* ===== HIDDEN ARTICLE ===== */
+  .article-card.hidden-card {
+    display: none;
+  }
+
+  /* ===== REDUCED MOTION ===== */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-el {
+      opacity: 1;
+      transform: none;
+      animation: none;
+    }
+    .scroll-reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    .cta-shine::after {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  // ===== SCROLL REVEAL =====
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
+  );
+  document.querySelectorAll('.scroll-reveal').forEach((el) => revealObserver.observe(el));
+
+  // ===== CATEGORY FILTER =====
+  const pills = document.querySelectorAll('.filter-pill');
+  const cards = document.querySelectorAll('.article-card');
+
+  pills.forEach((pill) => {
+    pill.addEventListener('click', () => {
+      const category = pill.getAttribute('data-category');
+
+      // Update active pill
+      pills.forEach((p) => p.classList.remove('active'));
+      pill.classList.add('active');
+
+      // Filter cards
+      cards.forEach((card) => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.classList.remove('hidden-card');
+        } else {
+          card.classList.add('hidden-card');
+        }
+      });
+    });
+  });
+
+  // ===== MAGNETIC BUTTONS =====
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.magnetic-btn').forEach((btn) => {
+      btn.addEventListener('mousemove', (e: MouseEvent) => {
+        const rect = (btn as HTMLElement).getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        (btn as HTMLElement).style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+      });
+      btn.addEventListener('mouseleave', () => {
+        (btn as HTMLElement).style.transform = '';
+      });
+    });
+  }
+</script>

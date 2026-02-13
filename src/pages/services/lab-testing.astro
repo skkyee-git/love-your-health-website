@@ -1,0 +1,855 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Lab & Testing · Love Your Health Natural Medicine" description="In-office blood draws and specialty lab testing in Tempe, AZ. SIBO breath tests, mycotoxin panels, food sensitivity testing, hormone panels, and more. The labs your doctor never ordered.">
+
+  <!-- ==================== 1. HERO ==================== -->
+  <section class="relative overflow-hidden bg-cream">
+    <div class="relative z-10 pt-[0.75rem] md:pt-[1rem] pb-4">
+      <div class="container-main">
+
+        <nav class="hero-el flex items-center gap-2 text-xs text-text-light mb-4 pt-2" aria-label="Breadcrumb">
+          <a href="/services" class="hover:text-sage transition-colors">Services</a>
+          <span class="text-sage/40">/</span>
+          <span class="text-charcoal font-medium">Lab &amp; Testing</span>
+        </nav>
+
+        <div class="bg-[#F5E0D0] rounded-[1.5rem] md:rounded-[2.5rem] px-5 py-8 md:px-8 md:py-12 relative overflow-hidden">
+          <div class="absolute inset-0 opacity-[0.04] pointer-events-none" style="background-image: radial-gradient(circle, #C47D5A 1px, transparent 1px); background-size: 28px 28px;" aria-hidden="true"></div>
+
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none" aria-hidden="true">
+            <div class="signal-ring absolute -top-[9rem] -left-[9rem] w-[18rem] h-[18rem] rounded-full border-2 border-sage/15"></div>
+            <div class="signal-ring absolute -top-[14rem] -left-[14rem] w-[28rem] h-[28rem] rounded-full border-[1.5px] border-sage/10" style="animation-delay: 0.6s;"></div>
+            <div class="signal-ring absolute -top-[20rem] -left-[20rem] w-[40rem] h-[40rem] rounded-full border border-sage/6" style="animation-delay: 1.2s;"></div>
+          </div>
+
+          <div class="relative z-10">
+            <div class="hero-el flex flex-wrap justify-center gap-2.5 sm:gap-3 mb-8">
+              <div class="bg-white/70 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 shadow-sm">
+                <svg class="w-3.5 h-3.5 text-sage shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                <span class="text-xs sm:text-sm font-bold text-charcoal">In-Office</span>
+                <span class="text-xs text-text-light hidden sm:inline">Tempe, AZ</span>
+              </div>
+              <div class="bg-white/70 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 shadow-sm">
+                <svg class="w-3.5 h-3.5 text-terracotta shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M9 3h6m-5 0v6.5L4.5 18a1.5 1.5 0 001.28 2.28h12.44A1.5 1.5 0 0019.5 18L14 9.5V3"/><path d="M7.5 15h9" stroke-linecap="round"/>
+                </svg>
+                <span class="text-xs sm:text-sm font-bold text-charcoal">Specialty Labs</span>
+              </div>
+              <div class="bg-white/70 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 shadow-sm">
+                <svg class="w-3.5 h-3.5 text-sage shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+                <span class="text-xs sm:text-sm font-bold text-charcoal">Same-Day</span>
+                <span class="text-xs text-text-light hidden sm:inline">Blood Draws</span>
+              </div>
+            </div>
+
+            <div class="text-center max-w-3xl mx-auto">
+              <h1 class="hero-el text-[clamp(2.4rem,6.5vw,4.5rem)] font-black leading-[1.04] tracking-[-0.03em] text-charcoal mb-5">
+                The labs your doctor <span class="text-sage">never ordered.</span>
+              </h1>
+              <p class="hero-el text-base md:text-lg text-text-light leading-relaxed max-w-xl mx-auto mb-8">
+                Standard panels miss the full picture. We run the specialty diagnostics that actually find what's wrong.
+              </p>
+
+              <div class="hero-el flex flex-row flex-wrap justify-center gap-3 mb-8">
+                <a href="/book" class="magnetic-btn cta-shine group relative inline-flex items-center justify-center gap-2 bg-sage hover:bg-sage-dark text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-sage/25 overflow-hidden">
+                  <span class="relative z-10 flex items-center gap-2">
+                    Book Lab Work
+                    <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </span>
+                </a>
+                <a href="/services" class="magnetic-btn relative inline-flex items-center justify-center gap-2 bg-white/70 hover:bg-white text-charcoal font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-md overflow-hidden">
+                  View All Services
+                </a>
+              </div>
+
+              <div class="hero-el flex flex-wrap justify-center items-center gap-x-4 gap-y-1.5 text-xs text-text-light">
+                <span class="flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-sage" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  In-office blood draws
+                </span>
+                <span class="w-px h-3 bg-sage/25"></span>
+                <span>Results reviewed with your doctor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 2. IN-OFFICE DRAWS ==================== -->
+  <section class="section-padding bg-warm-white relative overflow-hidden">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[60rem] h-[60rem] rounded-full bg-sage-pale/20 blur-[140px] -translate-y-1/2 pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-14 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">In-Office Draws</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          Blood work. Done <span class="text-sage">right here.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+        <!-- Left: Narrative -->
+        <div class="scroll-reveal space-y-5">
+          <div>
+            <h3 class="text-lg font-bold text-charcoal mb-2">No extra trips</h3>
+            <p class="text-sm text-text-light leading-relaxed">We draw your blood right in our Tempe office. No driving to a separate lab, no waiting in line, no lost orders. One visit, everything handled.</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-charcoal mb-2">The right tests, first time</h3>
+            <p class="text-sm text-text-light leading-relaxed">Most conventional doctors run the same basic panel on everyone. We order the tests that actually matter for your specific symptoms &mdash; specialty panels, functional markers, and comprehensive diagnostics that reveal what's really going on.</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-charcoal mb-2">Results reviewed with you</h3>
+            <p class="text-sm text-text-light leading-relaxed">You won't get a confusing report in a patient portal with no context. Your doctor sits down with you, walks through every result, and explains what it means for your care plan.</p>
+          </div>
+        </div>
+
+        <!-- Right: Comparison card -->
+        <div class="scroll-reveal" style="transition-delay: 0.12s;">
+          <div class="bg-white rounded-[2rem] p-6 sm:p-8 shadow-sm border border-sage-pale/40">
+            <p class="text-xs font-bold uppercase tracking-widest text-sage mb-6">What We Test vs Standard</p>
+
+            <div class="compare-grid">
+              <div class="compare-grid-header"></div>
+              <div class="compare-grid-header text-center">
+                <p class="text-[10px] font-bold uppercase tracking-wider text-text-light">Standard</p>
+              </div>
+              <div class="compare-grid-header text-center">
+                <p class="text-[10px] font-bold uppercase tracking-wider text-sage">Us</p>
+              </div>
+
+              <div class="compare-row"><span class="text-sm text-charcoal font-medium">Basic CBC/CMP</span></div>
+              <div class="compare-row text-center"><div class="compare-check"><svg class="w-3.5 h-3.5 text-sage" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div></div>
+              <div class="compare-row text-center"><div class="compare-check"><svg class="w-3.5 h-3.5 text-sage" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div></div>
+
+              <div class="compare-row"><span class="text-sm text-charcoal font-medium">Full thyroid panel</span></div>
+              <div class="compare-row text-center"><span class="text-text-light/30 text-sm">&mdash;</span></div>
+              <div class="compare-row text-center"><div class="compare-check"><svg class="w-3.5 h-3.5 text-sage" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div></div>
+
+              <div class="compare-row"><span class="text-sm text-charcoal font-medium">Food sensitivity</span></div>
+              <div class="compare-row text-center"><span class="text-text-light/30 text-sm">&mdash;</span></div>
+              <div class="compare-row text-center"><div class="compare-check"><svg class="w-3.5 h-3.5 text-sage" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div></div>
+
+              <div class="compare-row"><span class="text-sm text-charcoal font-medium">SIBO breath test</span></div>
+              <div class="compare-row text-center"><span class="text-text-light/30 text-sm">&mdash;</span></div>
+              <div class="compare-row text-center"><div class="compare-check"><svg class="w-3.5 h-3.5 text-sage" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div></div>
+
+              <div class="compare-row"><span class="text-sm text-charcoal font-medium">Mycotoxin panels</span></div>
+              <div class="compare-row text-center"><span class="text-text-light/30 text-sm">&mdash;</span></div>
+              <div class="compare-row text-center"><div class="compare-check"><svg class="w-3.5 h-3.5 text-sage" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div></div>
+
+              <div class="compare-row compare-row-last"><span class="text-sm text-charcoal font-medium">Doctor-reviewed results</span></div>
+              <div class="compare-row compare-row-last text-center"><span class="text-text-light/30 text-sm">&mdash;</span></div>
+              <div class="compare-row compare-row-last text-center"><div class="compare-check"><svg class="w-3.5 h-3.5 text-sage" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3. SPECIALTY DIAGNOSTICS BENTO ==================== -->
+  <section class="section-padding bg-[#F5E0D0] relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-white/15 blur-[120px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-14 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Specialty Testing</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          Beyond the <span class="text-sage">standard panel.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-4 md:grid-cols-12 auto-rows-[minmax(140px,auto)] gap-4">
+        <!-- SIBO Breath Tests (tall sage) -->
+        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-5 md:row-span-2 bg-sage rounded-[1.5rem] p-8 relative overflow-hidden group hover:shadow-xl transition-all duration-300">
+          <div class="absolute -top-10 -right-10 w-40 h-40 rounded-full border border-white/10" aria-hidden="true"></div>
+          <div class="absolute -bottom-6 -left-6 w-28 h-28 rounded-full border border-white/10" aria-hidden="true"></div>
+          <div class="relative z-10 h-full flex flex-col justify-between">
+            <div>
+              <p class="text-white/70 text-sm font-medium uppercase tracking-widest mb-3">Featured Test</p>
+              <p class="text-2xl font-black text-white leading-snug mb-3">SIBO Breath Tests</p>
+              <p class="text-sm text-white/80 leading-relaxed">The gold standard for diagnosing small intestinal bacterial overgrowth. Non-invasive, done at home, and interpreted by a doctor who actually understands SIBO.</p>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-6">
+              <span class="bg-white/15 text-white text-xs font-medium px-3 py-1 rounded-full">Non-Invasive</span>
+              <span class="bg-white/15 text-white text-xs font-medium px-3 py-1 rounded-full">At-Home Kit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stool Analysis -->
+        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-7 bg-white rounded-[1.5rem] p-8 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.06s;">
+          <p class="text-xs font-bold uppercase tracking-widest text-terracotta mb-2">Gut Health</p>
+          <p class="font-bold text-charcoal text-xl leading-snug mb-2">Comprehensive Stool Analysis</p>
+          <p class="text-sm text-text-light leading-relaxed">Maps your gut microbiome, detects parasites, yeast, inflammation markers, and digestive function. The most thorough gut test available.</p>
+        </div>
+
+        <!-- Food Sensitivity -->
+        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-4 bg-white rounded-[1.5rem] p-8 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.12s;">
+          <p class="text-xs font-bold uppercase tracking-widest text-sage mb-2">Immune Response</p>
+          <p class="font-bold text-charcoal text-lg leading-snug mb-2">Food Sensitivity</p>
+          <p class="text-sm text-text-light leading-relaxed">IgG and IgA panels that identify hidden food triggers driving inflammation, bloating, and fatigue.</p>
+        </div>
+
+        <!-- Organic Acids (charcoal) -->
+        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-3 bg-charcoal rounded-[1.5rem] p-8 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.18s;">
+          <div class="relative z-10 h-full flex flex-col justify-between">
+            <p class="text-white/70 text-xs font-bold uppercase tracking-widest mb-2">Metabolic</p>
+            <div>
+              <p class="font-bold text-white text-lg mb-2">Organic Acids</p>
+              <p class="text-sm text-white/70 leading-relaxed">Reveals nutrient deficiencies, mitochondrial dysfunction, and yeast overgrowth.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mycotoxin Panels (sage-pale) -->
+        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-7 bg-sage-pale rounded-[1.5rem] p-8 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.24s;">
+          <p class="text-xs font-bold uppercase tracking-widest text-sage mb-2">Environmental</p>
+          <p class="font-bold text-charcoal text-xl leading-snug mb-2">Mycotoxin Panels</p>
+          <p class="text-sm text-text leading-relaxed">Tests for mold exposure that most doctors miss entirely. Critical for patients with unexplained fatigue, brain fog, and chronic illness.</p>
+        </div>
+
+        <!-- Hormone Panels -->
+        <div class="scroll-reveal bento-tilt col-span-4 md:col-span-5 bg-white rounded-[1.5rem] p-8 relative overflow-hidden group hover:shadow-lg transition-all duration-300" style="transition-delay: 0.3s;">
+          <p class="text-xs font-bold uppercase tracking-widest text-terracotta mb-2">Endocrine</p>
+          <p class="font-bold text-charcoal text-xl leading-snug mb-2">Comprehensive Hormone Panels</p>
+          <p class="text-sm text-text-light leading-relaxed">Full thyroid (not just TSH), sex hormones, cortisol rhythm, DHEA &mdash; the complete picture your regular doctor never runs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. TEST MENU ==================== -->
+  <section class="section-padding bg-cream relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-[#F5E0D0]/20 blur-[140px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-14 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">What We Test</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          Our complete <span class="text-sage">testing menu.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Gut & Digestion -->
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300">
+          <div class="w-12 h-12 rounded-2xl bg-sage/10 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 4a3 3 0 016 0v2a3 3 0 01-3 3H9"/><path d="M9 9a3 3 0 000 6h3a3 3 0 010 6H9"/><circle cx="6" cy="12" r="1" fill="currentColor"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-charcoal mb-3">Gut &amp; Digestion</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2 text-sm text-text-light">
+              <svg class="w-4 h-4 text-sage shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              SIBO breath testing
+            </li>
+            <li class="flex items-center gap-2 text-sm text-text-light">
+              <svg class="w-4 h-4 text-sage shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              Comprehensive stool analysis
+            </li>
+            <li class="flex items-center gap-2 text-sm text-text-light">
+              <svg class="w-4 h-4 text-sage shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              Food sensitivity panels (IgG/IgA)
+            </li>
+            <li class="flex items-center gap-2 text-sm text-text-light">
+              <svg class="w-4 h-4 text-sage shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              Intestinal permeability (leaky gut)
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hormones & Endocrine -->
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300" style="transition-delay: 0.06s;">
+          <div class="w-12 h-12 rounded-2xl bg-terracotta/10 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-charcoal mb-3">Hormones &amp; Endocrine</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2 text-sm text-text-light">
+              <svg class="w-4 h-4 text-terracotta shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              Full thyroid panel (TSH, Free T3/T4, antibodies)
+            </li>
+            <li class="flex items-center gap-2 text-sm text-text-light">
+              <svg class="w-4 h-4 text-terracotta shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              Sex hormones (estrogen, progesterone, testosterone)
+            </li>
+            <li class="flex items-center gap-2 text-sm text-text-light">
+              <svg class="w-4 h-4 text-terracotta shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              Cortisol rhythm testing (DUTCH)
+            </li>
+            <li class="flex items-center gap-2 text-sm text-text-light">
+              <svg class="w-4 h-4 text-terracotta shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              Insulin &amp; metabolic markers
+            </li>
+          </ul>
+        </div>
+
+        <!-- Environmental & Toxins -->
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300" style="transition-delay: 0.12s;">
+          <div class="w-12 h-12 rounded-2xl bg-sage/10 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-sage" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-charcoal mb-3">Environmental &amp; Toxins</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2 text-sm text-text-light">
+              <svg class="w-4 h-4 text-sage shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              Mycotoxin panels (mold exposure)
+            </li>
+            <li class="flex items-center gap-2 text-sm text-text-light">
+              <svg class="w-4 h-4 text-sage shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              Organic acids test (OAT)
+            </li>
+            <li class="flex items-center gap-2 text-sm text-text-light">
+              <svg class="w-4 h-4 text-sage shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              Heavy metals testing
+            </li>
+            <li class="flex items-center gap-2 text-sm text-text-light">
+              <svg class="w-4 h-4 text-sage shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              Environmental toxin exposure
+            </li>
+          </ul>
+        </div>
+
+        <!-- Autoimmune & Inflammation -->
+        <div class="scroll-reveal bento-tilt bg-white rounded-[1.5rem] p-7 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300" style="transition-delay: 0.18s;">
+          <div class="w-12 h-12 rounded-2xl bg-terracotta/10 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-charcoal mb-3">Autoimmune &amp; Inflammation</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2 text-sm text-text-light">
+              <svg class="w-4 h-4 text-terracotta shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              ANA, inflammatory markers (CRP, ESR)
+            </li>
+            <li class="flex items-center gap-2 text-sm text-text-light">
+              <svg class="w-4 h-4 text-terracotta shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              Thyroid antibodies (TPO, TG)
+            </li>
+            <li class="flex items-center gap-2 text-sm text-text-light">
+              <svg class="w-4 h-4 text-terracotta shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              Celiac &amp; gluten sensitivity
+            </li>
+            <li class="flex items-center gap-2 text-sm text-text-light">
+              <svg class="w-4 h-4 text-terracotta shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/></svg>
+              Comprehensive metabolic panels
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. PROCESS ==================== -->
+  <section class="section-padding bg-warm-white relative overflow-hidden">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[60rem] h-[60rem] rounded-full bg-sage-pale/20 blur-[140px] -translate-y-1/2 pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-14 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">The Process</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal">
+          Lab testing, <span class="text-sage">simplified.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5">
+        <!-- Step 01 -->
+        <div class="scroll-reveal hiw-card bg-white rounded-[1.5rem] p-7 lg:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative">
+          <div class="hiw-icon-wrap mb-5">
+            <div class="w-14 h-14 rounded-2xl bg-sage/10 flex items-center justify-center">
+              <svg class="w-7 h-7 text-sage hiw-icon icon-float" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+              </svg>
+            </div>
+          </div>
+          <p class="text-xs font-bold text-sage uppercase tracking-widest mb-2">01</p>
+          <h3 class="text-lg font-black text-charcoal mb-2">Consult</h3>
+          <p class="text-sm text-text-light leading-relaxed">Meet with your doctor to discuss symptoms and determine which tests will give us the most useful information.</p>
+        </div>
+
+        <!-- Step 02 -->
+        <div class="scroll-reveal hiw-card bg-white rounded-[1.5rem] p-7 lg:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative" style="transition-delay: 0.08s;">
+          <div class="hiw-icon-wrap mb-5">
+            <div class="w-14 h-14 rounded-2xl bg-terracotta/10 flex items-center justify-center">
+              <svg class="w-7 h-7 text-terracotta hiw-icon icon-heartbeat" style="animation-delay: 0.3s;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M9 3h6m-5 0v6.5L4.5 18a1.5 1.5 0 001.28 2.28h12.44A1.5 1.5 0 0019.5 18L14 9.5V3"/><path d="M7.5 15h9" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <p class="text-xs font-bold text-terracotta uppercase tracking-widest mb-2">02</p>
+          <h3 class="text-lg font-black text-charcoal mb-2">Draw</h3>
+          <p class="text-sm text-text-light leading-relaxed">Blood draws done right in our Tempe office. Specialty kits (SIBO, stool) provided to complete at home.</p>
+        </div>
+
+        <!-- Step 03 (FEATURED) -->
+        <div class="scroll-reveal hiw-card hiw-featured bg-white rounded-[1.5rem] shadow-sm hover:shadow-lg transition-all duration-300 relative" style="transition-delay: 0.16s;">
+          <div class="bg-gradient-to-br from-sage to-sage-dark rounded-[1.5rem] p-7 lg:p-8 h-full">
+            <div class="hiw-icon-wrap mb-5">
+              <div class="w-14 h-14 rounded-2xl bg-white/15 flex items-center justify-center">
+                <svg class="w-7 h-7 text-white hiw-icon icon-search" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                  <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+              </div>
+            </div>
+            <p class="text-xs font-bold text-white/70 uppercase tracking-widest mb-2">03</p>
+            <h3 class="text-lg font-black text-white mb-2">Results</h3>
+            <p class="text-sm text-white/80 leading-relaxed">Your doctor reviews every result in detail with you &mdash; no confusing portal reports. Full context and actionable insights.</p>
+          </div>
+        </div>
+
+        <!-- Step 04 -->
+        <div class="scroll-reveal hiw-card bg-white rounded-[1.5rem] p-7 lg:p-8 border border-sage-pale/40 shadow-sm hover:shadow-lg transition-all duration-300 relative" style="transition-delay: 0.24s;">
+          <div class="hiw-icon-wrap mb-5">
+            <div class="w-14 h-14 rounded-2xl bg-sage/10 flex items-center justify-center">
+              <svg class="w-7 h-7 text-sage hiw-icon icon-zap" style="animation-delay: 0.6s;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+          </div>
+          <p class="text-xs font-bold text-sage uppercase tracking-widest mb-2">04</p>
+          <h3 class="text-lg font-black text-charcoal mb-2">Action Plan</h3>
+          <p class="text-sm text-text-light leading-relaxed">Lab results turn into a personalized treatment plan. Targeted protocols, dietary changes, and follow-up testing as needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. DARK SECTION ==================== -->
+  <section class="section-padding bg-[#1a2516] relative overflow-hidden">
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-14 scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-sage-light mb-4">Why Our Testing Is Different</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-white">
+          We don't just run labs. We <span class="text-sage-light">read them.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <!-- What Others Do -->
+        <div class="scroll-reveal bg-white/5 border border-white/10 rounded-[1.5rem] p-8 hover:bg-white/10 transition-all duration-300">
+          <p class="text-sm font-bold text-white/50 uppercase tracking-widest mb-5">What Others Do</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-white/30 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+              <span class="text-sm text-white/60">Same basic panel for everyone</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-white/30 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+              <span class="text-sm text-white/60">Results sent via portal with no context</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-white/30 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+              <span class="text-sm text-white/60">"Normal" ranges hide early dysfunction</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-white/30 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+              <span class="text-sm text-white/60">No action plan from results</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- What We Do -->
+        <div class="scroll-reveal bg-white/5 border border-white/10 rounded-[1.5rem] p-8 hover:bg-white/10 transition-all duration-300" style="transition-delay: 0.08s;">
+          <p class="text-sm font-bold text-sage-light uppercase tracking-widest mb-5">What We Do</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sage-light shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-sm text-white/80">Tests selected for your specific symptoms</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sage-light shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-sm text-white/80">Doctor reviews every result with you</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sage-light shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-sm text-white/80">Optimal ranges, not just "normal"</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-sage-light shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-sm text-white/80">Results become your treatment plan</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7. CTA ==================== -->
+  <section class="section-padding bg-cream relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] rounded-full bg-[#F5E0D0]/20 blur-[140px] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="container-main relative z-10">
+      <div class="text-center max-w-2xl mx-auto scroll-reveal">
+        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-terracotta mb-4">Let's get started</p>
+        <h2 class="text-[clamp(1.8rem,4.5vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-charcoal mb-5">
+          Ready for labs that actually <span class="text-sage">find answers?</span>
+        </h2>
+        <p class="text-base md:text-lg text-text-light leading-relaxed mb-8">
+          Stop guessing and start testing. Our specialty diagnostics find what standard panels miss &mdash; so your treatment plan is built on real data, not assumptions.
+        </p>
+        <div class="flex flex-row flex-wrap justify-center gap-4">
+          <a href="/book" class="magnetic-btn cta-shine group relative inline-flex items-center justify-center gap-2 bg-sage hover:bg-sage-dark text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-sage/25 overflow-hidden">
+            <span class="relative z-10 flex items-center gap-2">
+              Book Lab Work
+              <svg class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+          <a href="tel:+14809140521" class="magnetic-btn relative inline-flex items-center justify-center gap-2 bg-white hover:bg-sage-pale text-charcoal font-bold text-sm px-8 py-4 rounded-full transition-all duration-300 hover:shadow-md border border-sage-pale/60 overflow-hidden">
+            Call (480) 914-0521
+          </a>
+        </div>
+        <p class="text-xs text-text-light/50 mt-5">In-office blood draws in Tempe &middot; Specialty kits shipped to your home</p>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  .hero-el {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: heroElIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  .hero-el:nth-child(1) { animation-delay: 0.1s; }
+  .hero-el:nth-child(2) { animation-delay: 0.2s; }
+  .hero-el:nth-child(3) { animation-delay: 0.3s; }
+  .hero-el:nth-child(4) { animation-delay: 0.4s; }
+  .hero-el:nth-child(5) { animation-delay: 0.5s; }
+  .hero-el:nth-child(6) { animation-delay: 0.6s; }
+
+  @keyframes heroElIn {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .signal-ring {
+    animation: signalPulse 3.5s ease-out infinite;
+  }
+  @keyframes signalPulse {
+    0% { transform: scale(0.85); opacity: 1; }
+    70% { transform: scale(1.1); opacity: 0.3; }
+    100% { transform: scale(1.2); opacity: 0; }
+  }
+
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .cta-shine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+    transition: none;
+    pointer-events: none;
+  }
+  .cta-shine:hover::before {
+    animation: shineSweep 0.6s ease forwards;
+  }
+  @keyframes shineSweep {
+    to { left: 125%; }
+  }
+
+  .magnetic-btn {
+    transition: transform 0.3s cubic-bezier(0.03, 0.98, 0.52, 0.99), background-color 0.3s, box-shadow 0.3s;
+  }
+
+  .bento-tilt {
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform 0.35s cubic-bezier(0.03, 0.98, 0.52, 0.99), box-shadow 0.35s ease;
+  }
+  .bento-tilt .bento-glow {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+    border-radius: inherit;
+    z-index: 1;
+  }
+  .bento-tilt:hover .bento-glow {
+    opacity: 1;
+  }
+
+  .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 4.5rem 4.5rem;
+    align-items: center;
+    gap: 0;
+  }
+  .compare-grid-header {
+    padding: 0 0.25rem 0.75rem;
+  }
+  .compare-row {
+    padding: 0.85rem 0.25rem;
+    border-bottom: 1px solid rgba(136, 181, 156, 0.2);
+    opacity: 0;
+    transform: translateX(-15px);
+    transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .compare-row-last {
+    border-bottom: none;
+  }
+  .compare-row.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .compare-row:nth-of-type(2) { transition-delay: 0.05s; }
+  .compare-row:nth-of-type(3) { transition-delay: 0.1s; }
+  .compare-row:nth-of-type(4) { transition-delay: 0.15s; }
+  .compare-row:nth-of-type(5) { transition-delay: 0.2s; }
+  .compare-row:nth-of-type(6) { transition-delay: 0.25s; }
+  .compare-row:nth-of-type(7) { transition-delay: 0.3s; }
+  .compare-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background: rgba(91, 140, 111, 0.1);
+    margin: 0 auto;
+  }
+
+  /* ===== HIW CARD ANIMATIONS ===== */
+  .hiw-icon-wrap {
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .hiw-card:hover .hiw-icon-wrap {
+    transform: scale(1.12);
+  }
+  .hiw-icon {
+    opacity: 0;
+    transform: scale(0.4) rotate(-15deg);
+    transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .hiw-card.visible .hiw-icon {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+  .hiw-card.visible:nth-child(1) .hiw-icon { transition-delay: 0.35s; }
+  .hiw-card.visible:nth-child(2) .hiw-icon { transition-delay: 0.5s; }
+  .hiw-card.visible:nth-child(3) .hiw-icon { transition-delay: 0.65s; }
+  .hiw-card.visible:nth-child(4) .hiw-icon { transition-delay: 0.8s; }
+
+  @keyframes hiwFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+  }
+  .hiw-card.visible .hiw-icon-wrap {
+    animation: hiwFloat 3s ease-in-out infinite;
+  }
+  .hiw-card.visible:nth-child(1) .hiw-icon-wrap { animation-delay: 0s; }
+  .hiw-card.visible:nth-child(2) .hiw-icon-wrap { animation-delay: 0.75s; }
+  .hiw-card.visible:nth-child(3) .hiw-icon-wrap { animation-delay: 0.37s; }
+  .hiw-card.visible:nth-child(4) .hiw-icon-wrap { animation-delay: 1.12s; }
+
+  @keyframes hiwGlow {
+    0%, 100% { box-shadow: 0 0 40px rgba(91,140,111,0.15), 0 0 0 1px rgba(136,181,156,0.2); }
+    50% { box-shadow: 0 0 60px rgba(91,140,111,0.28), 0 0 0 1px rgba(136,181,156,0.35); }
+  }
+  .hiw-featured.visible > div {
+    animation: hiwGlow 3s ease-in-out infinite;
+  }
+
+  .icon-float {
+    animation: iconFloat 3s ease-in-out infinite;
+  }
+  @keyframes iconFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+  }
+
+  .icon-heartbeat {
+    animation: iconHeartbeat 2.4s ease-in-out infinite;
+  }
+  @keyframes iconHeartbeat {
+    0%, 100% { transform: scale(1); }
+    14% { transform: scale(1.18); }
+    28% { transform: scale(1); }
+    42% { transform: scale(1.12); }
+    56% { transform: scale(1); }
+  }
+
+  .icon-search {
+    animation: iconSearch 3s ease-in-out infinite;
+  }
+  @keyframes iconSearch {
+    0%, 100% { transform: translate(0, 0) rotate(0); }
+    20% { transform: translate(3px, -2px) rotate(5deg); }
+    40% { transform: translate(-3px, 1px) rotate(-5deg); }
+    60% { transform: translate(2px, -1px) rotate(3deg); }
+    80% { transform: translate(-1px, 0) rotate(0); }
+  }
+
+  .icon-zap {
+    animation: iconZap 2.8s ease-in-out infinite;
+  }
+  @keyframes iconZap {
+    0%, 100% { transform: translateY(0); opacity: 1; }
+    15% { transform: translateY(-4px); opacity: 0.6; }
+    25% { transform: translateY(0); opacity: 1; }
+    35% { transform: translateY(-2px); opacity: 0.7; }
+    45% { transform: translateY(0); opacity: 1; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-el {
+      opacity: 1;
+      transform: none;
+      animation: none;
+    }
+    .scroll-reveal {
+      opacity: 1;
+      transform: none;
+    }
+    .compare-row {
+      opacity: 1;
+      transform: none;
+    }
+    .cta-shine::before {
+      display: none;
+    }
+    .bento-tilt {
+      transform: none !important;
+    }
+    .signal-ring {
+      animation: none;
+    }
+    .icon-float,
+    .icon-heartbeat,
+    .icon-search,
+    .icon-zap {
+      animation: none;
+    }
+    .hiw-icon {
+      opacity: 1;
+      transform: none;
+    }
+    .hiw-card.visible .hiw-icon-wrap {
+      animation: none;
+    }
+    .hiw-featured.visible > div {
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ===== SCROLL REVEAL =====
+  const revealElements = document.querySelectorAll('.scroll-reveal');
+  if (revealElements.length) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    revealElements.forEach((el) => {
+      if (prefersReduced) {
+        el.classList.add('visible');
+      } else {
+        observer.observe(el);
+      }
+    });
+  }
+
+  // ===== HIW CARD REVEAL =====
+  const hiwCards = document.querySelectorAll('.hiw-card');
+  if (hiwCards.length) {
+    const hiwObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          hiwObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    hiwCards.forEach((el) => {
+      if (prefersReduced) {
+        el.classList.add('visible');
+      } else {
+        hiwObserver.observe(el);
+      }
+    });
+  }
+
+  // ===== COMPARE ROW STAGGER =====
+  const compareRows = document.querySelectorAll('.compare-row');
+  if (compareRows.length) {
+    const compareObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          compareRows.forEach((row) => row.classList.add('visible'));
+          compareObserver.disconnect();
+        }
+      });
+    }, { threshold: 0.1 });
+    compareRows.forEach((el) => {
+      if (prefersReduced) {
+        el.classList.add('visible');
+      } else {
+        compareObserver.observe(el);
+      }
+    });
+  }
+
+  // ===== BENTO CARD TILT + GLOW =====
+  document.querySelectorAll('.bento-tilt').forEach((card) => {
+    if (window.innerWidth < 1024 || prefersReduced) return;
+    const glow = document.createElement('div');
+    glow.classList.add('bento-glow');
+    card.appendChild(glow);
+    const maxTilt = 8;
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width;
+      const y = (e.clientY - rect.top) / rect.height;
+      const rotateY = (x - 0.5) * maxTilt * 2;
+      const rotateX = (0.5 - y) * maxTilt * 2;
+      card.style.transform = `perspective(600px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+      glow.style.background = `radial-gradient(circle at ${x * 100}% ${y * 100}%, rgba(255,255,255,0.15) 0%, transparent 60%)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(600px) rotateX(0) rotateY(0) scale(1)';
+    });
+  });
+
+  // ===== MAGNETIC CTA BUTTONS =====
+  document.querySelectorAll('.magnetic-btn').forEach((btn) => {
+    if (window.innerWidth < 1024) return;
+    const strength = 0.3;
+    btn.addEventListener('mousemove', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      btn.style.transform = `translate(${x * strength}px, ${y * strength}px)`;
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = 'translate(0, 0)';
+    });
+  });
+</script>

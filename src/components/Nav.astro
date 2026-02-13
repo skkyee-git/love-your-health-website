@@ -1,0 +1,1346 @@
+---
+// Simple nav links (no mega menu)
+const simpleLinks = [
+  { label: 'About', href: '/about' },
+  { label: 'Virtual Care', href: '/virtual-care', highlight: true },
+  { label: 'New Patients', href: '/new-patients' },
+  { label: 'Pricing', href: '/pricing' },
+];
+---
+
+<header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+  <!-- Main nav -->
+  <nav aria-label="Main navigation" class="nav-bar bg-cream/85 backdrop-blur-xl border-b border-sage-pale/50 transition-all duration-300">
+    <div class="container-main">
+      <div class="flex items-center justify-between h-[72px] lg:h-[80px]">
+
+        <!-- Logo (actual brand logo) -->
+        <a href="/" class="shrink-0 group" aria-label="Love Your Health Natural Medicine — Home">
+          <img
+            src="/images/logo.webp"
+            alt="Love Your Health Natural Medicine"
+            class="h-14 lg:h-16 w-auto transition-transform duration-300 group-hover:scale-[1.02]"
+          />
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden xl:flex items-center gap-0.5">
+          <!-- About (simple link) -->
+          <a href="/about" data-petal class="px-3.5 py-2 text-[13px] font-semibold text-text hover:text-sage rounded-lg hover:bg-sage-pale/40 transition-colors tracking-wide uppercase">
+            About
+          </a>
+
+          <!-- DOCTORS Mega Menu Trigger -->
+          <div class="relative" data-mega="doctors">
+            <button
+              class="mega-trigger flex items-center gap-1 px-3.5 py-2 text-[13px] font-semibold text-text hover:text-sage rounded-lg hover:bg-sage-pale/40 transition-colors tracking-wide uppercase"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              Doctors
+              <svg class="w-3.5 h-3.5 opacity-50 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- SERVICES Mega Menu Trigger -->
+          <div class="relative" data-mega="services">
+            <button
+              class="mega-trigger flex items-center gap-1 px-3.5 py-2 text-[13px] font-semibold text-text hover:text-sage rounded-lg hover:bg-sage-pale/40 transition-colors tracking-wide uppercase"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              Services
+              <svg class="w-3.5 h-3.5 opacity-50 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- CONDITIONS Mega Menu Trigger -->
+          <div class="relative" data-mega="conditions">
+            <button
+              class="mega-trigger flex items-center gap-1 px-3.5 py-2 text-[13px] font-semibold text-text hover:text-sage rounded-lg hover:bg-sage-pale/40 transition-colors tracking-wide uppercase"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              Conditions
+              <svg class="w-3.5 h-3.5 opacity-50 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- RESOURCES Mega Menu Trigger -->
+          <div class="relative" data-mega="resources">
+            <button
+              class="mega-trigger flex items-center gap-1 px-3.5 py-2 text-[13px] font-semibold text-text hover:text-sage rounded-lg hover:bg-sage-pale/40 transition-colors tracking-wide uppercase"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              Resources
+              <svg class="w-3.5 h-3.5 opacity-50 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Virtual Care (highlighted) -->
+          <a href="/virtual-care" data-petal class="flex items-center gap-1.5 px-3.5 py-2 text-[13px] font-semibold text-terracotta hover:text-terracotta-light rounded-lg hover:bg-terracotta/5 transition-colors tracking-wide uppercase">
+            Virtual Care
+            <span class="w-1.5 h-1.5 bg-terracotta rounded-full animate-pulse"></span>
+          </a>
+        </div>
+
+        <!-- Right side: CTA + Mobile toggle -->
+        <div class="flex items-center gap-3">
+          <!-- CTA Button -->
+          <a
+            href="/contact"
+            class="hidden sm:inline-flex items-center gap-2 bg-terracotta hover:bg-terracotta-light text-white font-semibold text-sm px-6 py-2.5 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-terracotta/25 hover:-translate-y-0.5 active:translate-y-0"
+          >
+            Book a Visit
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+
+          <!-- Mobile menu button -->
+          <button
+            id="mobile-menu-btn"
+            class="xl:hidden flex items-center justify-center w-10 h-10 rounded-xl hover:bg-sage-pale/50 transition-colors"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <div class="hamburger-icon w-5 h-4 flex flex-col justify-between">
+              <span class="hamburger-line block h-[2px] w-full bg-charcoal rounded-full transition-all duration-300 origin-center"></span>
+              <span class="hamburger-line block h-[2px] w-full bg-charcoal rounded-full transition-all duration-300"></span>
+              <span class="hamburger-line block h-[2px] w-full bg-charcoal rounded-full transition-all duration-300 origin-center"></span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== MEGA MENU PANELS ==================== -->
+
+  <!-- DOCTORS Mega Menu -->
+  <div id="mega-doctors" class="mega-panel hidden absolute left-0 right-0 top-full z-50" data-panel="doctors">
+    <div class="bg-white border-b border-sage-pale/60 shadow-xl shadow-charcoal/6">
+      <div class="container-main py-8">
+        <div class="grid grid-cols-12 gap-8">
+          <!-- Left: Section header -->
+          <div class="col-span-3">
+            <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-terracotta mb-3">Our Naturopathic Doctors</p>
+            <h3 class="font-display text-2xl font-semibold text-charcoal leading-snug mb-3">Three Minds,<br/>One Plan.</h3>
+            <p class="text-sm text-text-light leading-relaxed mb-5">Our doctors collaborate on every case. You get three perspectives, not just one.</p>
+            <a href="/doctors" class="inline-flex items-center gap-1.5 text-sm font-semibold text-sage hover:text-sage-dark transition-colors">
+              Meet the full team
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- Right: Doctor cards -->
+          <div class="col-span-9">
+            <div class="grid grid-cols-3 gap-5">
+              <!-- Dr. Spencer Warren -->
+              <a href="/doctors/dr-warren" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-bloom w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <!-- Fertility / flower icon -->
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path d="M12 3c-1.5 2-3 4-3 6a3 3 0 006 0c0-2-1.5-4-3-6z"/>
+                    <path d="M12 3c2 1.5 4 3 6 3a3 3 0 000-6c-2 0-4 1.5-6 3z"/>
+                    <path d="M12 3c-2 1.5-4 3-6 3a3 3 0 010-6c2 0 4 1.5 6 3z"/>
+                    <path d="M12 9v12" stroke-linecap="round"/>
+                    <path d="M9 14c0 0 1.5 1 3 1s3-1 3-1" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Dr. Spencer Warren</p>
+                  <p class="text-xs text-text-light mt-0.5">Fertility · Acupuncture · Women's Health</p>
+                  <span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-terracotta/8 text-terracotta px-2 py-0.5 rounded-full mt-2">Fertility Specialist</span>
+                </div>
+              </a>
+
+              <!-- Dr. Carie Perrino -->
+              <a href="/doctors/dr-perrino" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-heartbeat w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <!-- Heart / compassionate care icon -->
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                    <path d="M12 13v-2m0 0V9m0 2h2m-2 0h-2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Dr. Carie Perrino</p>
+                  <p class="text-xs text-text-light mt-0.5">Chronic Care · Geriatric · Compassionate Medicine</p>
+                  <span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-sage/8 text-sage px-2 py-0.5 rounded-full mt-2">Compassionate Care</span>
+                </div>
+              </a>
+
+              <!-- Dr. Bailey Newman -->
+              <a href="/doctors/dr-newman" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-swirl w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <!-- Gut / digestive icon -->
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path d="M9 4a3 3 0 016 0v2a3 3 0 01-3 3H9"/>
+                    <path d="M9 9a3 3 0 000 6h3a3 3 0 010 6H9"/>
+                    <circle cx="6" cy="12" r="1" fill="currentColor"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Dr. Bailey Newman</p>
+                  <p class="text-xs text-text-light mt-0.5">GI/SIBO · Digestive Health · Root-Cause</p>
+                  <span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-terracotta/8 text-terracotta px-2 py-0.5 rounded-full mt-2">Digestive Expert</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES Mega Menu -->
+  <div id="mega-services" class="mega-panel hidden absolute left-0 right-0 top-full z-50" data-panel="services">
+    <div class="bg-white border-b border-sage-pale/60 shadow-xl shadow-charcoal/6">
+      <div class="container-main py-8">
+        <div class="grid grid-cols-12 gap-8">
+          <!-- Left: Service items -->
+          <div class="col-span-8">
+            <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-terracotta mb-5">What We Offer</p>
+            <div class="grid grid-cols-2 gap-x-6 gap-y-1">
+              <!-- Naturopathic Care -->
+              <a href="/services/naturopathic-care" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-sway w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <!-- Leaf / natural medicine -->
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66L7 19c4-4 6-8 10-11z"/>
+                    <path d="M2 2s7 1 10 4c3 3 4 10 4 10" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Naturopathic Care</p>
+                  <p class="text-xs text-text-light mt-0.5">Medicine that actually listens — 75-90 min visits</p>
+                </div>
+              </a>
+
+              <!-- Integrative Care -->
+              <a href="/services/integrative-care" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-spin w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <!-- Puzzle / integrative -->
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 01-.837.276c-.47-.07-.802-.48-.968-.925a2.501 2.501 0 10-3.214 3.214c.446.166.855.497.925.968a.979.979 0 01-.276.837l-1.611 1.611a2.407 2.407 0 01-1.704.706 2.407 2.407 0 01-1.704-.706l-1.568-1.568a1.026 1.026 0 00-.877-.29c-.493.074-.84.504-1.02.968a2.5 2.5 0 11-3.237-3.237c.464-.18.894-.527.967-1.02a1.026 1.026 0 00-.289-.877l-1.568-1.568A2.407 2.407 0 011.5 12c0-.617.236-1.234.706-1.704L3.817 8.685a.98.98 0 01.837-.276c.47.07.802.48.968.925a2.501 2.501 0 103.214-3.214c-.446-.166-.855-.497-.925-.968a.979.979 0 01.276-.837l1.611-1.611A2.407 2.407 0 0111.5 2c.617 0 1.234.236 1.704.706l1.568 1.568c.23.23.556.338.877.29.493-.074.84-.504 1.02-.968a2.5 2.5 0 113.237 3.237c-.464.18-.894.527-.967 1.02z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Integrative Care</p>
+                  <p class="text-xs text-text-light mt-0.5">Best of natural + conventional medicine</p>
+                </div>
+              </a>
+
+              <!-- Acupuncture -->
+              <a href="/services/acupuncture" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-pulse w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <!-- Acupuncture needle -->
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M12 2v4m0 12v4m10-10h-4M6 12H2" stroke-linecap="round"/>
+                    <path d="M18.36 5.64l-2.83 2.83m-7.07 7.07l-2.83 2.83m14.73 0l-2.83-2.83M8.46 8.46L5.64 5.64" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Acupuncture</p>
+                  <p class="text-xs text-text-light mt-0.5">Pain, fertility, stress — ancient wisdom, modern results</p>
+                  <span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-terracotta/8 text-terracotta px-2 py-0.5 rounded-full mt-1.5">High Demand</span>
+                </div>
+              </a>
+
+              <!-- Lab & Testing -->
+              <a href="/services/lab-testing" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-bubble w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <!-- Lab / flask icon -->
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path d="M9 3h6m-5 0v6.5L4.5 18a1.5 1.5 0 001.28 2.28h12.44A1.5 1.5 0 0019.5 18L14 9.5V3"/>
+                    <path d="M7.5 15h9" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Lab & Testing</p>
+                  <p class="text-xs text-text-light mt-0.5">In-office blood draws & specialty diagnostics</p>
+                </div>
+              </a>
+            </div>
+            <div class="mt-4 pl-4">
+              <a href="/services" class="inline-flex items-center gap-1.5 text-sm font-semibold text-sage hover:text-sage-dark transition-colors">
+                View all services
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Featured card (like Balaji's "Custom Solutions") -->
+          <div class="col-span-4">
+            <div class="group bg-sage-pale/40 border border-sage-pale rounded-2xl p-6 h-full flex flex-col">
+              <div class="ico-float w-12 h-12 rounded-xl bg-terracotta/10 flex items-center justify-center mb-4">
+                <!-- Virtual / laptop icon -->
+                <svg class="w-6 h-6 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                  <rect x="2" y="3" width="20" height="14" rx="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21" stroke-linecap="round"/>
+                  <line x1="12" y1="17" x2="12" y2="21" stroke-linecap="round"/>
+                  <path d="M9 10l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h4 class="font-display text-lg font-semibold text-charcoal mb-1.5">Virtual Visits</h4>
+              <p class="text-sm text-text-light leading-relaxed mb-4">Same 75-90 min deep-dive. Same three-doctor team. From anywhere in Arizona.</p>
+              <a href="/virtual-care" class="mt-auto inline-flex items-center gap-1.5 text-sm font-semibold text-terracotta hover:text-terracotta-light transition-colors">
+                Learn about virtual care
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONDITIONS Mega Menu -->
+  <div id="mega-conditions" class="mega-panel hidden absolute left-0 right-0 top-full z-50" data-panel="conditions">
+    <div class="bg-white border-b border-sage-pale/60 shadow-xl shadow-charcoal/6">
+      <div class="container-main py-8">
+        <div class="grid grid-cols-12 gap-8">
+          <!-- Left: Conditions grid -->
+          <div class="col-span-8">
+            <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-terracotta mb-5">Conditions We Treat</p>
+            <div class="grid grid-cols-2 gap-x-6 gap-y-1">
+              <!-- Digestive Health -->
+              <a href="/conditions/digestive-health" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-swirl w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10"/>
+                    <path d="M12 2c3 3.5 5 7 5 10s-2 6.5-5 10"/>
+                    <path d="M2 12h10"/>
+                    <path d="M15 16a4 4 0 108 0c0 3-4 6-4 6s-4-3-4-6z" fill="currentColor" opacity="0.15"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Digestive Health</p>
+                  <p class="text-xs text-text-light mt-0.5">SIBO, IBS, bloating, acid reflux</p>
+                </div>
+              </a>
+
+              <!-- Hormonal Balance -->
+              <a href="/conditions/hormonal-balance" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-glow w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path d="M12 8V4m0 4a4 4 0 100 8 4 4 0 000-8z"/>
+                    <path d="M12 20v-4"/>
+                    <path d="M4 12h4m8 0h4"/>
+                    <path d="M6.34 6.34l2.83 2.83m5.66 5.66l2.83 2.83"/>
+                    <path d="M17.66 6.34l-2.83 2.83m-5.66 5.66l-2.83 2.83"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Hormonal Balance</p>
+                  <p class="text-xs text-text-light mt-0.5">Thyroid, PCOS, adrenal, menopause</p>
+                </div>
+              </a>
+
+              <!-- Fertility Support -->
+              <a href="/conditions/fertility" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-bloom w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path d="M12 22c-4-4-8-7.5-8-12a8 8 0 0116 0c0 4.5-4 8-8 12z"/>
+                    <circle cx="12" cy="10" r="2" fill="currentColor" opacity="0.2"/>
+                    <path d="M12 8v-3m-2.5 4.5L7 7m4.5 2.5L14 7" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Fertility Support</p>
+                  <p class="text-xs text-text-light mt-0.5">Acupuncture & natural fertility protocols</p>
+                  <span class="inline-block text-[10px] font-bold uppercase tracking-wider bg-terracotta/8 text-terracotta px-2 py-0.5 rounded-full mt-1.5">Specialty</span>
+                </div>
+              </a>
+
+              <!-- Chronic Pain -->
+              <a href="/conditions/chronic-pain" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-soothe w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path d="M18 18a6 6 0 00-12 0"/>
+                    <path d="M12 12V8"/>
+                    <circle cx="12" cy="6" r="2"/>
+                    <path d="M8 10l-2 2m8-2l2 2" stroke-linecap="round"/>
+                    <path d="M4 22h16" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Chronic Pain</p>
+                  <p class="text-xs text-text-light mt-0.5">Back, neck, arthritis, migraines</p>
+                </div>
+              </a>
+
+              <!-- Stress & Anxiety -->
+              <a href="/conditions/stress-anxiety" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-breathe w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l3 3" stroke-linecap="round"/>
+                    <path d="M7.5 16.5c1.5 1.5 3 2 4.5 2s3-.5 4.5-2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Stress & Anxiety</p>
+                  <p class="text-xs text-text-light mt-0.5">Sleep, fatigue, burnout, mental wellness</p>
+                </div>
+              </a>
+
+              <!-- Weight Management -->
+              <a href="/conditions/weight-management" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-rise w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path d="M12 20V4"/>
+                    <path d="M5 12l7-8 7 8"/>
+                    <path d="M8 16h8" stroke-linecap="round"/>
+                    <circle cx="12" cy="20" r="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Weight Management</p>
+                  <p class="text-xs text-text-light mt-0.5">Sustainable, root-cause metabolic support</p>
+                </div>
+              </a>
+            </div>
+            <div class="mt-4 pl-4">
+              <a href="/conditions" class="inline-flex items-center gap-1.5 text-sm font-semibold text-sage hover:text-sage-dark transition-colors">
+                View all conditions
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: CTA card -->
+          <div class="col-span-4">
+            <div class="group bg-sage-pale/40 border border-sage-pale rounded-2xl p-6 h-full flex flex-col">
+              <div class="ico-check w-12 h-12 rounded-xl bg-terracotta/10 flex items-center justify-center mb-4">
+                <!-- Quiz / clipboard icon -->
+                <svg class="w-6 h-6 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
+                  <rect x="9" y="3" width="6" height="4" rx="1"/>
+                  <path d="M9 14l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h4 class="font-display text-lg font-semibold text-charcoal mb-1.5">Not Sure Where to Start?</h4>
+              <p class="text-sm text-text-light leading-relaxed mb-4">Take our quick health quiz and we'll match you with the right doctor and treatment approach.</p>
+              <a href="/#quiz" class="mt-auto inline-flex items-center gap-1.5 text-sm font-semibold text-terracotta hover:text-terracotta-light transition-colors">
+                Take the health quiz
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESOURCES Mega Menu -->
+  <div id="mega-resources" class="mega-panel hidden absolute left-0 right-0 top-full z-50" data-panel="resources">
+    <div class="bg-white border-b border-sage-pale/60 shadow-xl shadow-charcoal/6">
+      <div class="container-main py-8">
+        <div class="grid grid-cols-12 gap-8">
+          <!-- Left: Resource items -->
+          <div class="col-span-8">
+            <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-terracotta mb-5">Learn & Prepare</p>
+            <div class="grid grid-cols-2 gap-x-6 gap-y-1">
+              <!-- New Patients -->
+              <a href="/new-patients" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-bloom w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6"/><path d="M23 11h-6"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">New Patients</p>
+                  <p class="text-xs text-text-light mt-0.5">What to expect at your first visit</p>
+                </div>
+              </a>
+
+              <!-- Pricing -->
+              <a href="/pricing" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-glow w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Pricing</p>
+                  <p class="text-xs text-text-light mt-0.5">Transparent pricing, no surprises</p>
+                </div>
+              </a>
+
+              <!-- Blog & Health Tips -->
+              <a href="/blog" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-sway w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <!-- Pen / article icon -->
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path d="M12 20h9"/>
+                    <path d="M16.5 3.5a2.121 2.121 0 113 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Blog & Health Tips</p>
+                  <p class="text-xs text-text-light mt-0.5">Wellness guides, recipes, and doctor insights</p>
+                </div>
+              </a>
+
+              <!-- FAQs -->
+              <a href="/faqs" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-bounce w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <!-- Question mark icon -->
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" stroke-linecap="round"/>
+                    <circle cx="12" cy="17" r="0.5" fill="currentColor"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">FAQs</p>
+                  <p class="text-xs text-text-light mt-0.5">Answers to our most common questions</p>
+                </div>
+              </a>
+
+              <!-- Patient Forms -->
+              <a href="/new-patients#forms" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-check w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <!-- Document / forms icon -->
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Patient Forms</p>
+                  <p class="text-xs text-text-light mt-0.5">Download intake & consent forms ahead of time</p>
+                </div>
+              </a>
+
+              <!-- Insurance & Payments -->
+              <a href="/pricing#insurance" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-glow w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <!-- Shield / insurance icon -->
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Insurance & Payments</p>
+                  <p class="text-xs text-text-light mt-0.5">What we accept, HSA/FSA, superbill info</p>
+                </div>
+              </a>
+
+              <!-- Testimonials -->
+              <a href="/testimonials" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-heartbeat w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <!-- Star / review icon -->
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Testimonials</p>
+                  <p class="text-xs text-text-light mt-0.5">Real patient stories and Google reviews</p>
+                </div>
+              </a>
+
+              <!-- Refer a Friend -->
+              <a href="/refer" class="group flex gap-4 p-4 rounded-2xl border border-transparent hover:border-sage-pale hover:bg-sage-pale/20 transition-all duration-200">
+                <div class="ico-bloom w-11 h-11 rounded-xl bg-terracotta/10 flex items-center justify-center shrink-0">
+                  <!-- Gift / referral icon -->
+                  <svg class="w-5.5 h-5.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <polyline points="20 12 20 22 4 22 4 12"/>
+                    <rect x="2" y="7" width="20" height="5"/>
+                    <line x1="12" y1="22" x2="12" y2="7"/>
+                    <path d="M12 7H7.5a2.5 2.5 0 110-5C11 2 12 7 12 7z"/>
+                    <path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-charcoal group-hover:text-sage transition-colors">Refer a Friend</p>
+                  <p class="text-xs text-text-light mt-0.5">Share the love — refer someone you care about</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Featured card -->
+          <div class="col-span-4">
+            <div class="group bg-sage-pale/40 border border-sage-pale rounded-2xl p-6 h-full flex flex-col">
+              <div class="ico-float w-12 h-12 rounded-xl bg-terracotta/10 flex items-center justify-center mb-4">
+                <!-- Download / guide icon -->
+                <svg class="w-6 h-6 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+              </div>
+              <h4 class="font-display text-lg font-semibold text-charcoal mb-1.5">Free Wellness Guide</h4>
+              <p class="text-sm text-text-light leading-relaxed mb-4">Download our "5 Things Your Doctor Isn't Testing" guide — the labs most practices skip.</p>
+              <a href="/resources/wellness-guide" class="mt-auto inline-flex items-center gap-1.5 text-sm font-semibold text-terracotta hover:text-terracotta-light transition-colors">
+                Download free guide
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== MOBILE FULL-SCREEN MENU ==================== -->
+<div id="mobile-menu" class="fixed inset-0 z-[60] pointer-events-none" aria-hidden="true">
+  <!-- Backdrop -->
+  <div class="mobile-backdrop absolute inset-0 bg-charcoal/40 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
+
+  <!-- Menu panel -->
+  <div class="mobile-panel absolute inset-y-0 right-0 w-full max-w-md bg-cream shadow-2xl translate-x-full transition-transform duration-400 ease-out overflow-y-auto">
+    <!-- Header with logo & close -->
+    <div class="flex items-center justify-between p-5 border-b border-sage-pale/60">
+      <img src="/images/logo.webp" alt="Love Your Health" class="h-10 w-auto" />
+      <button id="mobile-close-btn" class="w-10 h-10 rounded-xl hover:bg-sage-pale/50 flex items-center justify-center transition-colors" aria-label="Close menu">
+        <svg class="w-5 h-5 text-charcoal" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile nav links -->
+    <div class="p-4 space-y-0.5">
+      <!-- About -->
+      <a href="/about" class="flex items-center gap-3 px-4 py-3.5 text-[15px] font-semibold text-charcoal hover:text-sage hover:bg-sage-pale/40 rounded-xl transition-colors">
+        <div class="w-9 h-9 rounded-lg bg-terracotta/10 flex items-center justify-center shrink-0">
+          <svg class="w-4.5 h-4.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        About Us
+      </a>
+
+      <!-- Doctors accordion -->
+      <div class="mobile-nav-group">
+        <button class="mobile-dropdown-toggle w-full flex items-center gap-3 px-4 py-3.5 text-[15px] font-semibold text-charcoal hover:text-sage hover:bg-sage-pale/40 rounded-xl transition-colors">
+          <div class="w-9 h-9 rounded-lg bg-terracotta/10 flex items-center justify-center shrink-0">
+            <svg class="w-4.5 h-4.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <span class="flex-1 text-left">Doctors</span>
+          <svg class="w-4 h-4 text-text-light transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="mobile-dropdown hidden pl-12 space-y-0.5 pb-1">
+          <a href="/doctors" class="block px-4 py-2.5 text-sm font-medium text-text hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Meet All Doctors</a>
+          <a href="/doctors/dr-warren" class="block px-4 py-2.5 text-sm text-text-light hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Dr. Spencer Warren <span class="text-xs text-terracotta ml-1">Fertility</span></a>
+          <a href="/doctors/dr-perrino" class="block px-4 py-2.5 text-sm text-text-light hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Dr. Carie Perrino <span class="text-xs text-sage ml-1">Chronic Care</span></a>
+          <a href="/doctors/dr-newman" class="block px-4 py-2.5 text-sm text-text-light hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Dr. Bailey Newman <span class="text-xs text-terracotta ml-1">Digestive</span></a>
+        </div>
+      </div>
+
+      <!-- Services accordion -->
+      <div class="mobile-nav-group">
+        <button class="mobile-dropdown-toggle w-full flex items-center gap-3 px-4 py-3.5 text-[15px] font-semibold text-charcoal hover:text-sage hover:bg-sage-pale/40 rounded-xl transition-colors">
+          <div class="w-9 h-9 rounded-lg bg-terracotta/10 flex items-center justify-center shrink-0">
+            <svg class="w-4.5 h-4.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66L7 19c4-4 6-8 10-11z"/><path d="M2 2s7 1 10 4c3 3 4 10 4 10" stroke-linecap="round"/></svg>
+          </div>
+          <span class="flex-1 text-left">Services</span>
+          <svg class="w-4 h-4 text-text-light transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="mobile-dropdown hidden pl-12 space-y-0.5 pb-1">
+          <a href="/services" class="block px-4 py-2.5 text-sm font-medium text-text hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">All Services</a>
+          <a href="/services/naturopathic-care" class="block px-4 py-2.5 text-sm text-text-light hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Naturopathic Care</a>
+          <a href="/services/integrative-care" class="block px-4 py-2.5 text-sm text-text-light hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Integrative Care</a>
+          <a href="/services/acupuncture" class="block px-4 py-2.5 text-sm text-text-light hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Acupuncture</a>
+          <a href="/services/lab-testing" class="block px-4 py-2.5 text-sm text-text-light hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Lab & Testing</a>
+        </div>
+      </div>
+
+      <!-- Conditions accordion -->
+      <div class="mobile-nav-group">
+        <button class="mobile-dropdown-toggle w-full flex items-center gap-3 px-4 py-3.5 text-[15px] font-semibold text-charcoal hover:text-sage hover:bg-sage-pale/40 rounded-xl transition-colors">
+          <div class="w-9 h-9 rounded-lg bg-terracotta/10 flex items-center justify-center shrink-0">
+            <svg class="w-4.5 h-4.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 14l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="flex-1 text-left">Conditions</span>
+          <svg class="w-4 h-4 text-text-light transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="mobile-dropdown hidden pl-12 space-y-0.5 pb-1">
+          <a href="/conditions" class="block px-4 py-2.5 text-sm font-medium text-text hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">All Conditions</a>
+          <a href="/conditions/digestive-health" class="block px-4 py-2.5 text-sm text-text-light hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Digestive Health</a>
+          <a href="/conditions/hormonal-balance" class="block px-4 py-2.5 text-sm text-text-light hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Hormonal Balance</a>
+          <a href="/conditions/fertility" class="block px-4 py-2.5 text-sm text-text-light hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Fertility Support</a>
+          <a href="/conditions/chronic-pain" class="block px-4 py-2.5 text-sm text-text-light hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Chronic Pain</a>
+          <a href="/conditions/stress-anxiety" class="block px-4 py-2.5 text-sm text-text-light hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Stress & Anxiety</a>
+          <a href="/conditions/weight-management" class="block px-4 py-2.5 text-sm text-text-light hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Weight Management</a>
+        </div>
+      </div>
+
+      <!-- Resources accordion -->
+      <div class="mobile-nav-group">
+        <button class="mobile-dropdown-toggle w-full flex items-center gap-3 px-4 py-3.5 text-[15px] font-semibold text-charcoal hover:text-sage hover:bg-sage-pale/40 rounded-xl transition-colors">
+          <div class="w-9 h-9 rounded-lg bg-terracotta/10 flex items-center justify-center shrink-0">
+            <svg class="w-4.5 h-4.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+          </div>
+          <span class="flex-1 text-left">Resources</span>
+          <svg class="w-4 h-4 text-text-light transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="mobile-dropdown hidden pl-12 space-y-0.5 pb-1">
+          <a href="/blog" class="block px-4 py-2.5 text-sm font-medium text-text hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Blog & Health Tips</a>
+          <a href="/faqs" class="block px-4 py-2.5 text-sm text-text-light hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">FAQs</a>
+          <a href="/new-patients#forms" class="block px-4 py-2.5 text-sm text-text-light hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Patient Forms</a>
+          <a href="/pricing#insurance" class="block px-4 py-2.5 text-sm text-text-light hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Insurance & Payments</a>
+          <a href="/testimonials" class="block px-4 py-2.5 text-sm text-text-light hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Testimonials</a>
+          <a href="/refer" class="block px-4 py-2.5 text-sm text-text-light hover:text-sage rounded-lg hover:bg-sage-pale/30 transition-colors">Refer a Friend</a>
+        </div>
+      </div>
+
+      <!-- Virtual Care (highlighted) -->
+      <a href="/virtual-care" class="flex items-center gap-3 px-4 py-3.5 text-[15px] font-semibold text-terracotta hover:bg-terracotta/5 rounded-xl transition-colors">
+        <div class="w-9 h-9 rounded-lg bg-terracotta/10 flex items-center justify-center shrink-0">
+          <svg class="w-4.5 h-4.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21" stroke-linecap="round"/><line x1="12" y1="17" x2="12" y2="21" stroke-linecap="round"/></svg>
+        </div>
+        Virtual Care
+        <span class="text-[10px] font-bold uppercase tracking-wider bg-terracotta/10 text-terracotta px-2 py-0.5 rounded-full ml-auto">AZ-Wide</span>
+      </a>
+
+      <!-- New Patients -->
+      <a href="/new-patients" class="flex items-center gap-3 px-4 py-3.5 text-[15px] font-semibold text-charcoal hover:text-sage hover:bg-sage-pale/40 rounded-xl transition-colors">
+        <div class="w-9 h-9 rounded-lg bg-terracotta/10 flex items-center justify-center shrink-0">
+          <svg class="w-4.5 h-4.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14" stroke-linecap="round"/><line x1="22" y1="11" x2="16" y2="11" stroke-linecap="round"/></svg>
+        </div>
+        New Patients
+      </a>
+
+      <!-- Pricing -->
+      <a href="/pricing" class="flex items-center gap-3 px-4 py-3.5 text-[15px] font-semibold text-charcoal hover:text-sage hover:bg-sage-pale/40 rounded-xl transition-colors">
+        <div class="w-9 h-9 rounded-lg bg-terracotta/10 flex items-center justify-center shrink-0">
+          <svg class="w-4.5 h-4.5 text-terracotta" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        </div>
+        Pricing
+      </a>
+    </div>
+
+    <!-- Mobile CTA section -->
+    <div class="p-5 pt-3 space-y-3 border-t border-sage-pale/60">
+      <a href="/contact" class="flex items-center justify-center gap-2 w-full bg-terracotta hover:bg-terracotta-light text-white font-semibold text-base py-3.5 rounded-full transition-all duration-300">
+        Book a Visit
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="tel:4809140521" class="flex items-center justify-center gap-2 w-full border-2 border-sage-pale text-sage font-semibold text-base py-3 rounded-full hover:bg-sage-pale/30 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        (480) 914-0521
+      </a>
+      <div class="flex flex-wrap gap-2 justify-center pt-2">
+        <span class="text-[11px] text-text-light bg-sage-pale/60 px-2.5 py-1 rounded-full">Women-Owned</span>
+        <span class="text-[11px] text-text-light bg-sage-pale/60 px-2.5 py-1 rounded-full">LGBTQ+ Friendly</span>
+        <span class="text-[11px] text-text-light bg-sage-pale/60 px-2.5 py-1 rounded-full">5.0 ★ Google</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Petal burst container (sits above everything) -->
+<div id="petal-canvas" class="fixed inset-0 z-[100] pointer-events-none overflow-hidden" aria-hidden="true"></div>
+
+<!-- Spacer to offset fixed header -->
+<div id="header-spacer" class="h-[72px] lg:h-[80px]"></div>
+
+<style>
+  /* Scrolled state */
+  .nav-scrolled .nav-bar {
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: 0 1px 16px rgba(0,0,0,0.07);
+  }
+
+  /* Mega menu open state */
+  .mega-panel {
+    animation: megaIn 0.25s ease-out forwards;
+  }
+
+  @keyframes megaIn {
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Active trigger state */
+  .mega-trigger-active {
+    color: var(--color-sage) !important;
+    background-color: rgba(168, 184, 158, 0.3);
+  }
+
+  .mega-trigger-active svg {
+    transform: rotate(180deg);
+  }
+
+  /* Mobile menu open state */
+  .mobile-open .mobile-backdrop {
+    opacity: 1;
+  }
+  .mobile-open .mobile-panel {
+    transform: translateX(0);
+  }
+  .mobile-open {
+    pointer-events: auto;
+  }
+
+  /* Hamburger animation */
+  .menu-active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(4px, 4px);
+  }
+  .menu-active .hamburger-line:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  .menu-active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px);
+  }
+
+  /* Mobile dropdown animation */
+  .mobile-dropdown-open > svg:last-child {
+    transform: rotate(180deg);
+  }
+
+  /* ===== PETAL ANIMATION ===== */
+  .petal {
+    position: absolute;
+    pointer-events: none;
+    will-change: transform, opacity;
+  }
+
+  .petal svg {
+    filter: drop-shadow(0 2px 4px rgba(196, 125, 90, 0.2));
+  }
+
+  @keyframes petalFloat {
+    0% {
+      opacity: 0.9;
+      transform: translate(0, 0) rotate(0deg) scale(0.2);
+    }
+    10% {
+      opacity: 1;
+      transform: translate(calc(var(--tx-mid) * 0.3), calc(var(--ty-mid) * 0.3)) rotate(calc(var(--rot-mid) * 0.3)) scale(0.8);
+    }
+    30% {
+      opacity: 1;
+      transform: translate(var(--tx-mid), var(--ty-mid)) rotate(var(--rot-mid)) scale(1);
+    }
+    65% {
+      opacity: 0.8;
+      transform: translate(calc(var(--tx-mid) + (var(--tx-end) - var(--tx-mid)) * 0.5), calc(var(--ty-mid) + (var(--ty-end) - var(--ty-mid)) * 0.3)) rotate(calc(var(--rot-mid) + (var(--rot-end) - var(--rot-mid)) * 0.5)) scale(0.85);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(var(--tx-end), var(--ty-end)) rotate(var(--rot-end)) scale(0.3);
+    }
+  }
+
+  /* ===== INTERACTIVE ICON ANIMATIONS ===== */
+  /* Triggered when mega panel opens via .mega-active class */
+  /* Each icon gets a staggered --ico-delay from JS */
+
+  [class*="ico-"] {
+    transition: background-color 0.3s;
+  }
+
+  /* Bloom — flower petals opening (Dr. Spencer Warren, Fertility Support) */
+  .mega-active .ico-bloom {
+    animation: bloom 0.7s var(--ico-delay, 0ms) cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    background-color: rgba(196, 125, 90, 0.18);
+  }
+  @keyframes bloom {
+    0%   { transform: scale(1) rotate(0deg); }
+    40%  { transform: scale(1.25) rotate(8deg); }
+    70%  { transform: scale(1.15) rotate(-3deg); }
+    100% { transform: scale(1.18) rotate(0deg); }
+  }
+
+  /* Heartbeat — double pulse (Dr. Carie Perrino) */
+  .mega-active .ico-heartbeat {
+    animation: heartbeat 0.8s var(--ico-delay, 0ms) ease-in-out both;
+    background-color: rgba(196, 125, 90, 0.18);
+  }
+  @keyframes heartbeat {
+    0%   { transform: scale(1); }
+    14%  { transform: scale(1.22); }
+    28%  { transform: scale(1); }
+    42%  { transform: scale(1.18); }
+    60%  { transform: scale(1); }
+    100% { transform: scale(1.05); }
+  }
+
+  /* Swirl — smooth 360° rotation (Dr. Bailey Newman, Digestive Health) */
+  .mega-active .ico-swirl {
+    animation: swirl 0.8s var(--ico-delay, 0ms) cubic-bezier(0.4, 0, 0.2, 1) both;
+    background-color: rgba(196, 125, 90, 0.18);
+  }
+  @keyframes swirl {
+    0%   { transform: rotate(0deg) scale(1); }
+    50%  { transform: rotate(200deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1.05); }
+  }
+
+  /* Sway — leaf tilting in wind (Naturopathic Care) */
+  .mega-active .ico-sway {
+    animation: sway 1s var(--ico-delay, 0ms) ease-in-out both;
+    background-color: rgba(196, 125, 90, 0.18);
+  }
+  @keyframes sway {
+    0%   { transform: rotate(0deg); }
+    20%  { transform: rotate(12deg); }
+    40%  { transform: rotate(-10deg); }
+    60%  { transform: rotate(6deg); }
+    80%  { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg) scale(1.05); }
+  }
+
+  /* Spin — puzzle piece fitting (Integrative Care) */
+  .mega-active .ico-spin {
+    animation: spin 0.9s var(--ico-delay, 0ms) cubic-bezier(0.4, 0, 0.2, 1) both;
+    background-color: rgba(196, 125, 90, 0.18);
+  }
+  @keyframes spin {
+    0%   { transform: rotate(0deg) scale(1); }
+    60%  { transform: rotate(180deg) scale(1.12); }
+    100% { transform: rotate(360deg) scale(1.05); }
+  }
+
+  /* Pulse — energy radiating outward (Acupuncture) */
+  .ico-pulse {
+    position: relative;
+  }
+  .mega-active .ico-pulse {
+    animation: pulse-icon 0.8s var(--ico-delay, 0ms) ease-out both;
+    background-color: rgba(196, 125, 90, 0.18);
+  }
+  .mega-active .ico-pulse::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 12px;
+    border: 2px solid rgba(196, 125, 90, 0.3);
+    animation: pulse-ring 0.8s var(--ico-delay, 0ms) ease-out both;
+  }
+  @keyframes pulse-icon {
+    0%   { transform: scale(1); }
+    30%  { transform: scale(1.18); }
+    60%  { transform: scale(0.95); }
+    100% { transform: scale(1.08); }
+  }
+  @keyframes pulse-ring {
+    0%   { transform: scale(0.8); opacity: 0.8; }
+    100% { transform: scale(1.4); opacity: 0; }
+  }
+
+  /* Bubble — bouncy float up (Lab & Testing) */
+  .mega-active .ico-bubble {
+    animation: bubble 0.7s var(--ico-delay, 0ms) cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    background-color: rgba(196, 125, 90, 0.18);
+  }
+  @keyframes bubble {
+    0%   { transform: translateY(0) scale(1); }
+    30%  { transform: translateY(-8px) scale(1.1); }
+    50%  { transform: translateY(-3px) scale(1.05); }
+    70%  { transform: translateY(-6px) scale(1.08); }
+    100% { transform: translateY(-2px) scale(1.05); }
+  }
+
+  /* Float — gentle hovering (Virtual Visits card) */
+  .mega-active .ico-float {
+    animation: float 1.2s var(--ico-delay, 0ms) ease-in-out infinite both;
+    background-color: rgba(196, 125, 90, 0.18);
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-6px); }
+  }
+
+  /* Glow — warm radiating glow (Hormonal Balance) */
+  .mega-active .ico-glow {
+    animation: glow 0.9s var(--ico-delay, 0ms) ease-in-out both;
+    background-color: rgba(196, 125, 90, 0.22);
+    box-shadow: 0 0 16px 4px rgba(196, 125, 90, 0.25);
+  }
+  @keyframes glow {
+    0%   { transform: scale(1); box-shadow: 0 0 0 0 rgba(196, 125, 90, 0); }
+    40%  { transform: scale(1.12); box-shadow: 0 0 20px 6px rgba(196, 125, 90, 0.3); }
+    70%  { transform: scale(1.06); box-shadow: 0 0 12px 3px rgba(196, 125, 90, 0.2); }
+    100% { transform: scale(1.08); box-shadow: 0 0 16px 4px rgba(196, 125, 90, 0.25); }
+  }
+
+  /* Soothe — gentle breathing scale (Chronic Pain) */
+  .mega-active .ico-soothe {
+    animation: soothe 1.4s var(--ico-delay, 0ms) ease-in-out infinite both;
+    background-color: rgba(196, 125, 90, 0.18);
+  }
+  @keyframes soothe {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.1); }
+  }
+
+  /* Breathe — calming slow expand/contract (Stress & Anxiety) */
+  .mega-active .ico-breathe {
+    animation: breathe 1.6s var(--ico-delay, 0ms) ease-in-out infinite both;
+    background-color: rgba(196, 125, 90, 0.18);
+  }
+  @keyframes breathe {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    30%      { transform: scale(1.14); opacity: 0.85; }
+    60%      { transform: scale(0.96); opacity: 1; }
+  }
+
+  /* Rise — upward lift with bounce (Weight Management) */
+  .mega-active .ico-rise {
+    animation: rise 0.7s var(--ico-delay, 0ms) cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    background-color: rgba(196, 125, 90, 0.18);
+  }
+  @keyframes rise {
+    0%   { transform: translateY(0) scale(1); }
+    50%  { transform: translateY(-10px) scale(1.12); }
+    75%  { transform: translateY(-4px) scale(1.06); }
+    100% { transform: translateY(-2px) scale(1.08); }
+  }
+
+  /* Check — satisfying tick/bounce (Quiz card) */
+  .mega-active .ico-check {
+    animation: check-bounce 0.6s var(--ico-delay, 0ms) cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    background-color: rgba(196, 125, 90, 0.22);
+  }
+  @keyframes check-bounce {
+    0%   { transform: scale(1) rotate(0deg); }
+    30%  { transform: scale(0.85) rotate(-5deg); }
+    60%  { transform: scale(1.2) rotate(3deg); }
+    100% { transform: scale(1.1) rotate(0deg); }
+  }
+
+  /* Bounce — playful hop (FAQs question mark) */
+  .mega-active .ico-bounce {
+    animation: bounce-hop 0.6s var(--ico-delay, 0ms) cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    background-color: rgba(196, 125, 90, 0.18);
+  }
+  @keyframes bounce-hop {
+    0%   { transform: translateY(0) scale(1); }
+    25%  { transform: translateY(-10px) scale(1.05); }
+    45%  { transform: translateY(0) scale(0.95); }
+    65%  { transform: translateY(-5px) scale(1.02); }
+    100% { transform: translateY(0) scale(1.05); }
+  }
+</style>
+
+<script>
+  // === Petal Burst Animation ===
+  const petalCanvas = document.getElementById('petal-canvas')!;
+
+  // Different petal SVG shapes for variety (rose petals in different forms)
+  const petalShapes = [
+    // Classic rounded petal
+    `<svg width="20" height="26" viewBox="0 0 20 26" fill="none"><path d="M10 0C10 0 0 8 0 16c0 5.5 4.5 10 10 10s10-4.5 10-10C20 8 10 0 10 0z" fill="COLOR"/></svg>`,
+    // Pointed petal
+    `<svg width="16" height="28" viewBox="0 0 16 28" fill="none"><path d="M8 0C8 0 0 10 0 18c0 5 3.5 10 8 10s8-5 8-10C16 10 8 0 8 0z" fill="COLOR"/></svg>`,
+    // Wide petal
+    `<svg width="24" height="22" viewBox="0 0 24 22" fill="none"><path d="M12 0C12 0 0 6 0 13c0 5 5.5 9 12 9s12-4 12-9C24 6 12 0 12 0z" fill="COLOR"/></svg>`,
+    // Small round petal
+    `<svg width="14" height="18" viewBox="0 0 14 18" fill="none"><path d="M7 0C7 0 0 6 0 11c0 3.9 3.1 7 7 7s7-3.1 7-7C14 6 7 0 7 0z" fill="COLOR"/></svg>`,
+    // Curled petal
+    `<svg width="18" height="24" viewBox="0 0 18 24" fill="none"><path d="M9 0C4 4 0 10 0 15c0 5 4 9 9 9s9-4 9-9c0-2-1-4-3-6C13 7 9 0 9 0z" fill="COLOR"/></svg>`,
+  ];
+
+  // Orange/terracotta petal color palette (matches the poppy in the logo)
+  const petalColors = [
+    '#C47D5A',   // terracotta
+    '#D4956F',   // terracotta light
+    '#E8A87C',   // soft peach-orange
+    '#D68B5E',   // warm orange
+    '#C4704A',   // deeper terracotta
+    '#E09B6D',   // golden orange
+    '#B86E4A',   // dark terracotta
+  ];
+
+  function randomBetween(min: number, max: number) {
+    return Math.random() * (max - min) + min;
+  }
+
+  function spawnPetals(originX: number, originY: number, count: number = 12) {
+    // Respect reduced motion preference
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    for (let i = 0; i < count; i++) {
+      const petal = document.createElement('div');
+      petal.className = 'petal';
+
+      // Pick random shape and color
+      const shape = petalShapes[Math.floor(Math.random() * petalShapes.length)];
+      const color = petalColors[Math.floor(Math.random() * petalColors.length)];
+      const opacity = randomBetween(0.7, 0.95);
+      petal.innerHTML = shape.replace('COLOR', color).replace('/>', ` opacity="${opacity}"/>`);
+
+      // Size variation — bigger so they're visible
+      const scale = randomBetween(0.8, 1.6);
+      const size = 24 * scale;
+
+      // Position at origin
+      petal.style.left = `${originX - size / 2}px`;
+      petal.style.top = `${originY - size / 2}px`;
+
+      // Randomize trajectory — petals float outward in all directions, then drift down
+      const angle = randomBetween(0, Math.PI * 2);
+      const distance = randomBetween(60, 180);
+      const txMid = Math.cos(angle) * distance;
+      const tyMid = Math.sin(angle) * distance * 0.7 - randomBetween(20, 60); // bias upward initially
+      const txEnd = txMid + randomBetween(-40, 40);
+      const tyEnd = tyMid + randomBetween(100, 220); // then drift down
+      const rotMid = randomBetween(-120, 120);
+      const rotEnd = rotMid + randomBetween(-180, 180);
+
+      petal.style.setProperty('--tx-mid', `${txMid}px`);
+      petal.style.setProperty('--ty-mid', `${tyMid}px`);
+      petal.style.setProperty('--tx-end', `${txEnd}px`);
+      petal.style.setProperty('--ty-end', `${tyEnd}px`);
+      petal.style.setProperty('--rot-mid', `${rotMid}deg`);
+      petal.style.setProperty('--rot-end', `${rotEnd}deg`);
+
+      // Stagger the start and vary duration — slow and graceful
+      const delay = randomBetween(0, 400);
+      const duration = randomBetween(2800, 4500);
+      petal.style.animation = `petalFloat ${duration}ms ${delay}ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards`;
+
+      petalCanvas.appendChild(petal);
+
+      // Cleanup after animation
+      setTimeout(() => petal.remove(), duration + delay + 50);
+    }
+  }
+
+  // === Header scroll effect ===
+  const header = document.getElementById('site-header');
+
+  function handleScroll() {
+    if (window.scrollY > 20) {
+      header?.classList.add('nav-scrolled');
+    } else {
+      header?.classList.remove('nav-scrolled');
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  handleScroll();
+
+  // === Mega Menu Logic (hover + click for accessibility) ===
+  const megaTriggers = document.querySelectorAll('.mega-trigger');
+  const megaPanels = document.querySelectorAll('.mega-panel');
+  let activeMega: string | null = null;
+  let closeTimeout: ReturnType<typeof setTimeout> | null = null;
+
+  let lastPetalTime = 0;
+
+  function activateIcons(panel: HTMLElement) {
+    // Remove first so re-opening re-triggers animations
+    panel.classList.remove('mega-active');
+
+    // Find all icon wrappers and assign staggered delays
+    const icons = panel.querySelectorAll('[class*="ico-"]');
+    icons.forEach((icon, i) => {
+      (icon as HTMLElement).style.setProperty('--ico-delay', `${i * 80}ms`);
+    });
+
+    // Add class on next frame so browser registers the removal first
+    requestAnimationFrame(() => {
+      panel.classList.add('mega-active');
+    });
+  }
+
+  function deactivateIcons() {
+    megaPanels.forEach(p => {
+      p.classList.remove('mega-active');
+      p.querySelectorAll('[class*="ico-"]').forEach(icon => {
+        (icon as HTMLElement).style.removeProperty('--ico-delay');
+      });
+    });
+  }
+
+  function openMega(name: string) {
+    if (closeTimeout) { clearTimeout(closeTimeout); closeTimeout = null; }
+
+    const wasAlreadyOpen = activeMega === name;
+
+    // Close all panels & deactivate icons
+    megaPanels.forEach(p => p.classList.add('hidden'));
+    megaTriggers.forEach(t => t.classList.remove('mega-trigger-active'));
+    deactivateIcons();
+
+    // Open target
+    const panel = document.getElementById(`mega-${name}`);
+    const trigger = document.querySelector(`[data-mega="${name}"] .mega-trigger`) as HTMLElement;
+    if (panel) {
+      panel.classList.remove('hidden');
+      trigger?.classList.add('mega-trigger-active');
+      trigger?.setAttribute('aria-expanded', 'true');
+      activeMega = name;
+
+      // Activate icon animations with stagger
+      if (!wasAlreadyOpen) {
+        activateIcons(panel);
+      }
+
+      // Subtle petal burst from trigger (throttled so hovering between menus doesn't go crazy)
+      const now = Date.now();
+      if (!wasAlreadyOpen && trigger && now - lastPetalTime > 400) {
+        lastPetalTime = now;
+        const rect = trigger.getBoundingClientRect();
+        spawnPetals(rect.left + rect.width / 2, rect.bottom, 6);
+      }
+    }
+  }
+
+  function closeMega() {
+    closeTimeout = setTimeout(() => {
+      deactivateIcons();
+      megaPanels.forEach(p => p.classList.add('hidden'));
+      megaTriggers.forEach(t => {
+        t.classList.remove('mega-trigger-active');
+        t.setAttribute('aria-expanded', 'false');
+      });
+      activeMega = null;
+    }, 150);
+  }
+
+  function cancelClose() {
+    if (closeTimeout) { clearTimeout(closeTimeout); closeTimeout = null; }
+  }
+
+  // Attach hover events to triggers
+  document.querySelectorAll('[data-mega]').forEach(wrapper => {
+    const name = wrapper.getAttribute('data-mega')!;
+    wrapper.addEventListener('mouseenter', () => openMega(name));
+    wrapper.addEventListener('mouseleave', closeMega);
+
+    // Click for touch/accessibility
+    const btn = wrapper.querySelector('.mega-trigger');
+    btn?.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (activeMega === name) { closeMega(); }
+      else { openMega(name); }
+    });
+  });
+
+  // Keep mega open when hovering the panel itself
+  megaPanels.forEach(panel => {
+    panel.addEventListener('mouseenter', cancelClose);
+    panel.addEventListener('mouseleave', closeMega);
+  });
+
+  // === Petal burst on simple nav links (hover) ===
+  document.querySelectorAll('[data-petal]').forEach(link => {
+    link.addEventListener('mouseenter', () => {
+      const now = Date.now();
+      if (now - lastPetalTime > 400) {
+        lastPetalTime = now;
+        const rect = (link as HTMLElement).getBoundingClientRect();
+        spawnPetals(rect.left + rect.width / 2, rect.bottom, 6);
+      }
+    });
+  });
+
+  // Close on click outside
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    if (!target.closest('[data-mega]') && !target.closest('.mega-panel')) {
+      if (activeMega) {
+        if (closeTimeout) clearTimeout(closeTimeout);
+        deactivateIcons();
+        megaPanels.forEach(p => p.classList.add('hidden'));
+        megaTriggers.forEach(t => {
+          t.classList.remove('mega-trigger-active');
+          t.setAttribute('aria-expanded', 'false');
+        });
+        activeMega = null;
+      }
+    }
+  });
+
+  // Close on Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (activeMega) {
+        if (closeTimeout) clearTimeout(closeTimeout);
+        deactivateIcons();
+        megaPanels.forEach(p => p.classList.add('hidden'));
+        megaTriggers.forEach(t => {
+          t.classList.remove('mega-trigger-active');
+          t.setAttribute('aria-expanded', 'false');
+        });
+        activeMega = null;
+      }
+      closeMobileMenu();
+    }
+  });
+
+  // === Mobile menu ===
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileCloseBtn = document.getElementById('mobile-close-btn');
+
+  function openMobileMenu() {
+    mobileMenu?.classList.add('mobile-open');
+    mobileMenuBtn?.classList.add('menu-active');
+    mobileMenuBtn?.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+
+    // Petal burst from hamburger button
+    if (mobileMenuBtn) {
+      const rect = mobileMenuBtn.getBoundingClientRect();
+      spawnPetals(rect.left + rect.width / 2, rect.top + rect.height / 2, 14);
+    }
+  }
+
+  function closeMobileMenu() {
+    mobileMenu?.classList.remove('mobile-open');
+    mobileMenuBtn?.classList.remove('menu-active');
+    mobileMenuBtn?.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  mobileMenuBtn?.addEventListener('click', () => {
+    const isOpen = mobileMenu?.classList.contains('mobile-open');
+    if (isOpen) closeMobileMenu();
+    else openMobileMenu();
+  });
+
+  mobileCloseBtn?.addEventListener('click', closeMobileMenu);
+  mobileMenu?.querySelector('.mobile-backdrop')?.addEventListener('click', closeMobileMenu);
+
+  // === Mobile dropdowns ===
+  document.querySelectorAll('.mobile-dropdown-toggle').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const dropdown = btn.nextElementSibling as HTMLElement;
+      const isOpen = dropdown && !dropdown.classList.contains('hidden');
+
+      // Close all other dropdowns
+      document.querySelectorAll('.mobile-dropdown').forEach((d) => {
+        d.classList.add('hidden');
+        d.previousElementSibling?.classList.remove('mobile-dropdown-open');
+      });
+
+      // Toggle current
+      if (dropdown && !isOpen) {
+        dropdown.classList.remove('hidden');
+        btn.classList.add('mobile-dropdown-open');
+      }
+    });
+  });
+</script>
